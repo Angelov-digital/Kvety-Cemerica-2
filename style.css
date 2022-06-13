@@ -293,6 +293,14 @@ p {
     border-radius: 40px;
     align-items: center;
   }
+  .content-card-frame {
+    position: relative;
+    width: 100%;
+    background-color: #e9e7deb7;
+    z-index: 1;
+    margin: auto;
+    border-radius: 15px;
+  }
   .content-card-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -575,7 +583,7 @@ p {
   }
   .present-description {
     color: #5a5a5a;
-    font-size: 14px;
+    font-size: 15px;
     font-family: segoe;
     padding: 5px;
     margin: 0;
@@ -1034,7 +1042,9 @@ p {
   }
 
   /*choose us-Desktop*/
-
+  .chooseus-nav-mobile{
+    display: none;
+  }
   .chooseus-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1159,6 +1169,9 @@ p {
 
 /*choose us-Mobile */
 @media screen and (max-width: 768px) {
+  .content-card-nav{
+    display: none;
+  }
   .chooseus-content {
     display: none;
   }

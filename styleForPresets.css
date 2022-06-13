@@ -1,0 +1,218 @@
+html {
+  background-image: url(img/background.webp);
+  background-size: cover;
+}
+* {
+  color: #5a5a5a;
+  font-family: sitka;
+}
+h1 {
+  margin-left: 5%;
+}
+h2 {
+  margin-left: 8%;
+  border-bottom: 2px solid currentColor;
+  width: 250px;
+}
+h3 {
+}
+h4 {
+  margin-left: 5%;
+  margin-bottom: 0%;
+  border-bottom: 2px solid currentColor;
+  width: 150px;
+}
+h5 {
+  font-size: 24px;
+}
+.possibleOptionsText {
+  width: 250px;
+
+  margin-left: 13%;
+  margin-top: 10px;
+  margin-left: 8%;
+}
+.sliderButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.shownProduct {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*preset preview Desktop NEW CSS*/
+.preview-text {
+  margin-top: 10%;
+  text-align: center;
+}
+#preset-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 60px;
+  width: 90%;
+  height: max-content;
+  border-radius: 40px;
+  align-items: center;
+  background: url(img/sectionback.webp);
+  background-size: cover;
+}
+#presetPreview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 700px;
+  position: relative;
+  width: 100%;
+  height: 40%;
+  background-color: #e9e7deb7;
+  z-index: 1;
+  margin: auto;
+  border-radius: 40px;
+}
+.mySlides2 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  border-radius: 15px;
+}
+.presetSlideshow {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.discoverPresetsText {
+  max-width: 800px;
+  margin: auto;
+}
+.presetPictureDesktop {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+/*preset preview End*/
+/* NAVIGATION BUTTONS*/
+.navigationButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+.nextStep {
+  background-color: white;
+  border-color: #5a5a5a;
+  border-radius: 20px;
+}
+.prevStep {
+  margin-right: 30%;
+  background-color: white;
+  border-color: #5a5a5a;
+  border-radius: 20px;
+}
+/*FOOTER*/
+.footer-mobile {
+  background-image: url(img/sectionback.webp);
+}
+.footer-desktop {
+  background-image: url(img/sectionback.webp);
+}
+/* CAROUSEL*/
+.carousel {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(img/bouquet1.webp);
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.7s;
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-cell {
+    margin: 6px;
+  }
+}
+
+/* hiding mobile elements for Making desktop ver */
+@media screen and (min-width: 769px) {
+  .carousel,
+  .presetPartsTextMobile,
+  .sliderButtons,
+  .shownProduct,
+  .bouquetePart,
+  .boringInfo {
+    /*this shit is overlapping somewhere */
+    display: none;
+  }
+  .bouquetePart {
+    visibility: hidden;
+  }
+} /*  hiding DEsktop elements for  phone version*/
+@media screen and (max-width: 768px) {
+  .gridPresetPreviewDesktop,
+  .presetOptions,
+  .presetPictureMobile .preview-text,
+  #preset-container,
+  #presetPreview,
+  .mySlides2,
+  .presetSlideshow,
+  .discoverPresetsText,
+  .presetPictureDesktop {
+    display: none;
+  }
+  .btn1-light {
+    width: 140px;
+  }
+}
+
+.gridPresetPreviewDesktop {
+  margin-top: 80px; /* FIX THIS LATER*/
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 23% 33% 33%;
+  grid-template-rows: 1fr;
+}
+.presetPictureMobile {
+  width: 80%;
+}
+.presetOptions {
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+.slideShowPreset {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.white-cell {
+  border-color: white;
+}
+.white-cell:hover {
+  background-color: white;
+}

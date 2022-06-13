@@ -162,3 +162,44 @@ function showDivs(n) {
   dots[slideIndex2 - 1].className += " w3-white";
 }
 //Preset preview slideshow end
+// 7 elements on preset preview
+function currentPresetSlide(n) {
+  showPresetSlides((pSlideIndex = n));
+}
+
+function showPresetSlides(n) {
+  let pSlides = document.getElementsByClassName("presetDesktopSlides");
+  let options = document.getElementsByClassName("presetOption");
+  if (n > pSlides.length) {
+    pSlideIndex = 1;
+  }
+  if (n < 1) {
+    pSlideIndex = pSlides.length;
+  }
+  for (i = 0; i < pSlides.length; i++) {
+    pSlides[i].style.display = "none";
+  }
+  for (i = 0; i < options.length; i++) {
+    options[i].className = options[i].className.replace("activeHover", "");
+  }
+  pSlides[pSlideIndex - 1].style.display = "block";
+  options[pSlideIndex - 1].className += " activeHover";
+}
+// 7 elements on preset preview end
+function hideOptionsPreset() {
+  let slides1 = document.getElementsByClassName("presetDesktopSlides");
+  let slides2 = document.getElementsByClassName("bouquetePart");
+
+  for (i = 0; i > slides1.length; i++) {
+    slides1[i].style.display = "none";
+  }
+  for (i = 0; 1 > slides2.length; i++) {
+    slides2[i].style.display = "none";
+  }
+}
+var slideIndex2 = 1;
+showDivs(slideIndex2);
+
+function currentDiv(n) {
+  showDivs((slideIndex2 = n));
+}

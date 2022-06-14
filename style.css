@@ -666,29 +666,63 @@ p {
   }
   /*season-wheel-mobile*/
   .season-wheel{
+    position: relative;
+    max-height: auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
     position: relative;
     top: 60px;
+    
     background-color: #5a5a5a;
   }
   .flowers-container{
     display: flex;
+    flex-wrap: wrap;
    
   }
   .flower-frame{
     max-width: 20vh;
     text-align: center;
     margin: 10px;
+    
   }
   .flower{
     position: relative;
     max-width: 20vh;
+    border-radius: 10px;
   }
   .flower-name{
       position: relative;
       top: -20%;
-     
+      font-family: segoe;
+  }
+  .seasons-frame{
+    position: relative;
+    width: 90%;
+    background-color: #ccc7c7;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .season{
+    margin-left: 10px;
+    font-family: segoe;
+  }
+  #february{
+ 
+  }
+  .wheel-section{
+    position: relative;
+
+  }
+  .wheel-frame{
+    position: relative;
+   
+
+  }
+  .season-pics{
+    position: absolute;
+    max-width: 100%;
+
   }
   /*season-wheel-mobile-END*/
 }
@@ -1141,7 +1175,7 @@ p {
 }
 /* end style for hover effect*/
 
-/*test function imagechange*/
+/*test function imagechange
 #testimage {
   border-radius: 50%;
   width: 500px;
@@ -1188,6 +1222,7 @@ p {
   margin-right: 10px;
   cursor: pointer;
 }
+*/
 
 /*choose us-Mobile */
 @media screen and (max-width: 768px) {
@@ -1278,6 +1313,8 @@ p {
     color: #3b3b3b;
   }
   .footer-mobile {
+    position: relative;
+    bottom: 0px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -234,7 +234,6 @@ p {
 /*media-mobile*/
 @media only screen and (max-width: 768px) {
   /*headstyles-mobile*/
-
   .headstyle1 {
     color: #5a5a5a;
     font-size: 25px;
@@ -542,9 +541,7 @@ p {
     padding: 0;
     margin: 3px;
   }
-
   /*Our programs-mobile END*/
-
   /*Presentation-Mobile - thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp*/
   .mySlides {
     display: none;
@@ -645,7 +642,6 @@ p {
   .slider-cell:hover {
     background-color: #717171;
   }
-
   /* Fading animation */
   .fade {
     animation-name: fade;
@@ -668,8 +664,34 @@ p {
     align-content: center;
     text-align: center;
   }
+  /*season-wheel-mobile*/
+  .season-wheel{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    top: 60px;
+    background-color: #5a5a5a;
+  }
+  .flowers-container{
+    display: flex;
+   
+  }
+  .flower-frame{
+    max-width: 20vh;
+    text-align: center;
+    margin: 10px;
+  }
+  .flower{
+    position: relative;
+    max-width: 20vh;
+  }
+  .flower-name{
+      position: relative;
+      top: -20%;
+     
+  }
+  /*season-wheel-mobile-END*/
 }
-
 /*media-desktop*/
 @media only screen and (min-width: 768px) {
   /*navigation*/

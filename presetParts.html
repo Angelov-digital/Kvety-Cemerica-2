@@ -6,20 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--SEO-->
-    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
-    <meta
-      name="Kvety cemerica preset parts "
-      content="What we offer in our wedding programmes"
-    />
-    <!--link to css animation library-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <meta name="description"content="What we offer in our wedding decoration programmes"/>
+    <meta name="keywords" content="Wedding decorations,Flowers, Flower atelier,Flower decorations">
     <!--Link to css sheet-->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleForPresets.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <title>Kvety Cemerica</title>
   </head>
   <body onload="currentDiv(1)">
@@ -55,23 +46,23 @@
     <header>
       <nav class="navbar">
         <ul class="nav-logotype">
-          <img src="img/čemerica-loho-name.webp" class="nav-logo" />
+          <img src="img/čemerica-loho-name.webp" alt="logo" class="nav-logo" />
           <div class="vl"></div>
           <li class="nav-item">
-            <a class="nav-link" href="" class="nav-link">Flower studio</a>
+            <a class="nav-link" href="index.html" class="nav-link">Flower studio</a>
           </li>
         </ul>
 
         <ul class="nav-menu">
           <li class="nav-item-desk">
-            <a class="nav-link" href="" class="nav-link">Wedding plans</a>
+            <a class="nav-link" href="style-your-wedding.html" class="nav-link">Wedding plans</a>
           </li>
           <div class="vl"></div>
           <li class="nav-item-desk">
-            <a class="nav-link" href="" class="nav-link">Bouquetes</a>
+            <a class="nav-link" href="404.html" class="nav-link">Bouquetes</a>
           </li>
           <li class="nav-mobile">
-            <a class="nav-link" href="" class="nav-link">More</a>
+            <a class="nav-link" href="404.html" class="nav-link">Bouquetes</a>
           </li>
         </ul>
       </nav>
@@ -93,9 +84,9 @@
             <button class="button-28" id="downButton">Show more</button>
           </section>
           <section class="presetSlideshow">
-            <img class="mySlides2" src="img/bridesmatesdecoration1.webp" />
-            <img class="mySlides2" src="img/bridesmatesdecoration2.webp" />
-            <img class="mySlides2" src="img/buttonholes1.webp" />
+            <img class="mySlides2" alt="slideshow picture" src="img/bridesmatesdecoration1.webp" />
+            <img class="mySlides2" alt="slideshow picture" src="img/bridesmatesdecoration2.webp" />
+            <img class="mySlides2" alt="slideshow picture" src="img/buttonholes1.webp" />
             <section class="slideShowPreset" style="width: 100%">
               <div class="slider-cell white-cell" onclick="currentDiv(1)"></div>
               <div class="slider-cell white-cell" onclick="currentDiv(2)"></div>
@@ -106,16 +97,23 @@
       </section>
     </div>
     <section class="gridPresetPreviewDesktop">
-      <a href=""></a>
       <section class="presetOptions">
-        <p>Bouquet for bride</p>
-        <p>Feather for wedding guests</p>
-        <p>Wedding hall decorations</p>
-        <p>Church decorations</p>
-        <p>Car decorations</p>
-        <p>Bridesmaids decorations</p>
-        <p>Other decorations</p>
+        <p class="presetOption"
+          onclick="currentPresetSlide(1)">Bouquet for bride</p>
+        <p class="presetOption"
+          onclick="currentPresetSlide(2)">Feather for wedding guests</p>
+        <p class="presetOption"
+          onclick="currentPresetSlide(3)">Wedding hall decorations</p>
+        <p class="presetOption"
+          onclick="currentPresetSlide(1)">Church decorations</p>
+        <p class="presetOption"
+          onclick="currentPresetSlide(1)">Car decorations</p>
+        <p class="presetOption"
+          onclick="currentPresetSlide(1)">Bridesmaids decorations</p>
+        <p class="presetOption"
+          onclick="currentPresetSlide(1)">Other decorations</p>
       </section>
+      <!--bouquete for bride desktop pictures-->
       <section>
         <img
           class="presetPictureDesktop"
@@ -130,6 +128,7 @@
           alt="Bouquetes"
         />
       </section>
+      <p class="possibleOptions">Possible options</p>
     </section>
     <!-- MObile Version start MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx-->
     <div class="carousel fade"></div>
@@ -305,7 +304,7 @@
       </div>
 
       <div class="footercontent">
-        <a href="https://www.facebook.com/kvetycemerica">
+        <a href="https://www.facebook.com/kvetycemerica"aria-label="Facebook">
           <svg
             class="someIcons"
             xmlns="http://www.w3.org/2000/svg"
@@ -323,7 +322,7 @@
           </svg>
         </a>
 
-        <a href="https://www.instagram.com/kvety_cemerica/">
+        <a href="https://www.instagram.com/kvety_cemerica/"aria-label="Instagram">
           <svg
             class="someIcons"
             xmlns="http://www.w3.org/2000/svg"
@@ -356,7 +355,7 @@
       </div>
 
       <div class="footericons-desktop">
-        <a href="https://www.facebook.com/kvetycemerica">
+        <a href="https://www.facebook.com/kvetycemerica"aria-label="Facebook">
           <svg
             class="someIcons"
             xmlns="http://www.w3.org/2000/svg"
@@ -373,7 +372,7 @@
             />
           </svg>
         </a>
-        <a href="https://www.instagram.com/kvety_cemerica/">
+        <a href="https://www.instagram.com/kvety_cemerica/"aria-label="Instagram">
           <svg
             class="someIcons"
             xmlns="http://www.w3.org/2000/svg"
@@ -393,16 +392,16 @@
       </div>
 
       <div class="footercontent">
-        <p>Terms of use</p>
-        <p>Cookies</p>
-        <p>Privacy policy</p>
+        <a href="404.html"><p>Terms of use</p></a>
+        <a href="404.html"><p>Cookies</p></a>
+        <a href="404.html"><p>Privacy policy</p></a>
       </div>
     </footer>
 
     <section class="boringInfo">
-      <a href="#">Privacy policy</a>
-      <a class="termsOfUse" href="#">Terms of use</a>
-      <a href="#">Cookie policy</a>
+      <a href="404.html">Privacy policy</a> 
+      <a href="404.html">Terms of use</a> 
+      <a href="404.html">Cookie policy</a>
     </section>
 
     <script src="main.js"></script>

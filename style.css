@@ -668,16 +668,17 @@ p {
   .season-wheel{
     position: relative;
     max-height: auto;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
     position: relative;
     top: 60px;
-    
     background-color: #5a5a5a;
   }
   .flowers-container{
+    position: relative;
+    top: 100px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: antiquewhite;
    
   }
   .flower-frame{
@@ -696,33 +697,72 @@ p {
       top: -20%;
       font-family: segoe;
   }
-  .seasons-frame{
-    position: relative;
-    width: 90%;
-    background-color: #ccc7c7;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .season{
-    margin-left: 10px;
-    font-family: segoe;
-  }
-  #february{
- 
-  }
+  
   .wheel-section{
-    position: relative;
-
+  
   }
   .wheel-frame{
     position: relative;
-   
-
+    width: 320px;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
   }
   .season-pics{
     position: absolute;
-    max-width: 100%;
+    width: 320px;
+    
+    rotate: 0deg;
+    margin-right: auto;
+    margin-left: auto;
+  
+  }
+  .link-grid{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+  }
+  .link{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    rotate: 0deg;
+    margin-right: auto;
+    margin-left: auto;
 
+  }
+  #months{
+    transform: rotate(0deg);
+  }
+  #springlink{
+    position: relative;
+ 
+    background-color: rgba(72, 255, 0, 0.473);
+    z-index: 2;
+  }
+  #summerlink{
+    position: relative;
+   
+    background-color: rgba(255, 230, 0, 0.555);
+    z-index: 2;
+  }
+  #autumlink{
+    position: relative;
+    
+    background-color: rgba(255, 60, 0, 0.507);
+    z-index: 2;
+  }
+  #winterlink{
+    position: relative;
+
+    background-color: rgba(0, 132, 255, 0.514);
+    z-index: 2;
   }
   /*season-wheel-mobile-END*/
 }

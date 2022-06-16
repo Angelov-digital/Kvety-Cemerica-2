@@ -88,6 +88,7 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 // presentation slider              thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp
 
 let slideIndex = 1;
+
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -143,7 +144,7 @@ function currentDiv(n) {
 }
 
 function showDivs(n) {
-  var i;
+
   var x = document.getElementsByClassName("mySlides2");
   var dots = document.getElementsByClassName("slider-cell");
   if (n > x.length) {
@@ -156,10 +157,10 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace("active", "");
   }
   x[slideIndex2 - 1].style.display = "block";
-  dots[slideIndex2 - 1].className += " w3-white";
+  dots[slideIndex2 - 1].className += "active";
 }
 //Preset preview slideshow end
 // 7 elements on preset preview
@@ -168,7 +169,7 @@ function currentPresetSlide(n) {
 }
 
 function showPresetSlides(n) {
-  let pSlides = document.getElementsByClassName("presetDesktopSlides");
+  let pSlides = document.getElementsByClassName("presetPictureDesktop");
   let options = document.getElementsByClassName("presetOption");
   if (n > pSlides.length) {
     pSlideIndex = 1;
@@ -182,7 +183,13 @@ function showPresetSlides(n) {
   for (i = 0; i < options.length; i++) {
     options[i].className = options[i].className.replace("activeHover", "");
   }
-  pSlides[pSlideIndex - 1].style.display = "block";
+
+  let openPresets = document.getElementsByClassName(n);
+
+ for (i = 0; i < openPresets.length; i++) {
+    openPresets[i].style.display="conpact";
+  }
+
   options[pSlideIndex - 1].className += " activeHover";
 }
 // 7 elements on preset preview end

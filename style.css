@@ -1,10 +1,12 @@
 @font-face {
   font-family: sitka;
   src: url(fonts/Sitka.ttc);
+  font-display: swap;
 }
 @font-face {
   font-family: segoe;
   src: url(fonts/Segoe\ UI.ttf);
+  font-display: swap;
 }
 /*elements desktop*/
 body,

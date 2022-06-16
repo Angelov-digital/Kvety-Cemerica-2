@@ -88,9 +88,9 @@
             <img class="mySlides2" alt="slideshow picture" src="img/bridesmatesdecoration2.webp" />
             <img class="mySlides2" alt="slideshow picture" src="img/buttonholes1.webp" />
             <section class="slideShowPreset" style="width: 100%">
-              <div class="slider-cell white-cell" onclick="currentDiv(1)"></div>
-              <div class="slider-cell white-cell" onclick="currentDiv(2)"></div>
-              <div class="slider-cell white-cell" onclick="currentDiv(3)"></div>
+              <div class="slider-cell white-cell" id="slid1" onclick="currentDiv(1)"></div>
+              <div class="slider-cell white-cell" id="slid2" onclick="currentDiv(2)"></div>
+              <div class="slider-cell white-cell" id="slid3" onclick="currentDiv(3)"></div>
             </section>
           </section>
         </div>
@@ -105,30 +105,62 @@
         <p class="presetOption"
           onclick="currentPresetSlide(3)">Wedding hall decorations</p>
         <p class="presetOption"
-          onclick="currentPresetSlide(1)">Church decorations</p>
+          onclick="currentPresetSlide(4)">Church decorations</p>
         <p class="presetOption"
-          onclick="currentPresetSlide(1)">Car decorations</p>
+          onclick="currentPresetSlide(5)">Car decorations</p>
         <p class="presetOption"
-          onclick="currentPresetSlide(1)">Bridesmaids decorations</p>
+          onclick="currentPresetSlide(6)">Bridesmaids decorations</p>
         <p class="presetOption"
-          onclick="currentPresetSlide(1)">Other decorations</p>
+          onclick="currentPresetSlide(7)">Other decorations</p>
       </section>
       <!--bouquete for bride desktop pictures-->
-      <section>
+      <section class="presetPictures 1">
         <img
           class="presetPictureDesktop"
           src="img/bouquet3.webp"
           alt="Bouquet"
         />
       </section>
-      <section>
+      <section class="presetPictures 1">
         <img
           class="presetPictureDesktop"
           src="img/bouquet2.webp"
           alt="Bouquetes"
         />
       </section>
-      <p class="possibleOptions">Possible options</p>
+      <p class="presetPictures 1">Possible options</p>
+            <!--Feather for wedding guest desktop pictures-->
+            <section class="presetPictures 2">
+              <img
+                class="presetPictureDesktop"
+                src="img/buttonholes3.webp"
+                alt="Bouquet"
+              />
+            </section>
+            <section class="presetPictures 2">
+              <img
+                class="presetPictureDesktop"
+                src="img/buttonholes1.webp"
+                alt="Bouquetes"
+              />
+            </section>
+            <p class="presetPictures 2">Possible options2</p>
+                        <!--Wedding hall decorations desktop pictures-->
+                        <section class="presetPictures 3">
+                          <img
+                            class="presetPictureDesktop"
+                            src="img/weddingvenue1.webp"
+                            alt="Bouquet"
+                          />
+                        </section>
+                        <section class="presetPictures 3">
+                          <img
+                            class="presetPictureDesktop"
+                            src="img/weddingvenue3.webp"
+                            alt="Bouquetes"
+                          />
+                        </section>
+                        <p class="presetPictures 3">Possible options3</p>
     </section>
     <!-- MObile Version start MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx-->
     <div class="carousel fade"></div>

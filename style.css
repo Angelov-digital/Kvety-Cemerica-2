@@ -774,25 +774,25 @@ p {
   #springlink{
     position: relative;
     border-radius: 20vh 0 0 0;
-    background-color: rgba(72, 255, 0, 0.11);
+    background-color: rgba(72, 255, 0, 0.0);
     z-index: 2;
   }
   #summerlink{
     position: relative;
     border-radius: 0 0 0 20vh;
-    background-color: rgba(255, 230, 0, 0.11);
+    background-color: rgba(255, 230, 0, 0.0);
     z-index: 2;
   }
   #autumlink{
     position: relative;
     border-radius: 0 0 20vh 0;
-    background-color: rgba(255, 60, 0, 0.11);
+    background-color: rgba(255, 60, 0, 0.0);
     z-index: 2;
   }
   #winterlink{
     position: relative;
     border-radius: 0 20vh 0 0;
-    background-color: rgba(0, 132, 255, 0.11);
+    background-color: rgba(0, 132, 255, 0.0);
     z-index: 2;
   }
   /*season-wheel-mobile-END*/

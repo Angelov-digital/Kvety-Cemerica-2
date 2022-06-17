@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="styleForPresets.css" />
     <title>Kvety Cemerica</title>
   </head>
-  <body onload="currentDiv(1)">
-    <script src="main.js"></script>
+  <body onload="currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1)">
+
     <style>
       a:link {
         text-decoration: none;
@@ -88,9 +88,9 @@
             <img class="mySlides2" alt="slideshow picture" src="img/bridesmatesdecoration2.webp" />
             <img class="mySlides2" alt="slideshow picture" src="img/buttonholes1.webp" />
             <section class="slideShowPreset" style="width: 100%">
-              <div class="slider-cell white-cell" onclick="currentDiv(1)"></div>
-              <div class="slider-cell white-cell" onclick="currentDiv(2)"></div>
-              <div class="slider-cell white-cell" onclick="currentDiv(3)"></div>
+              <div class="slider-cell white-cell" id="slid1" onclick="currentDiv(1)"></div>
+              <div class="slider-cell white-cell" id="slid2" onclick="currentDiv(2)"></div>
+              <div class="slider-cell white-cell" id="slid3" onclick="currentDiv(3)"></div>
             </section>
           </section>
         </div>
@@ -98,40 +98,65 @@
     </div>
     <section class="gridPresetPreviewDesktop">
       <section class="presetOptions">
-        <p class="presetOption"
+        <p class="activeOption"
           onclick="currentPresetSlide(1)">Bouquet for bride</p>
-        <p class="presetOption"
+        <p class="activeOption"
           onclick="currentPresetSlide(2)">Feather for wedding guests</p>
-        <p class="presetOption"
+        <p class="activeOption"
           onclick="currentPresetSlide(3)">Wedding hall decorations</p>
-        <p class="presetOption"
-          onclick="currentPresetSlide(1)">Church decorations</p>
-        <p class="presetOption"
-          onclick="currentPresetSlide(1)">Car decorations</p>
-        <p class="presetOption"
-          onclick="currentPresetSlide(1)">Bridesmaids decorations</p>
-        <p class="presetOption"
-          onclick="currentPresetSlide(1)">Other decorations</p>
+        <p class="activeOption"
+          onclick="currentPresetSlide(4)">Church decorations</p>
+        <p class="activeOption"
+          onclick="currentPresetSlide(5)">Car decorations</p>
+        <p class="activeOption"
+          onclick="currentPresetSlide(6)">Bridesmaids decorations</p>
+        <p class="activeOption"
+          onclick="currentPresetSlide(7)">Other decorations</p>
       </section>
       <!--bouquete for bride desktop pictures-->
-      <section>
         <img
           class="presetPictureDesktop"
           src="img/bouquet3.webp"
           alt="Bouquet"
         />
-      </section>
-      <section>
         <img
           class="presetPictureDesktop"
           src="img/bouquet2.webp"
           alt="Bouquetes"
         />
-      </section>
-      <p class="possibleOptions">Possible options</p>
+                <!--Feather for wedding guest desktop pictures-->
+              <img
+                class="presetPictureDesktop"
+                src="img/buttonholes3.webp"
+                alt="Bouquet"
+              />
+              <img
+                class="presetPictureDesktop"
+                src="img/buttonholes1.webp"
+                alt="Bouquetes"
+              />
+                        <!--Wedding hall decorations desktop pictures-->
+                       
+                          <img
+                            class="presetPictureDesktop"
+                            src="img/weddingvenue1.webp"
+                            alt="Bouquet"
+                          />
+                   
+                       
+                          <img
+                            class="presetPictureDesktop"
+                            src="img/weddingvenue3.webp"
+                            alt="Bouquetes"
+                          />
+                   
+                       
     </section>
+    <p class="presetText"> Possible options</p>
+    <p class="presetText">Possible options2</p>
+    <p class="presetText">Possible options3</p>
     <!-- MObile Version start MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx-->
-    <div class="carousel fade"></div>
+    <div class="carousel fadePreview"></div>
     <section class="presetPartsTextMobile">
       <h1>Preset parts</h1>
     </section>
@@ -252,39 +277,39 @@
     </section>
     <section class="sliderButtons">
       <div
-        class="slider-cell"
+        class="slider-cell slider"
         id="slid1"
-        onclick="currentSlide(1, 'bouquetePart')"
+        onclick="currentPresetSlideMob(1)"
       ></div>
       <div
-        class="slider-cell"
+        class="slider-cell slider"
         id="slid2"
-        onclick="currentSlide(2, 'bouquetePart')"
+        onclick="currentPresetSlideMob(2)"
       ></div>
       <div
-        class="slider-cell"
+        class="slider-cell slider"
         id="slid3"
-        onclick="currentSlide(3, 'bouquetePart')"
+        onclick="currentPresetSlideMob(3)"
       ></div>
       <div
-        class="slider-cell"
+        class="slider-cell slider"
         id="slid4"
-        onclick="currentSlide(4, 'bouquetePart')"
+        onclick="currentPresetSlideMob(4)"
       ></div>
       <div
-        class="slider-cell"
+        class="slider-cell slider"
         id="slid5"
-        onclick="currentSlide(5, 'bouquetePart')"
+        onclick="currentPresetSlideMob(5)"
       ></div>
       <div
-        class="slider-cell"
+        class="slider-cell slider"
         id="slid6"
-        onclick="currentSlide(6, 'bouquetePart')"
+        onclick="currentPresetSlideMob(6)"
       ></div>
       <div
-        class="slider-cell"
+        class="slider-cell slider"
         id="slid7"
-        onclick="currentSlide(7, 'bouquetePart')"
+        onclick="currentPresetSlideMob(7)"
       ></div>
     </section>
     <section class="navigationButtons">
@@ -404,6 +429,7 @@
       <a href="404.html">Cookie policy</a>
     </section>
 
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
+    <script defer src="presetPreview.js"></script>
   </body>
 </html>

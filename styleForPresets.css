@@ -75,7 +75,8 @@ h5 {
 .mySlides2 {
   margin-right: auto;
   margin-left: auto;
-  width: 50%;
+  max-width: 50%;
+  min-width: 300px;
   border-radius: 15px;
 }
 .presetSlideshow {
@@ -88,11 +89,7 @@ h5 {
   max-width: 800px;
   margin: auto;
 }
-.presetPictureDesktop {
-  width: 90%;
-  margin-bottom: 40px;
-  border-radius: 10px;
-}
+
 /*preset preview End*/
 /* NAVIGATION BUTTONS*/
 .navigationButtons {
@@ -126,13 +123,13 @@ h5 {
   background-position: center;
   background-image: url(img/bouquet1.webp);
 }
-.fade {
+.fadePreview {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 0.7s;
   animation-name: fade;
   animation-duration: 0.7s;
 }
-@-webkit-keyframes fade {
+@-webkit-keyframes fadePreview {
   from {
     opacity: 0.4;
   }
@@ -140,7 +137,7 @@ h5 {
     opacity: 1;
   }
 }
-@keyframes fade {
+@keyframes fadePreview {
   from {
     opacity: 0.4;
   }
@@ -185,15 +182,34 @@ h5 {
     width: 140px;
   }
 }
+.gridPresetPreviewDesktop{
+  margin-top: 100px;
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+margin-left: auto;
+justify-content: space-around;
 
-.gridPresetPreviewDesktop {
-  margin-top: 80px; /* FIX THIS LATER*/
+}
+.presetPictureDesktop {
+  /* FIX THIS LATER
   display: grid;
   width: 80%;
 margin-right: auto;
 margin-left: auto;
   grid-template-columns:  1fr 1fr 1fr;
+  */
+  display: flex;
+  min-width: 200px;
+  max-width: 420px;
+  max-height: 540px;
+  
 }
+.presetPictureDesktop {
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
 .presetPictureMobile {
   width: 80%;
 }
@@ -220,3 +236,5 @@ a:active {
 .white-cell:hover {
   background-color: white;
 }
+
+

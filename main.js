@@ -1,7 +1,7 @@
 //changing images on click
 function changeImage1() {
-  var image = document.getElementById("testimage");
-  if (image.src.match("spring")) {
+  var image = document.getElementById("season-featured");
+  if (image.src.match("img/spring.png")) {
     image.src = "img/spring.png";
   } else {
     image.src = "img/spring.png";
@@ -9,7 +9,7 @@ function changeImage1() {
 }
 
 function changeImage2() {
-  var image = document.getElementById("testimage");
+  var image = document.getElementById("season-featured");
   if (image.src.match("summer")) {
     image.src = "img/summer.png";
   } else {
@@ -18,7 +18,7 @@ function changeImage2() {
 }
 
 function changeImage3() {
-  var image = document.getElementById("testimage");
+  var image = document.getElementById("season-featured");
   if (image.src.match("autum")) {
     image.src = "img/autum.png";
   } else {
@@ -27,13 +27,28 @@ function changeImage3() {
 }
 
 function changeImage4() {
-  var image = document.getElementById("testimage");
+  var image = document.getElementById("season-featured");
   if (image.src.match("winter")) {
     image.src = "img/winter.png";
   } else {
     image.src = "img/winter.png";
   }
 }
+// month bar rotation 
+
+function rotateMonthSummer() {
+  document.querySelector("#link-grid").style.transform = "rotate(140deg)";
+}
+function rotateMonthAutum() {
+  document.querySelector("#link-grid").style.transform = "rotate(230deg)";
+}
+function rotateMonthWinter() {
+  document.querySelector("#link-grid").style.transform = "rotate(320deg)";
+}
+function rotateMonthSpring() {
+  document.querySelector("#link-grid").style.transform = "rotate(50deg)";
+}
+
 // choose us 3 ailes
 function chooseUs(id) {
   var a = document.getElementById("1");

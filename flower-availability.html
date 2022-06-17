@@ -10,7 +10,7 @@
     <meta name="Kvety Cemerica welcome to our flower atelier" content="what we offer, why choose us, ">
     <!--Link to css sheet-->
     <link rel="stylesheet" href="style.css">
-
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <title>Kvety Cemerica</title>
 </head>
@@ -69,28 +69,27 @@
 
         <div class="wheel-frame">
         
-            <div  class="link-grid">
-                <div class="link" id="springlink"></div>
-                <div class="link" id="winterlink"></div>
-                <div class="link" id="summerlink"></div>
-                <div class="link" id="autumlink"></div>
-                
+            <div  id="link-grid">
+                <div class="link" id="springlink" onclick="rotateMonthSpring();changeImage1()" value="Change"></div>
+                <div class="link" id="winterlink" onclick="rotateMonthWinter();changeImage4()" value="Change"></div>
+                <div class="link" id="summerlink" onclick="rotateMonthSummer();changeImage2()" value="Change"></div>
+                <div class="link" id="autumlink" onclick="rotateMonthAutum();changeImage3()" value="Change"></div>
+                <img class="season-pics" id="months" src="img/seasons_wheel.png">
             </div>
-
-            <img class="season-pics" id="months" src="img/seasons_wheel.png">
-            
             <img class="season-pics" id="spring" src="img/spring.png">
             <img class="season-pics" id="summer" src="img/summer.png">
             <img class="season-pics" id="autum" src="img/autum.png">
             <img class="season-pics" id="winter" src="img/winter.png">
+            <img class="season-pics" id="season-featured" src="img/choose-season.png">
 
-       
         </div>
     </div>
 </section>
 
+
+
 <section class="flowers-container">
-    
+
         <div class="flower-frame" id="english-rose">
             <img src="img/englishrose.jpg" class="flower">
             <p class="flower-name">English rose</p>

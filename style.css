@@ -670,7 +670,7 @@ p {
     max-height: auto;
     position: relative;
     top: 60px;
-    background-color: #5a5a5a;
+    
   }
   .flowers-container{
     position: relative;
@@ -713,19 +713,21 @@ p {
   .season-pics{
     position: absolute;
     width: 320px;
-    
     rotate: 0deg;
     margin-right: auto;
     margin-left: auto;
+    z-index: -1;
   
   }
-  .link-grid{
+  #link-grid{
     position: absolute;
     width: 320px;
     height: 320px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    transform: rotate(50deg);
+    transition: all 2s linear;
     
   }
   .link{
@@ -735,33 +737,54 @@ p {
     rotate: 0deg;
     margin-right: auto;
     margin-left: auto;
-
+    cursor: pointer;
+    z-index: 10;
+  
   }
   #months{
     transform: rotate(0deg);
+    transition: all 2s linear;
   }
+
+  @keyframes rotate {
+    0% { 
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
   #springlink{
     position: relative;
- 
-    background-color: rgba(72, 255, 0, 0.473);
+    border-radius: 20vh 0 0 0;
+    background-color: rgba(72, 255, 0, 0.11);
     z-index: 2;
   }
   #summerlink{
     position: relative;
-   
-    background-color: rgba(255, 230, 0, 0.555);
+    border-radius: 0 0 0 20vh;
+    background-color: rgba(255, 230, 0, 0.11);
     z-index: 2;
   }
   #autumlink{
     position: relative;
-    
-    background-color: rgba(255, 60, 0, 0.507);
+    border-radius: 0 0 20vh 0;
+    background-color: rgba(255, 60, 0, 0.11);
     z-index: 2;
   }
   #winterlink{
     position: relative;
-
-    background-color: rgba(0, 132, 255, 0.514);
+    border-radius: 0 20vh 0 0;
+    background-color: rgba(0, 132, 255, 0.11);
     z-index: 2;
   }
   /*season-wheel-mobile-END*/

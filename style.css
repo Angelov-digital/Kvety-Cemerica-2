@@ -348,6 +348,7 @@ p {
     align-items: center;
     margin: 0px;
     z-index: 10;
+    max-width: 70px;
   }
   .nav-logo {
     position: relative;

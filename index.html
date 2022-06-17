@@ -8,8 +8,10 @@
     <!--CEO-->
     <meta name="description" content="Kvety Cemerica welcome to our flower atelier">
     <!--Link to css sheet-->
+    
     <link rel="stylesheet" href="style.css">
     <title>Kvety Cemerica</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/FAVICON.png"/>
 </head>
 <style>
     a:link { text-decoration: none; }
@@ -30,13 +32,13 @@
         list-style-type: none; 
     }
 </style>
-<body onload="hideOptions()">
+<body onload="currentSlide(1); chooseUs(1); chooseUsMobileSlider(4)" >
 <!-- navigation bar-->
     <header>
         <nav class="navbar">
 
             <ul class="nav-logotype">
-                <img src="img/čemerica-loho-name.webp" class="nav-logo" alt="logo">
+                <img src="img/čemerica-loho-name.webp"  class="nav-logo" alt="logo">
                 <div class="vl"></div>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html" class="nav-link">Flower studio</a>
@@ -378,7 +380,7 @@
 
 <!--choose us mobile-->
 
-    <section class="OurMindsetMobile" id="4">
+    <section class="OurMindsetMobile">
         <section class="chooseUsMobilePictures">
             <img loading="lazy" src="img/florist.webp" alt="Team" class="mindsetPicture1">
             <img loading="lazy" src="img/mindset.webp" alt="Process" class="mindsetPicture2">
@@ -393,7 +395,7 @@
     </section>
     
 <!--contuinue with workplace here-->
-    <section class="ourWorkplaceMobile" id="5">
+    <section class="ourWorkplaceMobile">
         <section class="chooseUsMobilePictures">
             <img loading="lazy" src="img/workplace1.webp" alt="Flower farm" class="mindsetPicture1">
             <img loading="lazy" src="img/workplace2.webp" alt="Bakery" class="mindsetPicture2">
@@ -409,7 +411,7 @@
     </section>
    
 <!--contuinue with partners here-->
-<section class="ourPartnersMobile" id="6">
+<section class="ourPartnersMobile">
     <section class="chooseUsMobilePictures" >
         <img loading="lazy" src="img/bakery.webp" alt="Laura bakery" class="mindsetPicture1">
         <img loading="lazy" src="img/farm.webp" alt="Burina farm" class="mindsetPicture2">
@@ -552,7 +554,7 @@
     <a class="headstyle2" href="404.html">Cookie policy</a>
 </section>
 
-    <script src="main.js"></script>
+<script defer src="main.js"></script>
 
 </body>
 

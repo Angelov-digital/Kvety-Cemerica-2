@@ -710,6 +710,14 @@ p {
     
     
   }
+  #arrow{
+    position: absolute;
+    width: 25px;
+    left: 150px;
+    z-index: 10;
+    top: 30px;
+
+  }
   .season-pics{
     position: absolute;
     width: 320px;
@@ -726,7 +734,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    transform: rotate(50deg);
+    transform: rotate(46deg);
     transition: all 2s linear;
     
   }

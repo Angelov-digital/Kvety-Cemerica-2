@@ -34,19 +34,31 @@ function changeImage4() {
     image.src = "img/winter.png";
   }
 }
-// month bar rotation 
+// month bar rotation + flower change
 
 function rotateMonthSummer() {
-  document.querySelector("#link-grid").style.transform = "rotate(140deg)";
+  document.querySelector("#link-grid").style.transform = "rotate(136deg)";
+  document.getElementById("flower1").src="img/flowers/summer1.jpeg";
+  document.getElementById("flower2").src="img/flowers/summer2.jpeg";
+  document.getElementById("flower3").src="img/flowers/summer3.jpeg";
 }
 function rotateMonthAutum() {
-  document.querySelector("#link-grid").style.transform = "rotate(230deg)";
+  document.querySelector("#link-grid").style.transform = "rotate(226deg)";
+  document.getElementById("flower1").src="img/flowers/autum1.jpeg";
+  document.getElementById("flower2").src="img/flowers/autum2.jpeg";
+  document.getElementById("flower3").src="img/flowers/autum3.jpeg";
 }
 function rotateMonthWinter() {
-  document.querySelector("#link-grid").style.transform = "rotate(320deg)";
+  document.querySelector("#link-grid").style.transform = "rotate(316deg)";
+  document.getElementById("flower1").src="img/flowers/winter1.jpeg";
+  document.getElementById("flower2").src="img/flowers/winter2.jpeg";
+  document.getElementById("flower3").src="img/flowers/winter3.jpeg";
 }
 function rotateMonthSpring() {
-  document.querySelector("#link-grid").style.transform = "rotate(50deg)";
+  document.querySelector("#link-grid").style.transform = "rotate(46deg)";
+  document.getElementById("flower1").src="img/flowers/spring1.jpeg";
+  document.getElementById("flower2").src="img/flowers/spring2a.jpeg";
+  document.getElementById("flower3").src="img/flowers/spring3.jpeg";
 }
 
 // choose us 3 ailes

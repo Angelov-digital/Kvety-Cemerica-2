@@ -32,7 +32,7 @@
         list-style-type: none; 
     }
 </style>
-<body onload="currentSlide(1); chooseUs(1); chooseUsMobileSlider(4)" >
+<body onload="currentSlide(1); chooseUsSlides(1); chooseUsMobileSlider(1)" >
 <!-- navigation bar-->
     <header>
         <nav class="navbar">
@@ -335,9 +335,9 @@
                 </div>
     
                 <div class="chooseus-nav">
-                    <p class="title1" onclick="chooseUs(1)">Our mindset</p>
-                    <p class="title2" onclick="chooseUs(2)">Our workplace</p>
-                    <p class="title3" onclick="chooseUs(3)">Our partners</p>
+                    <p class="titleChooseUs activeOption" onclick="chooseUsSlides(1)">Our mindset</p>
+                    <p class="titleChooseUs activeOption" onclick="chooseUsSlides(2)">Our workplace</p>
+                    <p class="titleChooseUs activeOption" onclick="chooseUsSlides(3)">Our partners</p>
                 </div>
             </div>
             <!-- choose us nav mobile-->
@@ -348,7 +348,7 @@
                 </div>
             </div>
             <!-- naviagtion END-->
-            <div class="chooseus-content" id="1">
+            <div class="chooseus-content">
                 <div class="chooseUsText">
                     <p class="text-cont" >We are a team of dedicated florists. We understand how important it is to stand out in a creative yet interesting way. Coming up with new ideas and improving our services are just a few of our goals and we try to maintain the beauty and purity of flowers with each step we take.</p>     
                 </div>
@@ -356,7 +356,7 @@
                 <img loading="lazy" class="mindsetImg" width="400px" alt="Florist" src="./img/florist.webp"></img>
             </div>
             
-            <div class="chooseus-content " id="2" >
+            <div class="chooseus-content ">
                 <div class="chooseUsText">
                     <p class="text-cont" >With each wedding plan, we are constantly making sure the flowers are delivered in the best conditions, so you can enjoy them for the longest time. We believe sustainability is key, which means we avoid plastic wraps, as well as using artificial flowers. The important part in taking care of the flowers is watering them with rain water, which extends their lifespan and keeps them thriving.
                     </p>     
@@ -364,7 +364,7 @@
                 <img loading="lazy" class="mindsetImg" width="400px" src="./img/workplace1.webp"></img>
             <img loading="lazy" class="mindsetImg" width="400px" src="./img/workplace2.webp"></img>
         </div>
-        <div class="chooseus-content" id="3">
+        <div class="chooseus-content">
             <div class="chooseUsText">
                 <p class="text-cont" >Our passion and interest for the industry brought us local partners, who offered us partnership and gave us the opportunity to grow as a company.
                     Every flower we use in our atelier comes from the local farm Burina, where no chemicals are used so the flowers can last longer, grow pure and beautiful.
@@ -380,7 +380,7 @@
 
 <!--choose us mobile-->
 
-    <section class="OurMindsetMobile">
+    <section class="chooseUsMobile">
         <section class="chooseUsMobilePictures">
             <img loading="lazy" src="img/florist.webp" alt="Team" class="mindsetPicture1">
             <img loading="lazy" src="img/mindset.webp" alt="Process" class="mindsetPicture2">
@@ -395,7 +395,7 @@
     </section>
     
 <!--contuinue with workplace here-->
-    <section class="ourWorkplaceMobile">
+    <section class="chooseUsMobile">
         <section class="chooseUsMobilePictures">
             <img loading="lazy" src="img/workplace1.webp" alt="Flower farm" class="mindsetPicture1">
             <img loading="lazy" src="img/workplace2.webp" alt="Bakery" class="mindsetPicture2">
@@ -411,7 +411,7 @@
     </section>
    
 <!--contuinue with partners here-->
-<section class="ourPartnersMobile">
+<section class="chooseUsMobile">
     <section class="chooseUsMobilePictures" >
         <img loading="lazy" src="img/bakery.webp" alt="Laura bakery" class="mindsetPicture1">
         <img loading="lazy" src="img/farm.webp" alt="Burina farm" class="mindsetPicture2">
@@ -430,9 +430,9 @@
 </section>
 
 <section class="sliderChooseUs">
-    <div class="slider-cell" onclick="chooseUsMobileSlider(4)"></div>
-    <div class="slider-cell" onclick="chooseUsMobileSlider(5)"></div>
-    <div class="slider-cell" onclick="chooseUsMobileSlider(6)"></div>
+    <div class="slider-cell chooseUs-slider" onclick="chooseUsMobileSlider(1)"></div>
+    <div class="slider-cell chooseUs-slider" onclick="chooseUsMobileSlider(2)"></div>
+    <div class="slider-cell chooseUs-slider" onclick="chooseUsMobileSlider(3)"></div>
 
 </section>
 </section>

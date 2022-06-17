@@ -87,10 +87,32 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-
 function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("slider-cell");
+getSlides(n, slides, dots);
+}
+
+//Choose us mobile
+function chooseUsMobileSlider(n) {
+  showChooseUsMob(slideIndex = n);
+}
+
+function showChooseUsMob(n) {
+  let slides = document.getElementsByClassName("chooseUsMobile");
+  let dots = document.getElementsByClassName("chooseUs-slider");
+  getSlides(n, slides, dots);
+}
+
+//choose us desktop version
+function chooseUsSlides(n) {
+  showChooseUs(slideIndex = n);
+}
+
+function showChooseUs(n) {
+  let slides = document.getElementsByClassName("chooseus-content");
+  let dots = document.getElementsByClassName("titleChooseUs");
+
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -101,16 +123,14 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" activeTitle", "");
   }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  slides[slideIndex - 1].style.display = "";
+  dots[slideIndex - 1].className += " activeTitle";
 }
 
-//Choose us mobile
-function chooseUsSlides(n) {
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("slider-cell");
+//function that gets all slides and active sliders for carousels
+function getSlides(n, slides, dots){
   if (n > slides.length) {
     slideIndex = 1;
   }

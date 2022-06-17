@@ -237,7 +237,4 @@ a:active {
   background-color: white;
 }
 
-.activePreset,
-.presetOption:hover {
-  text-decoration: underline;
-}
+

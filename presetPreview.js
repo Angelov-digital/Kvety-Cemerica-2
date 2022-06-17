@@ -71,7 +71,7 @@ function currentPresetSlide(n) {
 
 function showPresetSlides(n) {
   let pSlides = document.getElementsByClassName("presetPictureDesktop");
-  let options = document.getElementsByClassName("presetOption");
+  let options = document.getElementsByClassName("activeOption");
   let text = document.getElementsByClassName("presetText")
   if (n > pSlides.length) {
     pSlideIndex = 1;
@@ -83,7 +83,7 @@ function showPresetSlides(n) {
     pSlides[i].style.display = "none";
   }
   for (i = 0; i < options.length; i++) {
-    options[i].className = options[i].className.replace("activePreset", "");
+    options[i].className = options[i].className.replace("activeTitle", "");
   }
   for (i = 0; i < text.length; i++) {
     text[i].style.display = "none";
@@ -92,7 +92,7 @@ function showPresetSlides(n) {
   pSlides[n*2-1].style.display="";
   text[n-1].style.display="initial";
 
-  options[pSlideIndex - 1].className += " activePreset";
+  options[pSlideIndex - 1].className += " activeTitle";
 }
 // 7 elements on preset preview end
 function hideOptionsPreset() {

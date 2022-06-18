@@ -1,4 +1,4 @@
-//changing images on click
+//changing images onclick
 function changeImage1() {
   var image = document.getElementById("season-featured");
   if (image.src.match("img/spring.png")) {
@@ -74,19 +74,7 @@ function chooseUs(id) {
   var x = document.getElementById(id);
   x.style.display = "";
 }
-function hideOptions() {
-  var b = document.getElementById("2");
-  var c = document.getElementById("3");
 
-  b.style.display = "none";
-  c.style.display = "none";
-
-  var w = document.getElementById("5");
-  var e = document.getElementById("6");
-
-  w.style.display = "none";
-  e.style.display = "none";
-}
 // Choose us mobile slider
 function chooseUsMobileSlider(id) {
   var q = document.getElementById("4");
@@ -114,8 +102,7 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 
 // presentation slider              thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp
 
-let slideIndex = 1;
-showSlides(slideIndex);
+var slideIndex = 1;
 
 // Next/previous controls
 function plusSlides(n) {
@@ -124,12 +111,53 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("slider-cell");
+getSlides(n, slides, dots);
+}
+
+//Choose us mobile
+function chooseUsMobileSlider(n) {
+  showChooseUsMob(slideIndex = n);
+}
+
+function showChooseUsMob(n) {
+  let slides = document.getElementsByClassName("chooseUsMobile");
+  let dots = document.getElementsByClassName("chooseUs-slider");
+  getSlides(n, slides, dots);
+}
+
+//choose us desktop version
+function chooseUsSlides(n) {
+  showChooseUs(slideIndex = n);
+}
+
+function showChooseUs(n) {
+  let slides = document.getElementsByClassName("chooseus-content");
+  let dots = document.getElementsByClassName("titleChooseUs");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" activeTitle", "");
+  }
+  slides[slideIndex - 1].style.display = "";
+  dots[slideIndex - 1].className += " activeTitle";
+}
+
+//function that gets all slides and active sliders for carousels
+function getSlides(n, slides, dots){
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -145,47 +173,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-//CAROUSEL for preset preview thanks goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx
-const images = ["img/bouquet1.webp", "img/bouquet2.webp", "img/bouquet3.webp"];
-const carousel = document.querySelector(".carousel");
-const interval = setInterval(function () {
-  startCarousel();
-}, 3000);
-var index = 1;
-
-startCarousel = () => {
-  carousel.style.backgroundImage = `url(${images[index++]})`;
-  carousel.classList.remove("fade");
-  void carousel.offsetWidth;
-  carousel.classList.add("fade");
-  if (index > images.length - 1) index = 0;
-};
-//CArousel for preset preview end
-//Preset preview slideshow  thanks goes again to https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_dots2
-var slideIndex2 = 1;
-showDivs(slideIndex2);
-
-function currentDiv(n) {
-  showDivs((slideIndex2 = n));
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("slider-cell");
-  if (n > x.length) {
-    slideIndex2 = 1;
-  }
-  if (n < 1) {
-    slideIndex2 = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex2 - 1].style.display = "block";
-  dots[slideIndex2 - 1].className += " w3-white";
-}
-//Preset preview slideshow end

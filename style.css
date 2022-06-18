@@ -1,10 +1,12 @@
 @font-face {
   font-family: sitka;
   src: url(fonts/Sitka.ttc);
+  font-display: swap;
 }
 @font-face {
   font-family: segoe;
   src: url(fonts/Segoe\ UI.ttf);
+  font-display: swap;
 }
 /*elements desktop*/
 body,
@@ -60,9 +62,7 @@ p {
   margin-bottom: 8px;
   text-align: center;
 }
-.title1,
-.title2,
-.title3 {
+.titleChooseUs {
   position: relative;
   color: #5a5a5a;
   font-size: 25px;
@@ -345,6 +345,7 @@ p {
     align-items: center;
     margin: 0px;
     z-index: 10;
+    max-width: 70px;
   }
   .nav-logo {
     position: relative;
@@ -1318,7 +1319,6 @@ p {
 @media screen and (min-width: 769px) {
   .chooseUsMobilePictures,
   .chooseUsMobileText,
-  .ourWorkplaceMobile,
   .sliderChooseUs,
   .ourMindsetMobilePictures .ourPartnersMobile,
   .ourWorkpalceMobileText {
@@ -1443,3 +1443,8 @@ p {
     font-family: segoe;
   }
 }
+.activeTitle,
+.activeOption:hover {
+  text-decoration: underline;
+}
+

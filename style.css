@@ -754,23 +754,7 @@ p {
     transition: all 2s linear;
   }
 
-  @keyframes rotate {
-    0% { 
-        -moz-transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
 
-    100% {
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-}
   #springlink{
     position: relative;
     border-radius: 20vh 0 0 0;

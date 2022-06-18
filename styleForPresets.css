@@ -89,13 +89,18 @@ h5 {
   max-width: 800px;
   margin: auto;
 }
-
+.presetTextAdjust {
+  max-width: 200px;
+  margin-left: 12%;
+  margin-top: -9%;
+}
+.presetText {
+}
 /*preset preview End*/
 /* NAVIGATION BUTTONS*/
 .navigationButtons {
   display: flex;
   justify-content: space-around;
-  margin-top: 16px;
 }
 .nextStep {
   background-color: white;
@@ -182,14 +187,13 @@ h5 {
     width: 140px;
   }
 }
-.gridPresetPreviewDesktop{
+.gridPresetPreviewDesktop {
   margin-top: 100px;
   display: flex;
   width: 90%;
   margin-right: auto;
-margin-left: auto;
-justify-content: space-around;
-
+  margin-left: auto;
+  justify-content: space-around;
 }
 .presetPictureDesktop {
   /* FIX THIS LATER
@@ -203,7 +207,6 @@ margin-left: auto;
   min-width: 200px;
   max-width: 420px;
   max-height: 540px;
-  
 }
 .presetPictureDesktop {
   margin-bottom: 40px;
@@ -213,11 +216,12 @@ margin-left: auto;
 .presetPictureMobile {
   width: 80%;
 }
-.possibleOptions{
+.possibleOptions {
   margin-top: -30%;
   margin-left: 10%;
 }
-.presetOptions { /*style later*/
+.presetOptions {
+  /*style later*/
 }
 a:hover {
   text-decoration: none;
@@ -236,5 +240,3 @@ a:active {
 .white-cell:hover {
   background-color: white;
 }
-
-

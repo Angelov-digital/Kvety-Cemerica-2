@@ -38,27 +38,61 @@ function changeImage4() {
 
 function rotateMonthSummer() {
   document.querySelector("#link-grid").style.transform = "rotate(136deg)";
-  document.getElementById("flower1").src="img/flowers/summer1.jpeg";
-  document.getElementById("flower2").src="img/flowers/summer2.jpeg";
-  document.getElementById("flower3").src="img/flowers/summer3.jpeg";
+  document.getElementById("flower1").src="img/flowers/summer4.jpg";
+  document.getElementById("flower2").src="img/flowers/summer2.jpg";
+  document.getElementById("flower3").src="img/flowers/summer3.jpg";
+  
 }
 function rotateMonthAutum() {
   document.querySelector("#link-grid").style.transform = "rotate(226deg)";
-  document.getElementById("flower1").src="img/flowers/autum1.jpeg";
-  document.getElementById("flower2").src="img/flowers/autum2.jpeg";
-  document.getElementById("flower3").src="img/flowers/autum3.jpeg";
+  document.getElementById("flower1").src="img/flowers/autum1.jpg";
+  document.getElementById("flower2").src="img/flowers/autum2.jpg";
+  document.getElementById("flower3").src="img/flowers/autum3.jpg";
 }
 function rotateMonthWinter() {
   document.querySelector("#link-grid").style.transform = "rotate(316deg)";
-  document.getElementById("flower1").src="img/flowers/winter1.jpeg";
-  document.getElementById("flower2").src="img/flowers/winter2.jpeg";
-  document.getElementById("flower3").src="img/flowers/winter3.jpeg";
+  document.getElementById("flower1").src="img/flowers/winter1.jpg";
+  document.getElementById("flower2").src="img/flowers/winter2.jpg";
+  document.getElementById("flower3").src="img/flowers/winter3.jpg";
 }
 function rotateMonthSpring() {
   document.querySelector("#link-grid").style.transform = "rotate(46deg)";
-  document.getElementById("flower1").src="img/flowers/spring1.jpeg";
-  document.getElementById("flower2").src="img/flowers/spring2a.jpeg";
-  document.getElementById("flower3").src="img/flowers/spring3.jpeg";
+  document.getElementById("flower1").src="img/flowers/spring1.jpg";
+  document.getElementById("flower2").src="img/flowers/spring2a.jpg";
+  document.getElementById("flower3").src="img/flowers/spring3.jpg";
+}
+// change flower names
+function changeTextSummer() {
+  {var element = document.getElementById("flowerName1");
+        element.innerHTML = "Pink rose";}
+  {var element = document.getElementById("flowerName2");
+        element.innerHTML = "Nice purple flower";}
+  {var element = document.getElementById("flowerName3");
+        element.innerHTML = "Karafiát";}
+}
+function changeTextSpring() {
+  {var element = document.getElementById("flowerName1");
+        element.innerHTML = "Lisianthus";}
+  {var element = document.getElementById("flowerName2");
+        element.innerHTML = "White Rose";}
+  {var element = document.getElementById("flowerName3");
+        element.innerHTML = "English rose";}
+}
+function changeTextAutum() {
+  {var element = document.getElementById("flowerName1");
+        element.innerHTML = "Violetum";}
+  {var element = document.getElementById("flowerName2");
+        element.innerHTML = "Vřes obecný";}
+  {var element = document.getElementById("flowerName3");
+        element.innerHTML = "Modrý bodlák";}
+}
+function changeTextWinter() {
+  {var element = document.getElementById("flowerName1");
+        element.innerHTML = "Winter Rose";}
+  {var element = document.getElementById("flowerName2");
+        element.innerHTML = "Plevel Krásný";}
+  {var element = document.getElementById("flowerName3");
+        element.innerHTML = "Bělavka úžasná";}
 }
 
 // choose us 3 ailes

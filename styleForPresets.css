@@ -7,6 +7,9 @@ html {
   font-family: sitka;
 }
 h1 {
+  font-size: 26px;
+  max-width: 300px;
+  border-bottom: 2px solid currentColor;
   margin-left: 5%;
 }
 h2 {
@@ -93,8 +96,7 @@ h5 {
   max-width: 200px;
   margin-top: 40%;
 }
-.presetText {
-}
+
 /*preset preview End*/
 /* NAVIGATION BUTTONS*/
 .navigationButtonsDesktop,
@@ -229,5 +231,51 @@ a:active {
   }
   .btn1-light {
     width: 140px;
+  }
+}
+/*STYLE FOR CONTACT PAGE HERE*/
+.contactMobile {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e9e7deb7;
+  padding: 2% 2% 2% 2%;
+  border-radius: 15px;
+}
+.chosenText {
+  margin-left: 10%;
+  font-size: larger;
+}
+.contactText {
+  display: flex;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactInput {
+  border: 1px solid #3b3b3b;
+  border-radius: 15px;
+  height: 40px;
+  width: 60%;
+  margin-top: 4%;
+  margin-left: 4%;
+  font-size: larger;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+.yourMessage {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+.contactButton {
+  margin: 4%;
+  padding: 2%;
+}
+/* hiding mobile elements for Making desktop ver */
+@media screen and (min-width: 769px) {
+  .carousel {
+    display: none;
   }
 }

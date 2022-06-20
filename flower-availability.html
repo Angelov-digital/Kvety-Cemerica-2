@@ -10,7 +10,8 @@
     <meta name="Kvety Cemerica welcome to our flower atelier" content="what we offer, why choose us, ">
     <!--Link to css sheet-->
     <link rel="stylesheet" href="style.css">
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <title>Kvety Cemerica</title>
 </head>
@@ -42,7 +43,7 @@
                 <img src="img/čemerica-loho-name.webp" class="nav-logo">
                 <div class="vl"></div>
                 <li class="nav-item">
-                    <a class="nav-link" href="" class="nav-link">Flower studio</a>
+                    <a class="nav-link" href="index.html" class="nav-link">Flower studio</a>
                 </li>
             </ul>
 
@@ -62,7 +63,43 @@
         <hr size="2" height="10px" color="black">
     </header>
 <!-- navigation bar END -->
+<!-- Season explanation-->
+<div id="preset-container">
+    <section>
+      <div id="presetPreview">
+        <section class="preview-text">
+          <p class="featured-inspired">Get inspired</p>
+          <hr width="90%" />
+          <p id="inspiration">Flower Availability</p>
+          <p class="inspired">
+            Because every season has its unique flowers, here you can see which are available in season your wedding is expected to take a place.
+          </p>
+          <button class="button-28" id="downButton">Show more</button>
+        </section>
+        <section class="presetSlideshow">
+          <img class="mySlides2" alt="slideshow picture" src="img/flowers/summer4.jpg" />
+          <img class="mySlides2" alt="slideshow picture" src="img/flowers/spring1.jpg" />
+          <img class="mySlides2" alt="slideshow picture" src="img/flowers/summer2.jpg" />
+          <section class="slideShowPreset" style="width: 100%">
+            <div class="slider-cell white-cell" id="slid1" onclick="currentDiv(1)"></div>
+            <div class="slider-cell white-cell" id="slid2" onclick="currentDiv(2)"></div>
+            <div class="slider-cell white-cell" id="slid3" onclick="currentDiv(3)"></div>
+          </section>
+        </section>
+      </div>
+    </section>
+  </div>
+<!-- Season explanation END-->
+
+<section class="season-title">
+    <p class="headstyle1">Season wheel</p>
+    <hr width="90%"> 
+</section>
+<div class="vl2"></div>
+
 <!-- season wheel -->
+
+<section id="season-desktop-frame">
 <section class="season-wheel">
 
     <div class="wheel-section">
@@ -71,10 +108,10 @@
             <img id="arrow" src="img/arrow.png">
         
             <div  id="link-grid">
-                <div class="link" id="springlink" onclick="rotateMonthSpring();changeImage1()" value="Change"></div>
-                <div class="link" id="winterlink" onclick="rotateMonthWinter();changeImage4()" value="Change"></div>
-                <div class="link" id="summerlink" onclick="rotateMonthSummer();changeImage2()" value="Change"></div>
-                <div class="link" id="autumlink" onclick="rotateMonthAutum();changeImage3()" value="Change"></div>
+                <div class="link" id="springlink" onclick="rotateMonthSpring();changeImage1();changeTextSpring()" value="Change"></div>
+                <div class="link" id="winterlink" onclick="rotateMonthWinter();changeImage4();changeTextWinter()" value="Change"></div>
+                <div class="link" id="summerlink" onclick="rotateMonthSummer();changeImage2();changeTextSummer()" value="Change"></div>
+                <div class="link" id="autumlink" onclick="rotateMonthAutum();changeImage3();changeTextAutum()" value="Change"></div>
                 <img class="season-pics" id="months" src="img/seasons_wheel.png">
                 
             </div>
@@ -86,27 +123,52 @@
 
         </div>
     </div>
+
+    
+</section>
+
+<section class="seasons-btns-mobile">
+    <a href="presetParts.html">
+        <button class="btn2-light">Previous step</button>
+    </a>
+
+    <a href="">
+        <button class="btn2-light">Next step</button>
+    </a>
 </section>
 
 
 
 <section class="flowers-container">
+   
 
         <div class="flower-frame" id="english-rose">
-            <img src="img/englishrose.jpg" class="flower" id="flower1">
-            <p class="flower-name">English rose</p>
+            <img src="img/flowers/spring1.jpg" class="flower" id="flower1">
+            <p class="flower-name" id="flowerName1">Lisianthus</p>
         </div>
 
         <div class="flower-frame" id="">
-            <img src="img/lisianthus.jpg" class="flower" id="flower2">
-            <p class="flower-name">Lisianthus</p>
+            <img src="img/flowers/spring2a.jpg" class="flower" id="flower2">
+            <p class="flower-name" id="flowerName2">White Rose</p>
         </div>
 
         <div class="flower-frame" id="">
-            <img src="img/lisianthus.jpg" class="flower" id="flower3">
-            <p class="flower-name">Lisianthus</p>
+            <img src="img/flowers/spring3.jpg" class="flower" id="flower3">
+            <p class="flower-name" id="flowerName3">English rose</p>
         </div>
         
+</section>
+
+</section>
+
+<section class="seasons-btns-desktop">
+    <a href="presetParts.html">
+        <button class="btn1-light">Previous step</button>
+    </a>
+
+    <a href="">
+        <button class="btn1-light">Next step</button>
+    </a>
 </section>
 
 
@@ -231,5 +293,6 @@
 </section>
 
     <script src="main.js"></script>
+    <script defer src="presetPreview.js"></script>
 
 </body>

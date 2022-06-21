@@ -100,14 +100,13 @@ h5 {
 /*preset preview End*/
 /* NAVIGATION BUTTONS*/
 .navigationButtonsDesktop,
-.navigationButtonsMobile {
+.navigationButtonsMobile,
+.navigationButtonsDesktopFix {
   display: flex;
   justify-content: space-around;
 }
 .navigationButtonsMobile {
   margin-top: 4%;
-}
-.navigationButtonsDesktop {
 }
 /*FOOTER*/
 .footer-mobile {
@@ -233,7 +232,7 @@ a:active {
     width: 140px;
   }
 }
-/*STYLE FOR CONTACT PAGE HERE*/
+/* STYLE FOR CONTACT PAGE MOBILE HERE*/
 .contactMobile {
   width: 90%;
   margin-left: auto;
@@ -273,9 +272,56 @@ input::placeholder {
   margin: 4%;
   padding: 2%;
 }
-/* hiding mobile elements for Making desktop ver */
+
+/* STYLE FOR CONTACT PAGE Desktop HERE*/
+h6 {
+  font-size: 30px;
+  max-width: 320px;
+  border-bottom: 2px solid currentColor;
+  margin-left: 10%;
+}
+.contactDesktopHeadingsGrid {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+}
+.contactDesktopGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  margin-bottom: 10%;
+}
+.availableFlowersSlide {
+  justify-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.availableFlowers {
+  max-width: 300px;
+}
+.navigationButtonsDesktopFix {
+  margin-top: -3%;
+  margin-bottom: 8%;
+}
+/* hiding mobile elements for Making desktop ver for Contact page */
 @media screen and (min-width: 769px) {
-  .carousel {
+  .yourConfigurationSection {
+    display: none;
+  }
+}
+/*  hiding DEsktop elements for  phone version*/
+@media screen and (max-width: 768px) {
+  .gridPresetPreviewDesktop,
+  .contactDesktopHeadingsGrid,
+  .contactDesktopGrid,
+  .navigationButtonsDesktopFix,
+  h6 {
     display: none;
   }
 }

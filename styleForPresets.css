@@ -7,6 +7,9 @@ html {
   font-family: sitka;
 }
 h1 {
+  font-size: 26px;
+  max-width: 300px;
+  border-bottom: 2px solid currentColor;
   margin-left: 5%;
 }
 h2 {
@@ -93,19 +96,17 @@ h5 {
   max-width: 200px;
   margin-top: 40%;
 }
-.presetText {
-}
+
 /*preset preview End*/
 /* NAVIGATION BUTTONS*/
 .navigationButtonsDesktop,
-.navigationButtonsMobile {
+.navigationButtonsMobile,
+.navigationButtonsDesktopFix {
   display: flex;
   justify-content: space-around;
 }
 .navigationButtonsMobile {
   margin-top: 4%;
-}
-.navigationButtonsDesktop {
 }
 /*FOOTER*/
 .footer-mobile {
@@ -229,5 +230,98 @@ a:active {
   }
   .btn1-light {
     width: 140px;
+  }
+}
+/* STYLE FOR CONTACT PAGE MOBILE HERE*/
+.contactMobile {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e9e7deb7;
+  padding: 2% 2% 2% 2%;
+  border-radius: 15px;
+}
+.chosenText {
+  margin-left: 10%;
+  font-size: larger;
+}
+.contactText {
+  display: flex;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactInput {
+  border: 1px solid #3b3b3b;
+  border-radius: 15px;
+  height: 40px;
+  width: 60%;
+  margin-top: 4%;
+  margin-left: 4%;
+  font-size: larger;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+.yourMessage {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+.contactButton {
+  margin: 4%;
+  padding: 2%;
+}
+
+/* STYLE FOR CONTACT PAGE Desktop HERE*/
+h6 {
+  font-size: 30px;
+  max-width: 320px;
+  border-bottom: 2px solid currentColor;
+  margin-left: 10%;
+}
+.contactDesktopHeadingsGrid {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+}
+.contactDesktopGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  margin-bottom: 10%;
+}
+.availableFlowersSlide {
+  justify-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.availableFlowers {
+  max-width: 300px;
+}
+.navigationButtonsDesktopFix {
+  margin-top: -3%;
+  margin-bottom: 8%;
+}
+/* hiding mobile elements for Making desktop ver for Contact page */
+@media screen and (min-width: 769px) {
+  .yourConfigurationSection {
+    display: none;
+  }
+}
+/*  hiding DEsktop elements for  phone version*/
+@media screen and (max-width: 768px) {
+  .gridPresetPreviewDesktop,
+  .contactDesktopHeadingsGrid,
+  .contactDesktopGrid,
+  .navigationButtonsDesktopFix,
+  h6 {
+    display: none;
   }
 }

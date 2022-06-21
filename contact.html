@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="styleForPresets.css" />
     <title>Kvety Cemerica</title>
   </head>
-  <body onload="currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1)">
+  <body>
     <style>
       a:link {
         text-decoration: none;
@@ -83,14 +83,15 @@
       <section>
         <div id="presetPreview">
           <section class="preview-text">
-            <p class="featured-inspired">Get inspired</p>
+            <p class="featured-inspired">Discover</p>
             <hr width="90%" />
-            <p id="inspiration">Wedding inspiration</p>
+            <p id="inspiration">Configuration preview</p>
             <p class="discoverPresetsText">
-              In this step you are able to go through every part of this program
-              to see if it's the right one for you.
+              This is your last step to perfect wedding day. In this step you
+              can see your configuration, here you can also choose to contact us
+              so we can talk more about your requirements
             </p>
-            <button class="button-28" id="downButton">Show more</button>
+            <button class="button-28" id="downButton">See my preset</button>
           </section>
           <section class="presetSlideshow">
             <img
@@ -129,87 +130,47 @@
         </div>
       </section>
     </div>
-    <section class="gridPresetPreviewDesktop">
-      <section class="presetOptions">
-        <p class="activeOption" onclick="currentPresetSlide(1)">
-          Bouquet for bride
-        </p>
-        <p class="activeOption" onclick="currentPresetSlide(2)">
-          Feather for wedding guests
-        </p>
-        <p class="activeOption" onclick="currentPresetSlide(3)">
-          Wedding hall decorations
-        </p>
-        <p class="activeOption" onclick="currentPresetSlide(4)">
-          Other decorations
-        </p>
-        <section class="presetTextAdjust">
-          <p class="presetText">
-            <u>Possible options</u><br />You will be able to choose from
-            different bouquet sizes
+    <!-- contact desktop grid-->
+    <h6>Your configuration</h6>
+    <section class="contactDesktopHeadingsGrid">
+      <p>Your chosen preset</p>
+      <p>Available flowers</p>
+      <p>Contact form</p>
+    </section>
+    <section class="contactDesktopGrid">
+      <section>
+        <p>Bouquet for birde</p>
+        <p>Feathers for wedding guests</p>
+        <p>Wedding hall decorations</p>
+        <p>Church decorations</p>
+        <p>Car decorations</p>
+        <p>Bridesmaids decorations</p>
+        <p>Other decorations</p>
+      </section>
+      <section class="availableFlowersSlide">
+        <img src="img/flowers/spring3.jpg" class="availableFlowers" alt="" />
+        <img src="img/flowers/spring2a.jpg" class="availableFlowers" alt="" />
+        <img src="img/flowers/spring1.jpg" class="availableFlowers" alt="" />
+      </section>
+      <section class="contactMobile">
+        <section class="contactMobileContent">
+          <p class="contactText">
+            By contacting us, we will receive your customisation and then we
+            will be able to give you a price estimate
           </p>
-        </section>
-        <section class="presetTextAdjust">
-          <p class="presetText">
-            <u>Possible options</u><br />You will be able to choose from
-            different feathers for wedding guests
-          </p>
-        </section>
-        <section class="presetTextAdjust">
-          <p class="presetText">
-            <u>Possible options</u><br />You will be able to choose from
-            different wedding hall decorations
-          </p>
-        </section>
-        <section class="presetTextAdjust">
-          <p class="presetText">
-            <u>Possible options</u><br />You will be able to choose from
-            different other decorations
-          </p>
+          <input type="text" placeholder="Name" class="contactInput" /> <br />
+          <input type="text" placeholder="E-mail" class="contactInput" /> <br />
+          <input type="text" placeholder="Phone" class="contactInput" /> <br />
+          <input
+            type="text"
+            placeholder="Your message"
+            class="contactInput yourMessage"
+          /><br />
+          <button class="btn1-light contactButton">Contact</button>
         </section>
       </section>
-      <!--bouquete for bride desktop pictures-->
-      <img class="presetPictureDesktop" src="img/bouquet3.webp" alt="Bouquet" />
-      <img
-        class="presetPictureDesktop"
-        src="img/bouquet2.webp"
-        alt="Bouquetes"
-      />
-      <!--Feather for wedding guest desktop pictures-->
-      <img
-        class="presetPictureDesktop"
-        src="img/buttonholes3.webp"
-        alt="Buttonhole"
-      />
-      <img
-        class="presetPictureDesktop"
-        src="img/buttonholes1.webp"
-        alt="Boutonniere"
-      />
-      <!--Wedding hall decorations desktop pictures-->
-      <img
-        class="presetPictureDesktop"
-        src="img/weddingvenue1.webp"
-        alt="Bouquet"
-      />
-      <img
-        class="presetPictureDesktop"
-        src="img/weddingvenue3.webp"
-        alt="Bouquetes"
-      />
-      <!--Other decorations desktop pictures-->
-      <img
-        class="presetPictureDesktop"
-        src="img/otherdecorations2.webp"
-        alt="Bridesmaids decoration"
-      />
-      <img
-        class="presetPictureDesktop"
-        src="img/otherdecorations3.webp"
-        alt="Bridesmaids decoration"
-      />
     </section>
-    <section class="navigationButtonsDesktop">
+    <section class="navigationButtonsDesktopFix">
       <button class="btn1-light">
         <a href="style-your-wedding.html">Previous step</a>
       </button>
@@ -219,102 +180,39 @@
     </section>
     <!-- MObile Version start MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx-->
     <div class="carousel fadePreview"></div>
-    <section class="presetPartsTextMobile">
-      <h1>Preset parts</h1>
-    </section>
-    <!-- part1-->
-    <section class="bouquetePart">
-      <h2>Bouquet for bride</h2>
-
-      <img
-        class="shownProduct"
-        src="img/bouquet2.webp"
-        alt="Flower Bouquetes"
-      />
-
-      <section>
-        <h4>Possible options</h4>
-        <p class="possibleOptionsText">
-          You will be able to choose from different bouquet sizes
-        </p>
+    <!--YOUR CONFIGURATION CONTENT-->
+    <section class="yourConfigurationSection">
+      <h1>Your configuration</h1>
+      <h2>Chosen preset</h2>
+      <p class="chosenText">Complete programme</p>
+      <h2>Your chosen month</h2>
+      <p class="chosenText">May</p>
+      <h2>Contact form</h2>
+      <section class="contactMobile">
+        <section class="contactMobileContent">
+          <p class="contactText">
+            By contacting us, we will receive your customisation and then we
+            will be able to give you a price estimate
+          </p>
+          <input type="text" placeholder="Name" class="contactInput" /> <br />
+          <input type="text" placeholder="E-mail" class="contactInput" /> <br />
+          <input type="text" placeholder="Phone" class="contactInput" /> <br />
+          <input
+            type="text"
+            placeholder="Your message"
+            class="contactInput yourMessage"
+          /><br />
+          <button class="btn1-light contactButton">Contact</button>
+        </section>
       </section>
-    </section>
-    <!-- part2-->
-    <section class="bouquetePart">
-      <h2>Feathers for wedding guests</h2>
-
-      <img class="shownProduct" src="img/buttonholes1.webp" alt="buttoiere" />
-
-      <section>
-        <h4>Possible options</h4>
-        <p class="possibleOptionsText">
-          You will be able to choose from different feathers for guests
-        </p>
+      <section class="navigationButtonsMobile">
+        <button class="btn1-light">
+          <a href="style-your-wedding.html">Previous step</a>
+        </button>
+        <button class="btn1-light">
+          <a href="flower-availability.html">Next step</a>
+        </button>
       </section>
-    </section>
-    <!--part3-->
-    <section class="bouquetePart">
-      <h2>Wedding hall decorations</h2>
-
-      <img
-        class="shownProduct"
-        src="img/weddingvenue1.webp"
-        alt="Wedding venue"
-      />
-      <h3></h3>
-      <section>
-        <h4>Possible options</h4>
-        <p class="possibleOptionsText">
-          You will be able to choose from different wedding hall decorations
-        </p>
-      </section>
-    </section>
-    <!--part4-->
-    <section class="bouquetePart">
-      <h2>Other decorations</h2>
-
-      <img
-        class="shownProduct"
-        src="img/otherdecorations1.webp"
-        alt="bridesmaids decorations"
-      />
-      <h3></h3>
-      <section>
-        <h4>Possible options</h4>
-        <p class="possibleOptionsText">
-          You will be able to choose from different other decorations
-        </p>
-      </section>
-    </section>
-    <section class="sliderButtons">
-      <div
-        class="slider-cell slider"
-        id="slid1"
-        onclick="currentPresetSlideMob(1)"
-      ></div>
-      <div
-        class="slider-cell slider"
-        id="slid2"
-        onclick="currentPresetSlideMob(2)"
-      ></div>
-      <div
-        class="slider-cell slider"
-        id="slid3"
-        onclick="currentPresetSlideMob(3)"
-      ></div>
-      <div
-        class="slider-cell slider"
-        id="slid7"
-        onclick="currentPresetSlideMob(4)"
-      ></div>
-    </section>
-    <section class="navigationButtonsMobile">
-      <button class="btn1-light">
-        <a href="style-your-wedding.html">Previous step</a>
-      </button>
-      <button class="btn1-light">
-        <a href="flower-availability.html">Next step</a>
-      </button>
     </section>
     <!--Footer mobile-->
     <footer class="footer-mobile">

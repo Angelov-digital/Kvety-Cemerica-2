@@ -372,7 +372,6 @@ h5 {
     display: flex;
     align-items: center;
     margin: 0px;
-    margin-right: 7vh;
     z-index: 10;
   }
   .nav-logotype {
@@ -392,13 +391,12 @@ h5 {
   .nav-item-desk {
     display: none;
   }
-  .nav-mobile {
-  }
   .nav-link {
     margin: 5px;
     font-size: 20px;
-    color: black;
-    font-family: sitka;
+    color: #707070;
+    font-family: segoe;
+    white-space: nowrap;
   }
   .nav-mobile {
     position: relative;
@@ -838,7 +836,6 @@ h5 {
     right: 0px;
     top: 0px;
   }
-
   .nav-mobile {
     display: none;
   }
@@ -850,7 +847,6 @@ h5 {
     align-items: center;
     width: 100%;
     height: 80px;
-    font-family: sitka;
     z-index: 10;
     background-color: #ffffff;
   }
@@ -885,11 +881,12 @@ h5 {
   .nav-link {
     margin: 10px;
     font-size: 30px;
-    color: black;
+    color: #707070;
     font-family: segoe;
+    white-space: nowrap;
   }
   .nav-link:hover {
-    color: #616161;
+    color: #020202;
   }
 
   /*featured desktop*/
@@ -907,7 +904,7 @@ h5 {
     align-items: center;
     background: url(img/sectionback.webp);
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 100%;
   }
   #featured {
     display: grid;
@@ -1552,7 +1549,6 @@ h5 {
     display: none;
   }
 }
-
 /*fix for flexboxdesktop*/
 .contactFlexFix {
   width: 252px;
@@ -1634,7 +1630,6 @@ h5 {
     margin-top: 10px;
     font-family: segoe;
     color: #3b3b3b;
-    text-decoration: none;
   }
 }
 /*footer desktop Aleks*/

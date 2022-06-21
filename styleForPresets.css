@@ -7,6 +7,9 @@ html {
   font-family: sitka;
 }
 h1 {
+  font-size: 26px;
+  max-width: 300px;
+  border-bottom: 2px solid currentColor;
   margin-left: 5%;
 }
 h2 {
@@ -75,7 +78,7 @@ h5 {
 .mySlides2 {
   margin-right: auto;
   margin-left: auto;
-  max-width: 70%;
+  max-width: 420px;
   min-width: 300px;
   border-radius: 15px;
 }
@@ -89,24 +92,21 @@ h5 {
   max-width: 800px;
   margin: auto;
 }
+.presetTextAdjust {
+  max-width: 200px;
+  margin-top: 40%;
+}
 
 /*preset preview End*/
 /* NAVIGATION BUTTONS*/
-.navigationButtons {
+.navigationButtonsDesktop,
+.navigationButtonsMobile,
+.navigationButtonsDesktopFix {
   display: flex;
   justify-content: space-around;
-  margin-top: 16px;
 }
-.nextStep {
-  background-color: white;
-  border-color: #5a5a5a;
-  border-radius: 20px;
-}
-.prevStep {
-  margin-right: 30%;
-  background-color: white;
-  border-color: #5a5a5a;
-  border-radius: 20px;
+.navigationButtonsMobile {
+  margin-top: 4%;
 }
 /*FOOTER*/
 .footer-mobile {
@@ -114,11 +114,11 @@ h5 {
 }
 .footer-desktop {
   background-image: url(img/sectionback.webp);
+  margin-top: -6%;
 }
 /* CAROUSEL*/
 .carousel {
-  width: 100%;
-  height: 70%;
+  aspect-ratio: 1/1;
   background-size: cover;
   background-position: center;
   background-image: url(img/bouquet1.webp);
@@ -145,79 +145,31 @@ h5 {
     opacity: 1;
   }
 }
-@media screen and (max-width: 768px) {
-  .slider-cell {
-    margin: 6px;
-  }
-}
 
-/* hiding mobile elements for Making desktop ver */
-@media screen and (min-width: 769px) {
-  .carousel,
-  .presetPartsTextMobile,
-  .sliderButtons,
-  .shownProduct,
-  .bouquetePart,
-  .boringInfo {
-    /*this shit is overlapping somewhere */
-    display: none;
-  }
-  .bouquetePart {
-    visibility: hidden;
-  }
-} /*  hiding DEsktop elements for  phone version*/
-@media screen and (max-width: 768px) {
-  .gridPresetPreviewDesktop,
-  .presetOptions,
-  .presetPictureMobile .preview-text,
-  #preset-container,
-  #presetPreview,
-  .mySlides2,
-  .presetSlideshow,
-  .discoverPresetsText,
-  .presetPictureDesktop {
-    display: none;
-  }
-  .btn1-light {
-    width: 140px;
-  }
-}
-.gridPresetPreviewDesktop{
+.gridPresetPreviewDesktop {
   margin-top: 100px;
   display: flex;
   width: 90%;
   margin-right: auto;
-margin-left: auto;
-justify-content: space-around;
-
+  margin-left: auto;
+  justify-content: space-around;
 }
 .presetPictureDesktop {
-  /* FIX THIS LATER
-  display: grid;
-  width: 80%;
-margin-right: auto;
-margin-left: auto;
-  grid-template-columns:  1fr 1fr 1fr;
-  */
   display: flex;
-  min-width: 200px;
-  max-width: 420px;
-  max-height: 540px;
-  
-}
-.presetPictureDesktop {
   margin-bottom: 40px;
   border-radius: 10px;
+  max-width: 420px;
 }
 
 .presetPictureMobile {
   width: 80%;
 }
-.possibleOptions{
+.possibleOptions {
   margin-top: -30%;
   margin-left: 10%;
 }
-.presetOptions { /*style later*/
+.presetOptions {
+  /*style later*/
 }
 a:hover {
   text-decoration: none;
@@ -236,5 +188,140 @@ a:active {
 .white-cell:hover {
   background-color: white;
 }
+@media screen and (max-width: 768px) {
+  .slider-cell {
+    margin: 6px;
+  }
+}
 
+/* hiding mobile elements for Making desktop ver */
+@media screen and (min-width: 769px) {
+  .carousel,
+  .presetPartsTextMobile,
+  .sliderButtons,
+  .shownProduct,
+  .bouquetePart,
+  .boringInfo,
+  .navigationButtonsMobile {
+    /*this shit is overlapping somewhere */
+    display: none;
+  }
+  .bouquetePart {
+    visibility: hidden;
+  }
+  .btn1-light {
+    max-width: 250px;
+    max-height: 60px;
+  }
+} /*  hiding DEsktop elements for  phone version*/
+@media screen and (max-width: 768px) {
+  .gridPresetPreviewDesktop,
+  .presetOptions,
+  .presetPictureMobile .preview-text,
+  #preset-container,
+  #presetPreview,
+  .mySlides2,
+  .presetSlideshow,
+  .discoverPresetsText,
+  .navigationButtonsDesktop,
+  .presetPictureDesktop,
+  .gridPresetPreviewDesktop {
+    display: none;
+  }
+  .btn1-light {
+    width: 140px;
+  }
+}
+/* STYLE FOR CONTACT PAGE MOBILE HERE*/
+.contactMobile {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e9e7deb7;
+  padding: 2% 2% 2% 2%;
+  border-radius: 15px;
+}
+.chosenText {
+  margin-left: 10%;
+  font-size: larger;
+}
+.contactText {
+  display: flex;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactInput {
+  border: 1px solid #3b3b3b;
+  border-radius: 15px;
+  height: 40px;
+  width: 60%;
+  margin-top: 4%;
+  margin-left: 4%;
+  font-size: larger;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+.yourMessage {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+.contactButton {
+  margin: 4%;
+  padding: 2%;
+}
 
+/* STYLE FOR CONTACT PAGE Desktop HERE*/
+h6 {
+  font-size: 30px;
+  max-width: 320px;
+  border-bottom: 2px solid currentColor;
+  margin-left: 10%;
+}
+.contactDesktopHeadingsGrid {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: larger;
+}
+.contactDesktopGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  margin-bottom: 10%;
+}
+.availableFlowersSlide {
+  justify-items: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.availableFlowers {
+  max-width: 300px;
+}
+.navigationButtonsDesktopFix {
+  margin-top: -3%;
+  margin-bottom: 8%;
+}
+/* hiding mobile elements for Making desktop ver for Contact page */
+@media screen and (min-width: 769px) {
+  .yourConfigurationSection {
+    display: none;
+  }
+}
+/*  hiding DEsktop elements for  phone version*/
+@media screen and (max-width: 768px) {
+  .gridPresetPreviewDesktop,
+  .contactDesktopHeadingsGrid,
+  .contactDesktopGrid,
+  .navigationButtonsDesktopFix,
+  h6 {
+    display: none;
+  }
+}

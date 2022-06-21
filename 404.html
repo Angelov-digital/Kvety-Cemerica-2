@@ -79,138 +79,15 @@
       <hr size="2" height="10px" color="black" />
     </header>
     <!--DESKTOP VERSION-->
-    <div id="preset-container">
-      <section>
-        <div id="presetPreview">
-          <section class="preview-text">
-            <p class="featured-inspired">Discover</p>
-            <hr width="90%" />
-            <p id="inspiration">Configuration preview</p>
-            <p class="discoverPresetsText">
-              This is your last step to perfect wedding day. In this step you
-              can see your configuration, here you can also choose to contact us
-              so we can talk more about your requirements
-            </p>
-            <button class="button-28" id="downButton">See my preset</button>
-          </section>
-          <section class="presetSlideshow">
-            <img
-              class="mySlides2"
-              alt="slideshow picture"
-              src="img/bridesmatesdecoration1.webp"
-            />
-            <img
-              class="mySlides2"
-              alt="slideshow picture"
-              src="img/bridesmatesdecoration2.webp"
-            />
-            <img
-              class="mySlides2"
-              alt="slideshow picture"
-              src="img/buttonholes1.webp"
-            />
-            <section class="slideShowPreset" style="width: 100%">
-              <div
-                class="slider-cell white-cell"
-                id="slid1"
-                onclick="currentDiv(1)"
-              ></div>
-              <div
-                class="slider-cell white-cell"
-                id="slid2"
-                onclick="currentDiv(2)"
-              ></div>
-              <div
-                class="slider-cell white-cell"
-                id="slid3"
-                onclick="currentDiv(3)"
-              ></div>
-            </section>
-          </section>
-        </div>
-      </section>
-    </div>
-    <!-- contact desktop grid-->
-    <h6>Your configuration</h6>
-    <section class="contactDesktopHeadingsGrid">
-      <p>Your chosen preset</p>
-      <p>Available flowers</p>
-      <p>Contact form</p>
+    <section class="errorContainer">
+      <img src="img/404image.png" class="errorPicture" alt="404 error" />
     </section>
-    <section class="contactDesktopGrid">
-      <section>
-        <p>Bouquet for bride</p>
-        <p>Feathers for wedding guests</p>
-        <p>Wedding hall decorations</p>
-        <p>Church decorations</p>
-        <p>Car decorations</p>
-        <p>Bridesmaids decorations</p>
-        <p>Other decorations</p>
-        <section class="navigationButtonsDesktopContact">
-          <button class="btn1-light">
-            <a href="style-your-wedding.html">Previous step</a>
-          </button>
-        </section>
-      </section>
-      <section class="availableFlowersSlide">
-        <img src="img/flowers/spring3.jpg" class="availableFlowers" alt="" />
-        <img src="img/flowers/spring2a.jpg" class="availableFlowers" alt="" />
-        <img src="img/flowers/spring1.jpg" class="availableFlowers" alt="" />
-      </section>
-      <section class="contactMobile">
-        <section class="contactMobileContent">
-          <p class="contactText">
-            By contacting us, we will receive your customisation and then we
-            will be able to give you a price estimate
-          </p>
-          <input type="text" placeholder="Name" class="contactInput" /> <br />
-          <input type="text" placeholder="E-mail" class="contactInput" /> <br />
-          <input type="text" placeholder="Phone" class="contactInput" /> <br />
-          <input
-            type="text"
-            placeholder="Your message"
-            class="contactInput yourMessage"
-          /><br />
-          <button class="btn1-light contactButton">Contact</button>
-        </section>
-      </section>
-    </section>
-
-    <!-- MObile Version start MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx-->
-    <div class="carousel fadePreview"></div>
-    <!--YOUR CONFIGURATION CONTENT-->
-    <section class="yourConfigurationSection">
-      <h1>Your configuration</h1>
-      <h2>Chosen preset</h2>
-      <p class="chosenText">Complete programme</p>
-      <h2>Your chosen month</h2>
-      <p class="chosenText">May</p>
-      <h2>Contact form</h2>
-      <section class="contactMobile">
-        <section class="contactMobileContent">
-          <p class="contactText">
-            By contacting us, we will receive your customisation and then we
-            will be able to give you a price estimate
-          </p>
-          <input type="text" placeholder="Name" class="contactInput" /> <br />
-          <input type="text" placeholder="E-mail" class="contactInput" /> <br />
-          <input type="text" placeholder="Phone" class="contactInput" /> <br />
-          <input
-            type="text"
-            placeholder="Your message"
-            class="contactInput yourMessage"
-          /><br />
-          <button class="btn1-light contactButton">Contact</button>
-        </section>
-      </section>
-      <section class="navigationButtonsMobileContact">
-        <button class="btn1-light">
-          <a href="style-your-wedding.html">Previous step</a>
-        </button>
-      </section>
-    </section>
+   <!--mobile version-->
+<section class="errorContainerMobile">
+<img src="img/404image.png" class="errorPictureMobile" alt="404 error">
+</section>
     <!--Footer mobile-->
-    <footer class="footer-mobile">
+    <footer class="footer-mobile footer-mobile-noBackground">
       <h5>Contact</h5>
       <h5>Social Media</h5>
 
@@ -262,7 +139,7 @@
     </footer>
 
     <!-- Footer desktop-->
-    <footer class="footer-desktop">
+    <footer class="footer-desktop footer-desktop-noBackground">
       <h5>Contact</h5>
       <h5>Social media</h5>
       <div></div>
@@ -325,8 +202,5 @@
       <a href="404.html">Terms of use</a>
       <a href="404.html">Cookie policy</a>
     </section>
-
-    <script defer src="main.js"></script>
-    <script defer src="presetPreview.js"></script>
   </body>
 </html>

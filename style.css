@@ -734,10 +734,8 @@ h5 {
   }
   .flower-frame{
     max-width: 20vh;
-    
     text-align: center;
     margin: 10px;
-    
   }
   .flower{
     position: relative;
@@ -885,7 +883,7 @@ h5 {
     margin: 10px;
     font-size: 30px;
     color: black;
-    font-family: sitka;
+    font-family: segoe;
   }
   .nav-link:hover {
     color: #616161;

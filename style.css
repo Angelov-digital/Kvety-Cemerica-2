@@ -751,18 +751,12 @@ h5 {
       color: rgb(255, 255, 255);
       background-color: #5a5a5a42;
   }
-  
-  .wheel-section{
-  
-  }
   .wheel-frame{
     position: relative;
     width: 320px;
     height: 320px;
     margin-left: auto;
-    margin-right: auto;
-    
-    
+    margin-right: auto; 
   }
   #arrow{
     position: absolute;

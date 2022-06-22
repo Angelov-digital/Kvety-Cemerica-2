@@ -189,7 +189,6 @@ function showChooseUs(n) {
   slides[slideIndex - 1].style.display = "";
   dots[slideIndex - 1].className += " activeTitle";
 }
-
 //function that gets all slides and active sliders for carousels
 function getSlides(n, slides, dots){
   if (n > slides.length) {

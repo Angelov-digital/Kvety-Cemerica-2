@@ -1,65 +1,80 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <!--display-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!--CEO-->
-    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    <meta name="Kvety Cemerica welcome to our flower atelier" content="what we offer, why choose us, ">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <meta
+      name="Kvety Cemerica welcome to our flower atelier"
+      content="what we offer, why choose us, "
+    />
     <!--Link to css sheet-->
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+
     <title>Kvety Cemerica</title>
-</head>
-<style>
-    a:link { text-decoration: none; }
-    a:visited { text-decoration: none; }
-    a:hover { text-decoration: none; }
-    a:active { text-decoration: none; }
+  </head>
+  <style>
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    a:active {
+      text-decoration: none;
+    }
 
-    body{
-        margin: 0;
-        background-image: url(img/background.webp);
-        background-repeat: no-repeat, repeat;
-        background-size:130%;
-        /*background-size: cover; /* Resize the background image to cover the entire container */
-        /*box-shadow: inset 0 0 20vmin 0 #585247;}*/
-        align-items: center;
+    body {
+      margin: 0;
+      background-image: url(img/background.webp);
+      background-repeat: no-repeat, repeat;
+      background-size: 130%;
+      /*background-size: cover; /* Resize the background image to cover the entire container */
+      /*box-shadow: inset 0 0 20vmin 0 #585247;}*/
+      align-items: center;
     }
-    ul{
-        list-style-type: none; 
+    ul {
+      list-style-type: none;
     }
-</style>
-<body onload="hideOptions()">
-<!-- navigation bar-->
+  </style>
+  <body onload="hideOptions()">
+    <!-- navigation bar-->
     <header>
-        <nav class="navbar">
+      <nav class="navbar">
+        <ul class="nav-logotype">
+          <img src="img/čemerica-loho-name.webp" class="nav-logo" />
+          <div class="vl"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" class="nav-link"
+              >Flower studio</a
+            >
+          </li>
+        </ul>
 
-            <ul class="nav-logotype">
-                <img src="img/čemerica-loho-name.webp" class="nav-logo">
-                <div class="vl"></div>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html" class="nav-link">Flower studio</a>
-                </li>
-            </ul>
-
-            <ul class="nav-menu">  
-                <li class="nav-item-desk">
-                    <a class="nav-link" href="" class="nav-link">Wedding plans</a>
-                </li>
-                <div class="vl"></div>
-                <li class="nav-item-desk">
-                    <a class="nav-link"href="" class="nav-link">Bouquetes</a>
-                </li>
-                <li class="nav-mobile">
-                    <a class="nav-link"href="" class="nav-link">More</a>
-                </li>
-            </ul>
-        </nav>
-        <hr size="2" height="10px" color="black">
+        <ul class="nav-menu">
+          <li class="nav-item-desk">
+            <a class="nav-link" href="" class="nav-link">Wedding plans</a>
+          </li>
+          <div class="vl"></div>
+          <li class="nav-item-desk">
+            <a class="nav-link" href="" class="nav-link">Bouquetes</a>
+          </li>
+          <li class="nav-mobile">
+            <a class="nav-link" href="" class="nav-link">More</a>
+          </li>
+        </ul>
+      </nav>
+      <hr size="2" height="10px" color="black" />
     </header>
+
 <!-- navigation bar END -->
 <!-- Season explanation-->
 <div id="preset-container">
@@ -82,112 +97,124 @@
             <div class="slider-cell white-cell" id="slid1" onclick="currentDiv(1)"></div>
             <div class="slider-cell white-cell" id="slid2" onclick="currentDiv(2)"></div>
             <div class="slider-cell white-cell" id="slid3" onclick="currentDiv(3)"></div>
+
           </section>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
+    <!-- Season explanation END-->
+
+    <section class="season-title">
+      <p class="headstyle1">Season wheel</p>
+      <hr width="90%" />
     </section>
-  </div>
-<!-- Season explanation END-->
+    <div class="vl2"></div>
 
-<section class="season-title">
-    <p class="headstyle1">Season wheel</p>
-    <hr width="90%"> 
-</section>
-<div class="vl2"></div>
+    <!-- season wheel -->
 
-<!-- season wheel -->
+    <section id="season-desktop-frame">
+      <section class="season-wheel">
+        <div class="wheel-section">
+          <div class="wheel-frame">
+            <img id="arrow" src="img/arrow.png" />
 
-<section id="season-desktop-frame">
-<section class="season-wheel">
-
-    <div class="wheel-section">
-
-        <div class="wheel-frame">
-            <img id="arrow" src="img/arrow.png">
-        
-            <div  id="link-grid">
-                <div class="link" id="springlink" onclick="rotateMonthSpring();changeImage1();changeTextSpring()" value="Change"></div>
-                <div class="link" id="winterlink" onclick="rotateMonthWinter();changeImage4();changeTextWinter()" value="Change"></div>
-                <div class="link" id="summerlink" onclick="rotateMonthSummer();changeImage2();changeTextSummer()" value="Change"></div>
-                <div class="link" id="autumlink" onclick="rotateMonthAutum();changeImage3();changeTextAutum()" value="Change"></div>
-                <img class="season-pics" id="months" src="img/seasons_wheel.png">
-                
+            <div id="link-grid">
+              <div
+                class="link"
+                id="springlink"
+                onclick="rotateMonthSpring();changeImage1();changeTextSpring()"
+                value="Change"
+              ></div>
+              <div
+                class="link"
+                id="winterlink"
+                onclick="rotateMonthWinter();changeImage4();changeTextWinter()"
+                value="Change"
+              ></div>
+              <div
+                class="link"
+                id="summerlink"
+                onclick="rotateMonthSummer();changeImage2();changeTextSummer()"
+                value="Change"
+              ></div>
+              <div
+                class="link"
+                id="autumlink"
+                onclick="rotateMonthAutum();changeImage3();changeTextAutum()"
+                value="Change"
+              ></div>
+              <img
+                class="season-pics"
+                id="months"
+                src="img/seasons_wheel.png"
+              />
             </div>
-            <img class="season-pics" id="spring" src="img/spring.png">
-            <img class="season-pics" id="summer" src="img/summer.png">
-            <img class="season-pics" id="autum" src="img/autum.png">
-            <img class="season-pics" id="winter" src="img/winter.png">
-            <img class="season-pics" id="season-featured" src="img/choose-season.png">
-
+            <img class="season-pics" id="spring" src="img/spring.png" />
+            <img class="season-pics" id="summer" src="img/summer.png" />
+            <img class="season-pics" id="autum" src="img/autum.png" />
+            <img class="season-pics" id="winter" src="img/winter.png" />
+            <img
+              class="season-pics"
+              id="season-featured"
+              src="img/choose-season.png"
+            />
+          </div>
         </div>
-    </div>
+      </section>
 
-    
-</section>
+      <section class="seasons-btns-mobile">
+        <a href="presetParts.html">
+          <button class="btn2-light">Previous step</button>
+        </a>
 
-<section class="seasons-btns-mobile">
-    <a href="presetParts.html">
-        <button class="btn2-light">Previous step</button>
-    </a>
+        <a href="contact.html">
+          <button class="btn2-light">Next step</button>
+        </a>
+      </section>
 
-    <a href="">
-        <button class="btn2-light">Next step</button>
-    </a>
-</section>
-
-
-
-<section class="flowers-container">
-   
-
+      <section class="flowers-container">
         <div class="flower-frame" id="english-rose">
-            <img src="img/flowers/spring1.jpg" class="flower" id="flower1">
-            <p class="flower-name" id="flowerName1">Lisianthus</p>
+          <img src="img/flowers/spring1.jpg" class="flower" id="flower1" />
+          <p class="flower-name" id="flowerName1">Lisianthus</p>
         </div>
 
         <div class="flower-frame" id="">
-            <img src="img/flowers/spring2a.jpg" class="flower" id="flower2">
-            <p class="flower-name" id="flowerName2">White Rose</p>
+          <img src="img/flowers/spring2a.jpg" class="flower" id="flower2" />
+          <p class="flower-name" id="flowerName2">White Rose</p>
         </div>
 
         <div class="flower-frame" id="">
-            <img src="img/flowers/spring3.jpg" class="flower" id="flower3">
-            <p class="flower-name" id="flowerName3">English rose</p>
+          <img src="img/flowers/spring3.jpg" class="flower" id="flower3" />
+          <p class="flower-name" id="flowerName3">English rose</p>
         </div>
-        
-</section>
+      </section>
+    </section>
 
-</section>
-
-<section class="seasons-btns-desktop">
-    <a href="presetParts.html">
+    <section class="seasons-btns-desktop">
+      <a href="presetParts.html">
         <button class="btn1-light">Previous step</button>
-    </a>
+      </a>
 
-    <a href="">
+      <a href="contact.html">
         <button class="btn1-light">Next step</button>
-    </a>
-</section>
+      </a>
+    </section>
 
+    <!-- season wheel END -->
 
+    <div class="spacer1"></div>
 
-<!-- season wheel END -->
+    <!--Footer mobile-->
+    <footer class="footer-mobile">
+      <h5>Contact</h5>
+      <h5>Social Media</h5>
 
-<div class="spacer1"></div>
-
-<!--Footer mobile-->
-<footer class="footer-mobile">
-
-    <h5>Contact</h5>
-    <h5>Social Media</h5>
-  
-    <div class="footercontent">
+      <div class="footercontent">
         <p class="text-cont2">+421 915 548 878</p>
-        <p class="text-cont2">kvetycemerica@<br/>gmail.com</p>
-    </div>
-  
-    <div class="footercontent">
+        <p class="text-cont2">kvetycemerica@<br />gmail.com</p>
+      </div>
 
+      <div class="footercontent">
         <a href="https://www.facebook.com/kvetycemerica">
           <svg
             class="someIcons"
@@ -223,74 +250,72 @@
             />
           </svg>
         </a>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Footer desktop-->
-<footer class="footer-desktop">
+    <!-- Footer desktop-->
+    <footer class="footer-desktop">
+      <h5>Contact</h5>
+      <h5>Social media</h5>
+      <div></div>
 
-    <h5>Contact</h5>
-    <h5>Social media</h5>
-    <div></div>
-
-    <div class="footercontent">
+      <div class="footercontent">
         <p>+421 915 548 878</p>
         <p>kvetycemerica@gmail.com</p>
         <p>Priehradná 1875/4, Zubrohlava</p>
-    </div>
+      </div>
 
-    <div class="footericons-desktop">
+      <div class="footericons-desktop">
         <a href="https://www.facebook.com/kvetycemerica">
-            <svg
-                class="someIcons"
-                xmlns="http://www.w3.org/2000/svg"
-                width="47"
-                height="46.715"
-                viewBox="0 0 47 46.715"
-              >
-                <path
-                  id="facebook-brands_1_"
-                  data-name="facebook-brands (1)"
-                  d="M55,31.5A23.5,23.5,0,1,0,27.828,54.715V38.293h-5.97V31.5h5.97V26.322c0-5.889,3.506-9.142,8.876-9.142a36.166,36.166,0,0,1,5.261.459v5.78H39c-2.919,0-3.829,1.812-3.829,3.67V31.5h6.517l-1.042,6.793H35.172V54.715A23.508,23.508,0,0,0,55,31.5Z"
-                  transform="translate(-8 -8)"
-                  fill="#5a5a5a"
-                />
-            </svg>
+          <svg
+            class="someIcons"
+            xmlns="http://www.w3.org/2000/svg"
+            width="47"
+            height="46.715"
+            viewBox="0 0 47 46.715"
+          >
+            <path
+              id="facebook-brands_1_"
+              data-name="facebook-brands (1)"
+              d="M55,31.5A23.5,23.5,0,1,0,27.828,54.715V38.293h-5.97V31.5h5.97V26.322c0-5.889,3.506-9.142,8.876-9.142a36.166,36.166,0,0,1,5.261.459v5.78H39c-2.919,0-3.829,1.812-3.829,3.67V31.5h6.517l-1.042,6.793H35.172V54.715A23.508,23.508,0,0,0,55,31.5Z"
+              transform="translate(-8 -8)"
+              fill="#5a5a5a"
+            />
+          </svg>
         </a>
         <a href="https://www.instagram.com/kvety_cemerica/">
-            <svg
-                class="someIcons"
-                xmlns="http://www.w3.org/2000/svg"
-                width="42.475"
-                height="42.466"
-                viewBox="0 0 42.475 42.466"
-              >
-                <path
-                  id="instagram-brands_1_"
-                  data-name="instagram-brands (1)"
-                  d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z"
-                  transform="translate(0.075 -31.825)"
-                  fill="#5a5a5a"
-                />
-            </svg>
+          <svg
+            class="someIcons"
+            xmlns="http://www.w3.org/2000/svg"
+            width="42.475"
+            height="42.466"
+            viewBox="0 0 42.475 42.466"
+          >
+            <path
+              id="instagram-brands_1_"
+              data-name="instagram-brands (1)"
+              d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z"
+              transform="translate(0.075 -31.825)"
+              fill="#5a5a5a"
+            />
+          </svg>
         </a>
-    </div>
+      </div>
 
-    <div class="footercontent">
+      <div class="footercontent">
         <p>Terms of use</p>
         <p>Cookies</p>
         <p>Privacy policy</p>
-    </div>
+      </div>
+    </footer>
 
-</footer>
-
-<section class="boringInfo">
-    <a class="headstyle2" href="#">Privacy policy</a>
-    <a class="headstyle2" href="#">Terms of use</a>
-    <a class="headstyle2" href="#">Cookie policy</a>
-</section>
+    <section class="boringInfo">
+      <a class="headstyle2" href="#">Privacy policy</a>
+      <a class="headstyle2" href="#">Terms of use</a>
+      <a class="headstyle2" href="#">Cookie policy</a>
+    </section>
 
     <script src="main.js"></script>
     <script defer src="presetPreview.js"></script>
-
-</body>
+  </body>
+</html>

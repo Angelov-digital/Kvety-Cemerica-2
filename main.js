@@ -128,7 +128,7 @@ var rootElement = document.documentElement;
 
 function scrollToTop() {
   rootElement.scrollTo({
-    top: 620,
+    top: 850,
     behavior: "smooth",
   });
 }
@@ -189,7 +189,6 @@ function showChooseUs(n) {
   slides[slideIndex - 1].style.display = "";
   dots[slideIndex - 1].className += " activeTitle";
 }
-
 //function that gets all slides and active sliders for carousels
 function getSlides(n, slides, dots){
   if (n > slides.length) {

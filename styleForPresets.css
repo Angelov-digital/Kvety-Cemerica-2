@@ -108,11 +108,7 @@ h5 {
   margin-top: 4%;
 }
 /*FOOTER*/
-.footer-mobile {
-  background-image: url(img/sectionback.webp);
-}
 .footer-desktop {
-  background-image: url(img/sectionback.webp);
   margin-top: -6%;
 }
 /* CAROUSEL*/

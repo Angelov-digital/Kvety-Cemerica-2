@@ -15,7 +15,7 @@ html {
   padding: 0;
   height: 100%;
 }
-a{
+a {
   color: #000000;
   text-decoration: none;
 }
@@ -101,7 +101,7 @@ h5 {
   left: 9%;
   bottom: 30%;
   appearance: none;
-  background-color:#edede8;
+  background-color: #edede8;
   border: 1px solid #707070;
   border-radius: 55px;
   box-sizing: border-box;
@@ -123,7 +123,6 @@ h5 {
   touch-action: manipulation;
   width: 250px;
   will-change: transform;
-  
 }
 
 .button-main:disabled {
@@ -458,7 +457,6 @@ h5 {
     position: relative;
     top: 0;
     width: 100%;
-   
   }
 
   /*Our programs-mobile*/
@@ -747,19 +745,19 @@ h5 {
     border-radius: 10px;
   }
 
-  .flower-name{
-      position: relative;
-      top: -20%;
-      font-family: segoe;
-      color: rgb(255, 255, 255);
-      background-color: #5a5a5a42;
+  .flower-name {
+    position: relative;
+    top: -20%;
+    font-family: segoe;
+    color: rgb(255, 255, 255);
+    background-color: #5a5a5a42;
   }
-  .wheel-frame{
+  .wheel-frame {
     position: relative;
     width: 320px;
     height: 320px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
   }
   #arrow {
     position: absolute;
@@ -935,7 +933,7 @@ h5 {
     margin: 0;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    overflow: hidden; 
+    overflow: hidden;
   }
   .videoframe {
     position: relative;
@@ -949,7 +947,7 @@ h5 {
     margin-right: auto;
     margin-top: 15vh;
     text-align: center;
-    width: 80%; 
+    width: 80%;
   }
   .featured-inspired {
     color: #5a5a5a;
@@ -999,7 +997,7 @@ h5 {
     margin-right: auto;
     margin-top: 8vh;
   }
-  .slide-card{
+  .slide-card {
     position: relative;
     margin-top: 200px;
   }
@@ -1038,8 +1036,6 @@ h5 {
     text-align: center;
     background-color: #e9e7deb7;
     border-radius: 10px;
-    
-    
   }
   .present-description {
     position: relative;

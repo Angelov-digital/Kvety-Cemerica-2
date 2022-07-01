@@ -1,98 +1,121 @@
 //changing images onclick
 function changeImage1() {
   var image = document.getElementById("season-featured");
-  if (image.src.match("img/spring.png")) {
-    image.src = "img/spring.png";
+  if (image.src.match("img/spring.webp")) {
+    image.src = "img/spring.webp";
   } else {
-    image.src = "img/spring.png";
+    image.src = "img/spring.webp";
   }
 }
 
 function changeImage2() {
   var image = document.getElementById("season-featured");
   if (image.src.match("summer")) {
-    image.src = "img/summer.png";
+    image.src = "img/summer.webp";
   } else {
-    image.src = "img/summer.png";
+    image.src = "img/summer.webp";
   }
 }
 
 function changeImage3() {
   var image = document.getElementById("season-featured");
   if (image.src.match("autum")) {
-    image.src = "img/autum.png";
+    image.src = "img/autum.webp";
   } else {
-    image.src = "img/autum.png";
+    image.src = "img/autum.webp";
   }
 }
 
 function changeImage4() {
   var image = document.getElementById("season-featured");
   if (image.src.match("winter")) {
-    image.src = "img/winter.png";
+    image.src = "img/winter.webp";
   } else {
-    image.src = "img/winter.png";
+    image.src = "img/winter.webp";
   }
 }
 // month bar rotation + flower change
 
 function rotateMonthSummer() {
   document.querySelector("#link-grid").style.transform = "rotate(136deg)";
-  document.getElementById("flower1").src="img/flowers/summer4.jpg";
-  document.getElementById("flower2").src="img/flowers/summer2.jpg";
-  document.getElementById("flower3").src="img/flowers/summer3.jpg";
-  
+  document.getElementById("flower1").src = "img/flowers/summer4.webp";
+  document.getElementById("flower2").src = "img/flowers/summer2.webp";
+  document.getElementById("flower3").src = "img/flowers/summer3.webp";
 }
 function rotateMonthAutum() {
   document.querySelector("#link-grid").style.transform = "rotate(226deg)";
-  document.getElementById("flower1").src="img/flowers/autum1.jpg";
-  document.getElementById("flower2").src="img/flowers/autum2.jpg";
-  document.getElementById("flower3").src="img/flowers/autum3.jpg";
+  document.getElementById("flower1").src = "img/flowers/autum1.webp";
+  document.getElementById("flower2").src = "img/flowers/autum2.webp";
+  document.getElementById("flower3").src = "img/flowers/autum3.webp";
 }
 function rotateMonthWinter() {
   document.querySelector("#link-grid").style.transform = "rotate(316deg)";
-  document.getElementById("flower1").src="img/flowers/winter1.jpg";
-  document.getElementById("flower2").src="img/flowers/winter2.jpg";
-  document.getElementById("flower3").src="img/flowers/winter3.jpg";
+  document.getElementById("flower1").src = "img/flowers/winter1.webp";
+  document.getElementById("flower2").src = "img/flowers/winter2.webp";
+  document.getElementById("flower3").src = "img/flowers/winter3.webp";
 }
 function rotateMonthSpring() {
   document.querySelector("#link-grid").style.transform = "rotate(46deg)";
-  document.getElementById("flower1").src="img/flowers/spring1.jpg";
-  document.getElementById("flower2").src="img/flowers/spring2a.jpg";
-  document.getElementById("flower3").src="img/flowers/spring3.jpg";
+  document.getElementById("flower1").src = "img/flowers/spring1.webp";
+  document.getElementById("flower2").src = "img/flowers/spring2a.webp";
+  document.getElementById("flower3").src = "img/flowers/spring3.webp";
 }
 // change flower names
 function changeTextSummer() {
-  {var element = document.getElementById("flowerName1");
-        element.innerHTML = "Pink rose";}
-  {var element = document.getElementById("flowerName2");
-        element.innerHTML = "Nice purple flower";}
-  {var element = document.getElementById("flowerName3");
-        element.innerHTML = "Karafiát";}
+  {
+    var element = document.getElementById("flowerName1");
+    element.innerHTML = "Pink rose";
+  }
+  {
+    var element = document.getElementById("flowerName2");
+    element.innerHTML = "Nice purple flower";
+  }
+  {
+    var element = document.getElementById("flowerName3");
+    element.innerHTML = "Karafiát";
+  }
 }
 function changeTextSpring() {
-  {var element = document.getElementById("flowerName1");
-        element.innerHTML = "Lisianthus";}
-  {var element = document.getElementById("flowerName2");
-        element.innerHTML = "White Rose";}
-  {var element = document.getElementById("flowerName3");
-        element.innerHTML = "English rose";}
+  {
+    var element = document.getElementById("flowerName1");
+    element.innerHTML = "Lisianthus";
+  }
+  {
+    var element = document.getElementById("flowerName2");
+    element.innerHTML = "White Rose";
+  }
+  {
+    var element = document.getElementById("flowerName3");
+    element.innerHTML = "English rose";
+  }
 }
 function changeTextAutum() {
-  {var element = document.getElementById("flowerName1");
-        element.innerHTML = "Violetum";}
-  {var element = document.getElementById("flowerName2");
-        element.innerHTML = "Vřes obecný";}
-  {var element = document.getElementById("flowerName3");
-        element.innerHTML = "Modrý bodlák";}
+  {
+    var element = document.getElementById("flowerName1");
+    element.innerHTML = "Violetum";
+  }
+  {
+    var element = document.getElementById("flowerName2");
+    element.innerHTML = "Vřes obecný";
+  }
+  {
+    var element = document.getElementById("flowerName3");
+    element.innerHTML = "Modrý bodlák";
+  }
 }
 function changeTextWinter() {
-  {var element = document.getElementById("flowerName1");
-        element.innerHTML = "Winter Rose";}
-  {var element = document.getElementById("flowerName2");
-        element.innerHTML = "Plevel Krásný";}
-  {var element = document.getElementById("flowerName3");
-        element.innerHTML = "Bělavka úžasná";}
+  {
+    var element = document.getElementById("flowerName1");
+    element.innerHTML = "Winter Rose";
+  }
+  {
+    var element = document.getElementById("flowerName2");
+    element.innerHTML = "Plevel Krásný";
+  }
+  {
+    var element = document.getElementById("flowerName3");
+    element.innerHTML = "Bělavka úžasná";
+  }
 }
 
 // choose us 3 ailes
@@ -145,18 +168,18 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("slider-cell");
-getSlides(n, slides, dots);
+  getSlides(n, slides, dots);
 }
 
 //Choose us mobile
 function chooseUsMobileSlider(n) {
-  showChooseUsMob(slideIndex = n);
+  showChooseUsMob((slideIndex = n));
 }
 
 function showChooseUsMob(n) {
@@ -167,7 +190,7 @@ function showChooseUsMob(n) {
 
 //choose us desktop version
 function chooseUsSlides(n) {
-  showChooseUs(slideIndex = n);
+  showChooseUs((slideIndex = n));
 }
 
 function showChooseUs(n) {
@@ -190,7 +213,7 @@ function showChooseUs(n) {
   dots[slideIndex - 1].className += " activeTitle";
 }
 //function that gets all slides and active sliders for carousels
-function getSlides(n, slides, dots){
+function getSlides(n, slides, dots) {
   if (n > slides.length) {
     slideIndex = 1;
   }

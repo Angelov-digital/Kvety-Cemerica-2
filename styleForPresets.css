@@ -1,4 +1,4 @@
-html {
+body {
   background-image: url(img/background.webp);
   background-size: cover;
 }
@@ -323,6 +323,10 @@ h6 {
   .navigationButtonsDesktopFix,
   h6 {
     display: none;
+  }
+  body {
+    background-image: url(img/mobile-background.webp);
+    background-size: cover;
   }
 }
 /* Style for 404 error*/

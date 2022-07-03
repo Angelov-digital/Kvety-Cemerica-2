@@ -9,11 +9,12 @@
   font-display: swap;
 }
 /*elements desktop*/
-body,
-html {
+body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-image: url(img/background.webp);
+  background-size: cover;
 }
 a {
   color: #000000;
@@ -356,7 +357,7 @@ h5 {
   }
 
   .navbar {
-    position: fixed;
+    position: absolute;
     top: 0px;
     display: flex;
     justify-content: space-between;
@@ -384,11 +385,9 @@ h5 {
     align-items: center;
     margin: 0px;
     z-index: 10;
-    max-width: 70px;
   }
   .nav-logo {
     position: relative;
-    max-height: 50px;
   }
   .nav-item-desk {
     display: none;
@@ -620,7 +619,7 @@ h5 {
     color: #5a5a5a;
     font-size: 15px;
     font-family: segoe;
-    padding: 5px;
+    padding: 10px;
     margin: 0;
     text-align: left;
   }
@@ -629,8 +628,9 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    height: 15vh;
+    height: max-content;
     text-align: center;
+
     background-color: #e9e7deb7;
     border-radius: 10px;
   }
@@ -1560,6 +1560,10 @@ h5 {
   .footer-desktop {
     display: none;
   }
+  body {
+    background-image: url(img/mobile-background.webp);
+    background-size: cover;
+  }
 }
 
 /* hiding mobile elements for Making desktop ver */
@@ -1655,4 +1659,13 @@ h5 {
 .chooseUsMissingHeading {
   text-align: end;
   font-size: 20px;
+}
+@media (min-width: 300px) and (max-width: 370px) {
+  .nav-link {
+    font-size: 17px;
+  }
+  .cells7 {
+    margin: 4px;
+    margin-top: 16px;
+  }
 }

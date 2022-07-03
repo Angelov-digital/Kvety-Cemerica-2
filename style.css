@@ -27,6 +27,7 @@ h5 {
   padding: 0;
   font-family: sitka;
   color: #707070;
+  font-weight: normal;
 }
 .vl {
   border-left: 2px solid rgb(0, 0, 0);
@@ -209,6 +210,10 @@ h5 {
   width: 80%;
   border-radius: 40px;
   align-items: center;
+  background: url(img/sectionback.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
 }
 .content-card-blank {
   position: relative;
@@ -223,12 +228,11 @@ h5 {
 .content-card-frame {
   position: relative;
   width: 100%;
-  background: url(img/sectionback.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
+
   margin: auto;
   border-radius: 40px;
+  background-color: #e9e7deb7;
+  z-index: 2;
 }
 .content-card-frame-blank {
   position: relative;
@@ -388,6 +392,7 @@ h5 {
   }
   .nav-logo {
     position: relative;
+    margin-bottom: 12px;
   }
   .nav-item-desk {
     display: none;
@@ -398,6 +403,7 @@ h5 {
     color: #707070;
     font-family: segoe;
     white-space: nowrap;
+    font-weight: normal;
   }
   .nav-mobile {
     position: relative;
@@ -668,7 +674,7 @@ h5 {
   .slider-cell {
     position: relative;
     width: 90px;
-    height: 8px;
+    height: 11px;
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
@@ -868,6 +874,7 @@ h5 {
   .nav-logo {
     position: relative;
     max-height: 70px;
+    margin-bottom: 10px;
   }
   .nav-item {
     margin: 10px;
@@ -1564,6 +1571,10 @@ h5 {
     background-image: url(img/mobile-background.webp);
     background-size: cover;
   }
+  .spacer2,
+  .spacer1 {
+    display: none;
+  }
 }
 
 /* hiding mobile elements for Making desktop ver */
@@ -1581,6 +1592,7 @@ h5 {
     padding: 0;
     font-family: sitka;
     color: #3b3b3b;
+    font-weight: normal;
   }
   .footer-mobile {
     position: relative;
@@ -1593,9 +1605,7 @@ h5 {
     margin-top: 40px;
     text-align: center;
     height: max-content;
-  }
-  .someIcons {
-    margin-left: 0;
+    align-items: center;
   }
   .footercontent {
     justify-content: center;
@@ -1607,6 +1617,7 @@ h5 {
   .someIcons {
     margin-left: 10px;
     margin-right: 10px;
+    top: 50%;
   }
   a {
     text-decoration: none;
@@ -1668,4 +1679,8 @@ h5 {
     margin: 4px;
     margin-top: 16px;
   }
+}
+/*new fixes*/
+.desktopIcons {
+  padding: 2%;
 }

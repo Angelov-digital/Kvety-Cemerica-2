@@ -89,7 +89,7 @@ h5 {
 }
 .presetTextAdjust {
   max-width: 200px;
-  margin-top: 40%;
+  margin-top: 20%;
 }
 
 /*preset preview End*/
@@ -192,7 +192,6 @@ a:active {
   .bouquetePart,
   .boringInfo,
   .navigationButtonsMobile {
-    /*this shit is overlapping somewhere */
     display: none;
   }
   .bouquetePart {
@@ -267,9 +266,8 @@ h6 {
   font-size: 30px;
   max-width: 320px;
   border-bottom: 2px solid currentColor;
-  margin-left: 10%;
   margin-top: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 16%;
 }
 .contactDesktopHeadingsGrid {
   display: grid;

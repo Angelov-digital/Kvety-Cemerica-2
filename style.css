@@ -16,11 +16,11 @@ body {
   background-image: url(img/background.webp);
   background-size: cover;
 }
+
 a {
   color: #000000;
   text-decoration: none;
 }
-
 h5 {
   font-size: 20px;
   margin: 10px;
@@ -717,11 +717,9 @@ h5 {
     height: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    top: 80px;
     align-items: center;
     align-content: center;
     text-align: center;
-    background-color: #71717144;
   }
   .seasons-btns-desktop {
     display: none;
@@ -836,7 +834,6 @@ h5 {
     display: none;
   }
   .navbar {
-    position: fixed;
     top: 0px;
     display: flex;
     justify-content: space-between;
@@ -929,18 +926,12 @@ h5 {
   /*featured picture-Desktop end*/
 
   #video-cemerica {
-    position: relative;
-    margin: 0;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    overflow: hidden;
+    height: 83vh;
   }
   .videoframe {
     position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 300px;
-    border-radius: 0 40px 40px 0;
+    border-radius: 0 0px 0px 0;
+    margin-left: 15%;
   }
   .featured-text {
     margin-left: auto;
@@ -1192,6 +1183,14 @@ h5 {
     opacity: 0;
     display: flex;
     transition: 0.7s ease;
+  }
+  .spacer1 {
+    width: 100%;
+    height: 2vh;
+  }
+  .spacer2 {
+    width: 100%;
+    height: 4vh;
   }
   .prog-it-cont p {
     text-align: left;
@@ -1557,7 +1556,10 @@ h5 {
 
 /*  hiding Desktop elements for  phone version*/
 @media screen and (max-width: 768px) {
-  .footer-desktop {
+  .footer-desktop,
+  .vl2,
+  .spacer1,
+  .spacer2 {
     display: none;
   }
   body {
@@ -1675,4 +1677,7 @@ h5 {
   width: 95%;
   justify-content: space-between;
   align-items: center;
+}
+hr {
+  background-color: #3b3b3b;
 }

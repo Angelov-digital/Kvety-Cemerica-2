@@ -296,8 +296,11 @@ h5 {
     text-align: center;
     text-decoration: none;
     user-select: none;
-    width: 250px;
+    width: 180px;
     will-change: transform;
+  }
+  .centerButtonFix {
+    display: flex;
   }
   .btn2-light {
     appearance: none;
@@ -508,7 +511,6 @@ h5 {
     align-self: right;
     padding-left: 3vh;
   }
-
   .programs-container img {
     position: relative;
     top: 0;
@@ -619,6 +621,8 @@ h5 {
     font-size: 15px;
     font-family: segoe;
     padding: 10px;
+    padding-left: 0%;
+    padding-right: 0%;
     margin: 0;
     text-align: left;
   }
@@ -656,6 +660,7 @@ h5 {
   }
   .slider {
     position: relative;
+    width: 93%;
     top: 0px;
     grid-column: 1 / 4;
     grid-row: 2 / 2;
@@ -663,6 +668,8 @@ h5 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   .slider-cell {
     position: relative;
@@ -670,7 +677,7 @@ h5 {
     height: 11px;
     border-radius: 10px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: #5a5a5a;
     margin: 10px;
     transition: background-color 0.6s ease;
@@ -720,6 +727,8 @@ h5 {
     align-items: center;
     align-content: center;
     text-align: center;
+    margin-top: 120px;
+    margin-bottom: -20px;
   }
   .seasons-btns-desktop {
     display: none;
@@ -735,6 +744,7 @@ h5 {
     max-width: 20vh;
     text-align: center;
     margin: 10px;
+    height: 220px;
   }
   .flower {
     position: relative;
@@ -744,7 +754,7 @@ h5 {
 
   .flower-name {
     position: relative;
-    top: -20%;
+    top: -25%;
     font-family: segoe;
     color: rgb(255, 255, 255);
     background-color: #5a5a5a42;
@@ -1491,6 +1501,7 @@ h5 {
 /* end style for hover effect*/
 
 /*choose us-Mobile */
+
 @media screen and (max-width: 768px) {
   .content-card-nav {
     display: none;
@@ -1505,7 +1516,6 @@ h5 {
     border-radius: 15px;
   }
   .chooseUsMobilePictures {
-    height: fit-content;
     display: flex;
     justify-content: space-around;
   }

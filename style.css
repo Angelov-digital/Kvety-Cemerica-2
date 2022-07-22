@@ -89,6 +89,51 @@ h5 {
   margin: 10px;
   margin-left: 4rem;
 }
+.underline,
+.underlineLong,
+.underlineD,
+.underlineDLong {
+  display: inline-block;
+  position: relative;
+}
+/*mobileunderline*/
+.underlineLong::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #5a5a5a;
+  position: absolute;
+  left: 12%;
+  bottom: -1px;
+}
+.underline::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #5a5a5a;
+  position: absolute;
+  left: 20%;
+  bottom: -1px;
+}
+/*desktopunderline*/
+.underlineD::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #5a5a5a;
+  position: absolute;
+  left: 12%;
+  bottom: -4px;
+}
+.underlineDLong::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #5a5a5a;
+  position: absolute;
+  left: 12%;
+  bottom: -4px;
+}
 
 /*buttons*/
 .button-main {
@@ -257,6 +302,7 @@ h5 {
     font-family: sitka;
     padding: 0;
     margin-right: 24px;
+    margin-bottom: 2%;
   }
   .headstyle2 {
     color: #5a5a5a;
@@ -873,7 +919,7 @@ h5 {
   }
   .nav-logo {
     position: relative;
-    max-height: 70px;
+    height: 70px;
     margin-bottom: 10px;
   }
   .nav-item {
@@ -1569,7 +1615,9 @@ h5 {
   .footer-desktop,
   .vl2,
   .spacer1,
-  .spacer2 {
+  .spacer2,
+  .underlineDLong,
+  .underlineD {
     display: none;
   }
   body {
@@ -1581,6 +1629,11 @@ h5 {
   }
   .hiddenVl {
     display: none;
+  }
+  .nav-logo {
+    position: relative;
+    height: 47px;
+    margin-bottom: 8px;
   }
 }
 
@@ -1674,6 +1727,7 @@ h5 {
 /* Last day small adjustments*/
 .whyChooseUsFix {
   padding-top: 2%;
+  margin-bottom: 3%;
 }
 @media (min-width: 300px) and (max-width: 370px) {
   .nav-link {

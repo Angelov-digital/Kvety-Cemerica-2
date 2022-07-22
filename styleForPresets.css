@@ -4,15 +4,12 @@
 }
 h1 {
   font-size: 26px;
-  max-width: 300px;
-  border-bottom: 2px solid currentColor;
   margin-left: 5%;
 }
 h2 {
   margin-left: 8%;
-  border-bottom: 2px solid currentColor;
-  width: 250px;
 }
+
 h4 {
   margin-left: 5%;
   margin-bottom: 0%;
@@ -213,7 +210,8 @@ a:active {
   .discoverPresetsText,
   .navigationButtonsDesktop,
   .presetPictureDesktop,
-  .gridPresetPreviewDesktop {
+  .gridPresetPreviewDesktop,
+  h6 {
     display: none;
   }
   .btn1-light {
@@ -263,9 +261,9 @@ input::placeholder {
 
 /* STYLE FOR CONTACT PAGE Desktop HERE*/
 h6 {
+  margin: 0;
   font-size: 30px;
   max-width: 320px;
-  border-bottom: 2px solid currentColor;
   margin-top: 5%;
   margin-bottom: 16%;
 }

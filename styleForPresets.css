@@ -13,7 +13,6 @@ h2 {
 h4 {
   margin-left: 5%;
   margin-bottom: 0%;
-  border-bottom: 2px solid currentColor;
   width: 150px;
 }
 h5 {
@@ -360,4 +359,7 @@ h6 {
   .errorContainer {
     display: none;
   }
+}
+.presetOptions {
+  max-width: 400px;
 }

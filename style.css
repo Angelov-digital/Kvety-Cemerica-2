@@ -96,6 +96,11 @@ h5 {
   display: inline-block;
   position: relative;
 }
+.underlineDLongNoMargins {
+  margin: 0%;
+  display: inline-block;
+  position: relative;
+}
 /*mobileunderline*/
 .underlineLong::after {
   content: "";
@@ -134,7 +139,22 @@ h5 {
   left: 12%;
   bottom: -4px;
 }
-
+.underlineDLongNoMargins::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #5a5a5a;
+  position: absolute;
+  left: 12%;
+  bottom: -4px;
+}
+p.underline {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.possibleOptText {
+  margin-left: 12px;
+}
 /*buttons*/
 .button-main {
   position: absolute;
@@ -1286,6 +1306,11 @@ h5 {
     font-size: 1.7rem;
     margin-left: 30px;
   }
+  .flowerNBakeryFix {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: left;
+  }
   /*style your wedding-mobile*/
   .styleYourWedding {
     position: relative;
@@ -1719,10 +1744,6 @@ h5 {
   .footer-desktop p {
     font-family: segoe;
   }
-}
-.activeTitle,
-.activeOption:hover {
-  text-decoration: underline;
 }
 /* Last day small adjustments*/
 .whyChooseUsFix {

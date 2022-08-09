@@ -23,7 +23,6 @@ function currentDiv(n) {
 }
 
 function showDivs(n) {
-
   var x = document.getElementsByClassName("mySlides2");
   var dots = document.getElementsByClassName("slider-cell");
   if (n > x.length) {
@@ -44,7 +43,7 @@ function showDivs(n) {
 //Preset preview slideshow end
 // 7 elements on preset preview
 function currentPresetSlideMob(n) {
-  showPresetSlidesMob(slideIndex = n);
+  showPresetSlidesMob((slideIndex = n));
 }
 
 function showPresetSlidesMob(n) {
@@ -72,7 +71,7 @@ function currentPresetSlide(n) {
 function showPresetSlides(n) {
   let pSlides = document.getElementsByClassName("presetPictureDesktop");
   let options = document.getElementsByClassName("activeOption");
-  let text = document.getElementsByClassName("presetText")
+  let text = document.getElementsByClassName("presetText");
   if (n > pSlides.length) {
     pSlideIndex = 1;
   }
@@ -83,16 +82,16 @@ function showPresetSlides(n) {
     pSlides[i].style.display = "none";
   }
   for (i = 0; i < options.length; i++) {
-    options[i].className = options[i].className.replace("activeTitle", "");
+    options[i].className = options[i].className.replace(" underlineDLongNoMargins", "");
   }
   for (i = 0; i < text.length; i++) {
     text[i].style.display = "none";
   }
-  pSlides[n*2-2].style.display="";
-  pSlides[n*2-1].style.display="";
-  text[n-1].style.display="initial";
+  pSlides[n * 2 - 2].style.display = "";
+  pSlides[n * 2 - 1].style.display = "";
+  text[n - 1].style.display = "initial";
 
-  options[pSlideIndex - 1].className += " activeTitle";
+  options[pSlideIndex - 1].className += " underlineDLongNoMargins";
 }
 // 7 elements on preset preview end
 function hideOptionsPreset() {

@@ -207,10 +207,10 @@ function showChooseUs(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" activeTitle", "");
+    dots[i].className = dots[i].className.replace(" underlineD", "");
   }
   slides[slideIndex - 1].style.display = "";
-  dots[slideIndex - 1].className += " activeTitle";
+  dots[slideIndex - 1].className += " underlineD";
 }
 //function that gets all slides and active sliders for carousels
 function getSlides(n, slides, dots) {

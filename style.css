@@ -1548,20 +1548,18 @@ p.underline {
 .middle {
   transition: 0.9s ease;
   opacity: 0;
-  position: absolute;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
-  transform: translate(25%, -120%);
-  -ms-transform: translate(25%, -120%);
-  max-width: 70%;
   text-align: center;
 }
 .bi-plus {
-  position: relative;
-  display: inherit;
-  margin-top: auto;
-  margin-bottom: auto;
-  top: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 1px;
+  right: 30%;
+  max-width: 40%;
+  margin-bottom: 30.5%;
 }
 .prog-it-cont:hover .whitePlus {
   opacity: 0.7;

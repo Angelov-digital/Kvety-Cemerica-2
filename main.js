@@ -1,3 +1,19 @@
+//CAROUSEL for preset preview thanks goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx
+var images = ["img/bouquet1.webp", "img/bouquet2.webp", "img/bouquet3.webp"];
+var carousel = document.querySelector(".carousel");
+var interval = setInterval(function () {
+  startCarousel();
+}, 3000);
+var index = 1;
+
+startCarousel = () => {
+  carousel.style.backgroundImage = `url(${images[index++]})`;
+  carousel.classList.remove("fade");
+  void carousel.offsetWidth;
+  carousel.classList.add("fade");
+  if (index > images.length - 1) index = 0;
+};
+//CArousel for preset preview end
 //changing images onclick
 function changeImage1() {
   var image = document.getElementById("season-featured");

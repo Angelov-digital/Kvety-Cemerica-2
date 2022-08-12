@@ -156,6 +156,37 @@ p.underline {
 .possibleOptText {
   margin-left: 12px;
 }
+/*Mobile carousel style start*/
+/* CAROUSEL*/
+.carousel {
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  background-image: url(img/bouquet1.webp);
+}
+.fadePreview {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.7s;
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+@-webkit-keyframes fadePreview {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadePreview {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Mobile carousel style end*/
 /*buttons*/
 .button-main {
   position: absolute;
@@ -443,12 +474,14 @@ p.underline {
     align-items: center;
     margin: 0px;
     z-index: 10;
+    padding: 0%;
   }
   .nav-logotype {
     position: relative;
     top: 0px;
     display: flex;
-    left: -40px;
+    left: -7px;
+    padding: 0%;
     align-items: center;
     margin: 0px;
     z-index: 10;
@@ -806,6 +839,8 @@ p.underline {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .flower-frame {
     max-width: 20vh;
@@ -1663,7 +1698,8 @@ p.underline {
 
 /* hiding mobile elements for Making desktop ver */
 @media screen and (min-width: 768px) {
-  .footer-mobile {
+  .footer-mobile,
+  .carousel {
     display: none;
   }
 }
@@ -1778,4 +1814,9 @@ p.underline {
 }
 hr {
   background-color: #3b3b3b;
+}
+.configurationHeadingFix {
+  margin-bottom: 2%;
+  margin-top: 6%;
+  margin-left: 5%;
 }

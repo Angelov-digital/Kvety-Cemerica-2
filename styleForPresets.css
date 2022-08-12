@@ -103,35 +103,6 @@ h5 {
 .footer-desktop {
   margin-top: -6%;
 }
-/* CAROUSEL*/
-.carousel {
-  aspect-ratio: 1/1;
-  background-size: cover;
-  background-position: center;
-  background-image: url(img/bouquet1.webp);
-}
-.fadePreview {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.7s;
-  animation-name: fade;
-  animation-duration: 0.7s;
-}
-@-webkit-keyframes fadePreview {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadePreview {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .gridPresetPreviewDesktop {
   margin-top: 100px;

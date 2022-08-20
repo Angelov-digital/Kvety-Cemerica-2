@@ -31,10 +31,24 @@ h5 {
 }
 
 .shownProduct {
+  position: relative;
   display: flex;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+.swipeText {
+  position: absolute;
+  bottom: 8px;
+  right: 9%;
+  font-family: segoe;
+  color: rgb(255, 255, 255);
+}
+.swipeLine {
+  position: absolute;
+  bottom: 8px;
+  right: 6%;
 }
 /*preset preview Desktop NEW CSS*/
 .preview-text {

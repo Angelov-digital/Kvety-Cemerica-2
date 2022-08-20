@@ -11,6 +11,8 @@
     <!--Link to css sheet-->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleForPresets.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.webp" />
     <title>Kvety Cemerica</title>
   </head>
@@ -161,9 +163,72 @@
     <!-- part1-->
     <section class="bouquetePart">
       <h2 class="underlineLong">Bouquet for bride</h2>
-
-      <img class="shownProduct" src="img/bouquet2.webp" alt="Flower Bouquetes" />
-
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/bouquet1.webp" alt="Flower Bouquetes" />
+            <p class="swipeText">Swipe</p>
+            <svg
+              class="swipeLine"
+              xmlns="http://www.w3.org/2000/svg"
+              width="95.5"
+              height="14.916"
+              viewBox="0 0 95.5 14.916"
+            >
+              <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(388 1650.958) rotate(180)">
+                <g id="Сгруппировать_60" data-name="Сгруппировать 60">
+                  <line
+                    id="Линия_66"
+                    data-name="Линия 66"
+                    x2="95"
+                    transform="translate(292.5 1643.5)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="1"
+                  />
+                  <line
+                    id="Линия_68"
+                    data-name="Линия 68"
+                    x1="16"
+                    y1="7"
+                    transform="translate(371.5 1636.5)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="1"
+                  />
+                  <line
+                    id="Линия_69"
+                    data-name="Линия 69"
+                    x1="16"
+                    y2="7"
+                    transform="translate(371.5 1643.5)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="1"
+                  />
+                </g>
+                <g
+                  id="Эллипс_17"
+                  data-name="Эллипс 17"
+                  transform="translate(387 1643)"
+                  fill="#fff"
+                  stroke="#fff"
+                  stroke-width="1"
+                >
+                  <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                  <circle cx="0.5" cy="0.5" fill="none" />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/bouquet2.webp" alt="Flower Bouquetes" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/bouquet3.webp" alt="Flower Bouquetes" />
+          </div>
+        </div>
+      </div>
       <section>
         <h4 class="underlineLong">Possible options</h4>
         <p class="possibleOptionsText">You will be able to choose from different bouquet sizes</p>
@@ -172,8 +237,19 @@
     <!-- part2-->
     <section class="bouquetePart">
       <h2 class="underlineLong">Feathers for wedding guests</h2>
-
-      <img class="shownProduct" src="img/buttonholes1.webp" alt="buttoiere" />
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/buttonholes1.webp" alt="buttonholes" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/buttonholes2.webp" alt="buttoniere" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/buttonholes3.webp" alt="buttoniere" />
+          </div>
+        </div>
+      </div>
 
       <section>
         <h4 class="underlineLong">Possible options</h4>
@@ -183,8 +259,19 @@
     <!--part3-->
     <section class="bouquetePart">
       <h2 class="underlineLong">Wedding hall decorations</h2>
-
-      <img class="shownProduct" src="img/weddingvenue1.webp" alt="Wedding venue" />
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/weddingvenue1.webp" alt="Wedding venue" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/weddingvenue2.webp" alt="Wedding venue" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/weddingvenue3.webp" alt="Wedding venue" />
+          </div>
+        </div>
+      </div>
       <h3></h3>
       <section>
         <h4 class="underlineLong">Possible options</h4>
@@ -194,8 +281,19 @@
     <!--part4-->
     <section class="bouquetePart">
       <h2 class="underlineLong">Other decorations</h2>
-
-      <img class="shownProduct" src="img/otherdecorations1.webp" alt="bridesmaids decorations" />
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/otherdecorations1.webp" alt="Other decorations" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/otherdecorations2.webp" alt="Other decorations" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/otherdecorations3.webp" alt="Other decorations" />
+          </div>
+        </div>
+      </div>
       <h3></h3>
       <section>
         <h4 class="underlineLong">Possible options</h4>
@@ -204,6 +302,8 @@
         </p>
       </section>
     </section>
+    <!--/* Swiper JS */-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <section class="sliderButtons">
       <div class="slider-cell slider" id="slid1" onclick="currentPresetSlideMob(1)"></div>
       <div class="slider-cell slider" id="slid2" onclick="currentPresetSlideMob(2)"></div>

@@ -1,4 +1,7 @@
 
+/* Initialize Swiper*/
+var swiper = new Swiper(".mySwiper", {});
+
 //Preset preview slideshow  thanks goes again to https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_dots2
 var slideIndex2 = 1;
 showDivs(slideIndex2);

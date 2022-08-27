@@ -1,4 +1,3 @@
-
 /* Initialize Swiper*/
 var swiper = new Swiper(".mySwiper", {});
 
@@ -12,7 +11,7 @@ function currentDiv(n) {
 
 function showDivs(n) {
   var x = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("slider-cell");
+  var dots = document.getElementsByClassName("slider-cellActive");
   if (n > x.length) {
     slideIndex2 = 1;
   }

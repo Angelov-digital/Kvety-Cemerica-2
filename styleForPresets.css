@@ -156,12 +156,6 @@ a:active {
   display: flex;
   justify-content: center;
 }
-.white-cell {
-  border-color: white;
-}
-.white-cell:hover {
-  background-color: white;
-}
 @media screen and (max-width: 768px) {
   .slider-cell {
     margin: 6px;
@@ -282,9 +276,6 @@ h6 {
   max-width: 300px;
 }
 
-.navigationButtonsDesktopContact {
-  margin-top: 20%;
-}
 .navigationButtonsMobileContact {
   margin-top: 6%;
   margin-left: 8%;
@@ -335,6 +326,7 @@ h6 {
 }
 .buttonWidthFix {
   width: 310px;
+  margin-top: 37%;
 }
 /* hiding mobile elements for Making desktop ver for 404 */
 @media screen and (min-width: 769px) {

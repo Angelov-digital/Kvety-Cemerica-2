@@ -1552,26 +1552,31 @@ p.underline {
     border-radius: 40px;
   }
   .mySlides2 {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 70%;
-    min-width: 300px;
-    border-radius: 15px;
+    max-width: 460px;
+    height: 700px;
+    margin-top: -7px;
+    border-radius: 0%;
   }
   .presetSlideshow {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-right: 20%;
   }
   .discoverPresetsText {
-    max-width: 800px;
-    margin: auto;
+    max-width: 700px;
+    margin-left: 10%;
+    text-align: center;
   }
   .slideShowPreset {
     margin-top: -40px;
     display: flex;
     justify-content: center;
+  }
+  .presetTextAdjust {
+    max-width: 200px;
+    margin-top: 20%;
   }
 }
 /*preset preview End*/

@@ -283,7 +283,8 @@ h6 {
 }
 /*  hiding DEsktop elements for  phone version 404*/
 @media screen and (max-width: 768px) {
-  .errorContainer {
+  .errorContainer,
+  .contactDesktopGrid {
     display: none;
   }
 }

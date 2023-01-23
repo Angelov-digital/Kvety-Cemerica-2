@@ -78,11 +78,11 @@ h5 {
   justify-content: space-around;
 }
 .presetPictureDesktop {
-  display: flex;
   margin-bottom: 40px;
   border-radius: 10px;
-  max-width: 420px;
-  max-height: 500px;
+  width: 315px;
+  height: 420px;
+  
 }
 
 .presetPictureMobile {

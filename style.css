@@ -104,11 +104,6 @@ h5 {
   display: inline-block;
   position: relative;
 }
-.underlineDLongNoMargins {
-  margin: 0%;
-  display: inline-block;
-  position: relative;
-}
 /*mobileunderline*/
 .underlineLong::after {
   content: "";
@@ -147,21 +142,9 @@ h5 {
   left: 12%;
   bottom: -4px;
 }
-.underlineDLongNoMargins::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  background: #5a5a5a;
-  position: absolute;
-  left: 12%;
-  bottom: -4px;
-}
 p.underline {
   font-size: 1.4rem;
   margin: 0;
-}
-.possibleOptText {
-  margin-left: 12px;
 }
 /*Mobile carousel style start*/
 /* CAROUSEL*/
@@ -176,22 +159,6 @@ p.underline {
   -webkit-animation-duration: 0.7s;
   animation-name: fade;
   animation-duration: 0.7s;
-}
-@-webkit-keyframes fadePreview {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadePreview {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 /*Mobile carousel style end*/
 /*buttons*/
@@ -233,39 +200,6 @@ p.underline {
   background-color: #3b3b3b;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
-}
-
-.button-28:active {
-  box-shadow: none;
-  transform: translateY(0);
-}
-
-.info-button {
-  appearance: none;
-  background-color: transparent;
-  border: 1px solid #3b3b3b;
-  border-radius: 55px;
-  box-sizing: border-box;
-  color: #3b3b3b;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Segoe;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0px;
-  min-height: 60px;
-  min-width: 0;
-  outline: none;
-  padding: 16px 24px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 250px;
-  will-change: transform;
 }
 .btn1-light {
   appearance: none;
@@ -312,16 +246,6 @@ p.underline {
   background-size: cover;
   z-index: 1;
 }
-.content-card-blank {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10vh;
-  width: 90%;
-  height: 83vh;
-  border-radius: 40px;
-  align-items: center;
-}
 .content-card-frame {
   position: relative;
   width: 100%;
@@ -330,13 +254,6 @@ p.underline {
   border-radius: 40px;
   background-color: #e9e7deb7;
   z-index: 2;
-}
-.content-card-frame-blank {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  z-index: 1;
-  margin: auto;
 }
 .content-card-head {
   text-align: left;
@@ -368,10 +285,6 @@ p.underline {
     font-size: 15px;
     font-family: sitka;
     padding: 0;
-    margin: 0;
-  }
-  .headstyle3 {
-    font-size: 15px;
     margin: 0;
   }
   .text-cont2 {
@@ -455,11 +368,6 @@ p.underline {
   /*modules end*/
 
   /*navigation-mobile*/
-  .header {
-    position: sticky;
-    right: 0px;
-    top: 0px;
-  }
 
   .navbar {
     position: absolute;
@@ -512,18 +420,6 @@ p.underline {
     position: relative;
   }
   /*featured-mobile*/
-
-  .featuredImg {
-    display: block;
-    position: relative;
-    top: 0;
-    width: 100%;
-  }
-  .featuredImgFrame {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
   #featured {
     display: none;
   }
@@ -571,9 +467,6 @@ p.underline {
   .programs {
     display: none;
   }
-  .info-button {
-    display: none;
-  }
   .prgtxtcnt {
     position: relative;
     top: 20px;
@@ -582,18 +475,6 @@ p.underline {
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
-  }
-  .prg-cnt {
-    width: 100%;
-    text-align: left;
-  }
-  #ourprograms {
-    color: #5a5a5a;
-    font-size: 24px;
-    font-family: sitka;
-    padding: 0;
-    margin: 0;
-    margin-left: 5vh;
   }
 
   .programs-container {
@@ -758,13 +639,6 @@ p.underline {
     margin-left: auto;
     margin-right: auto;
   }
-  .present-img-description {
-    position: relative;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
   .slider {
     position: relative;
     width: 93%;
@@ -789,7 +663,6 @@ p.underline {
     margin: 10px;
     transition: background-color 0.6s ease;
   }
-  .active,
   .slider-cell:hover {
     background-color: #717171;
   }
@@ -944,11 +817,6 @@ p.underline {
 /*media-desktop*/
 @media only screen and (min-width: 768px) {
   /*navigation*/
-  .header {
-    position: sticky;
-    right: 0px;
-    top: 0px;
-  }
   .nav-mobile {
     display: none;
   }
@@ -1031,17 +899,6 @@ p.underline {
     border-radius: 40px;
   }
   /*featured picture desktop*/
-  .featuredImg {
-    display: block;
-    position: relative;
-    top: 0;
-    height: 83vh;
-  }
-  .featuredImgFrame {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
   /*featured picture-Desktop end*/
 
   #video-cemerica {
@@ -1156,14 +1013,6 @@ p.underline {
     padding-left: 5vh;
     padding-right: 5vh;
   }
-  .present-img-description {
-    position: relative;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .active,
   .slider-cell:hover {
     background-color: #717171;
   }
@@ -1209,7 +1058,6 @@ p.underline {
   .white-cell:hover {
     background-color: #5a5a5a;
   }
-  .active,
   .slider-cell:hover {
     background-color: white;
   }
@@ -1263,19 +1111,6 @@ p.underline {
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
-  }
-  .prg-cnt {
-    width: 100%;
-    text-align: center;
-  }
-  #ourprograms {
-    color: #5a5a5a;
-    font-size: 40px;
-    font-family: sitka;
-    padding: 0;
-    margin: 0;
-    margin-top: 2vh;
-    margin-bottom: 1vh;
   }
 
   .programs-container {
@@ -1370,12 +1205,6 @@ p.underline {
     width: 74.2%;
     border-radius: 15px;
     margin-bottom: 30px;
-  }
-  .underlinedText {
-    color: #5a5a5a;
-    text-decoration: underline;
-    font-size: 1.7rem;
-    margin-left: 30px;
   }
   .flowerNBakeryFix {
     margin-top: 0;
@@ -1539,10 +1368,6 @@ p.underline {
     z-index: 2;
   }
   /*preset preview Desktop NEW CSS*/
-  .preview-text {
-    margin-top: 10%;
-    text-align: center;
-  }
   #preset-container {
     position: relative;
     margin-left: auto;
@@ -1580,19 +1405,10 @@ p.underline {
     margin-right: auto;
     margin-right: 20%;
   }
-  .discoverPresetsText {
-    max-width: 700px;
-    margin-left: 10%;
-    text-align: center;
-  }
   .slideShowPreset {
     margin-top: -40px;
     display: flex;
     justify-content: center;
-  }
-  .presetTextAdjust {
-    max-width: 200px;
-    margin-top: 20%;
   }
 }
 /*preset preview End*/
@@ -1680,28 +1496,11 @@ p.underline {
   .chooseUsMobilePictures,
   .chooseUsMobileText,
   .sliderChooseUs,
-  .ourMindsetMobilePictures .ourPartnersMobile,
   .ourWorkpalceMobileText {
     display: none;
   }
 }
 /*fix for flexboxdesktop*/
-.contactFlexFix {
-  width: 252px;
-  text-align: center;
-}
-.someFlexFix {
-  width: 162px;
-  margin-right: 100px;
-  text-align: center;
-}
-.emptyFlexFix {
-  width: 114;
-}
-.iconsDesktop {
-  align-items: center;
-  margin-top: 32px;
-}
 
 /*  hiding Desktop elements for  phone version*/
 @media screen and (max-width: 768px) {
@@ -1853,10 +1652,6 @@ hr {
   margin-bottom: 2%;
   margin-top: 6%;
   margin-left: 5%;
-}
-#flower-frame {
-  box-sizing: border-box;
-  transition: transform 0.2s;
 }
 .flower-frame:hover {
   -ms-transform: scale(1.5); /* IE 9 */

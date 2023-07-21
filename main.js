@@ -272,3 +272,29 @@ function getSlides(n, slides, dots) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+function storeClickedProgram(program) {
+  sessionStorage.setItem("selectedProgram", program);
+  let selectedProgram = sessionStorage.getItem("selectedProgram");
+  console.log(selectedProgram);
+}
+
+let selectedProgram = sessionStorage.getItem("selectedProgram");
+console.log(selectedProgram); // Output: 'program1', 'program2', or 'program3' (check the browser console)
+
+function switchLanguage(language) {
+  if (language === "english") {
+    window.location.href = "contact.html"; // Redirect to the English version
+  } else if (language === "slovak") {
+    window.location.href = "contactSL.html"; // Redirect to the Slovak version
+  }
+}
+
+// Add click event listeners to the language switch buttons
+document.getElementById("englishBtn").addEventListener("click", function () {
+  switchLanguage("english");
+});
+
+document.getElementById("slovakBtn").addEventListener("click", function () {
+  switchLanguage("slovak");
+});

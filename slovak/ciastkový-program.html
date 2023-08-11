@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+ <head> <!--display-->
+  <meta charset="UTF-8"> 
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"> 
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"> 
+  <meta content="Čo ponúkame v našich programoch svadobnej výzdoby" name="description"> <!--SEO-->
+  <meta content="Kvetiny, Kvetinový ateliér, Kvetinové dekorácie, Svadobné dekorácie" name="keywords"> 
+  <link href="style.css" rel="stylesheet"> 
+  <link href="styleForPresets.css" rel="stylesheet"> <!--Link to css sheet-->
+  <link href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" rel="stylesheet"> 
+  <link href="img/favicon.webp" rel="shortcut icon" type="image/jpg"> 
+  <title>Kvety Čemerica</title> <!-- Link Swiper's CSS -->
+ </head> 
+ <body onload="currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1)"> 
+  <style>
+      a:link {
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:active {
+        text-decoration: none;
+      }
+
+      body {
+        margin: 0;
+        align-items: center;
+      }
+      ul {
+        list-style-type: none;
+      }
+    </style> <!-- navigation bar-->
+  <header> 
+   <nav class="navbar"> 
+    <ul class="nav-logotype"> 
+     <div>
+      <a href="index.html"><img alt="logo" class="nav-logo" src="img/logo.svg"></a>
+     </div> 
+     <div class="vl"></div> 
+     <li class="nav-item"><a class="nav-link" href="index.html">Kvetinové štúdio</a></li> 
+    </ul> 
+    <ul class="nav-menu"> 
+     <li class="nav-item-desk"><a class="nav-link" href="style-your-wedding.html">Svadobné plány</a></li> 
+     <div class="vl hiddenVl"></div> 
+     <li class="nav-item-desk"><a class="nav-link" href="404.html">Bouquetes</a></li> 
+     <li class="nav-mobile"><a class="nav-link" href="404.html">Bouquetes</a></li> 
+    </ul> 
+   </nav>
+   <hr color="black" height="10px" size="2">
+  </header> 
+  <div id="preset-container"> 
+   <section> 
+    <div id="presetPreview"> 
+     <section class="featured-text"> 
+      <p class="featured-inspired">Inšpirujte sa</p>
+      <hr width="90%">
+      <p id="inspiration">Svadobná inšpirácia</p> 
+      <p class="inspired">V tomto kroku si môžete prejsť všetky časti tohto programu a zistiť, či je pre vás ten pravý.</p><button class="button-main" id="downButton">Pozrite si všetky časti</button>
+     </section> 
+     <section class="presetSlideshow">
+      <img alt="obrázok prezentácie" class="mySlides2" src="img/bridesmatesdecoration1.webp"> 
+      <img alt="obrázok prezentácie" class="mySlides2" src="img/bridesmatesdecoration2.webp"> 
+      <img alt="obrázok prezentácie" class="mySlides2" src="img/buttonholes1.webp">
+      <section class="slideShowPreset" style="width: 100%"> 
+       <div class="slider-cellActive white-cell" id="slid1" onclick="currentDiv(1)"></div> 
+       <div class="slider-cellActive white-cell" id="slid2" onclick="currentDiv(2)"></div> 
+       <div class="slider-cellActive white-cell" id="slid3" onclick="currentDiv(3)"></div> 
+      </section> 
+     </section> 
+    </div> 
+   </section> 
+  </div> <!--DESKTOP VERSION-->
+  <section class="gridPresetPreviewDesktop"> 
+   <section class="presetOptions"> 
+    <h6 class="underlineDLong">Časti tejto predvoľby</h6> 
+    <p class="activeOption" onclick="currentPresetSlide(1)">Kytica pre nevestu</p> 
+    <p class="activeOption" onclick="currentPresetSlide(2)">Pero pre svadobných hostí</p> 
+    <p class="activeOption" onclick="currentPresetSlide(3)">Výzdoba svadobnej sály</p> 
+    <p class="activeOption" onclick="currentPresetSlide(4)">Výzdoba kostola</p> 
+    <p class="activeOption" onclick="currentPresetSlide(5)">Dekorácie pre družičky</p> 
+    <p class="activeOption" onclick="currentPresetSlide(6)">Ostatné dekorácie</p> 
+    <section class="presetTextAdjust"> 
+     <div class="presetText"> 
+      <p class="underline">Možné možnosti</p>
+      <br>
+      <p class="possibleOptText">Budete si môcť vybrať z rôznych veľkostí kytíc</p> 
+     </div> 
+    </section> 
+    <section class="presetTextAdjust"> 
+     <div class="presetText"> 
+      <p class="underline">Možné možnosti</p>
+      <br>
+      <p class="possibleOptText">Ponúkame 3 kategórie. Perie pre ženícha, pre svedkov a svadobných hostí</p> 
+     </div> 
+    </section> 
+    <section class="presetTextAdjust"> 
+     <div class="presetText"> 
+      <p class="underline">Možné možnosti</p>
+      <br>
+      <p class="possibleOptText">Tá sa delí na strechu, steny a ostatné požadované časti</p> 
+     </div> 
+    </section> 
+    <section class="presetTextAdjust"> 
+     <div class="presetText"> 
+      <p class="underline">Možné možnosti</p>
+      <br>
+      <p class="possibleOptText">Tú možno rozdeliť na oltárne dekorácie, stoličky pre novomanželov a iné drobné dekorácie</p> 
+     </div> 
+    </section> 
+    <section class="presetTextAdjust"> 
+     <div class="presetText"> 
+      <p class="underline">Možné možnosti</p>
+      <br>
+      <p class="possibleOptText">Do tejto kategórie môžu patriť náramky a čelenky</p> 
+     </div> 
+    </section> 
+    <section class="presetTextAdjust"> 
+     <div class="presetText"> 
+      <p class="underline">Možné možnosti</p>
+      <br>
+      <p class="possibleOptText">Ako ďalšie dekorácie ponúkame fotostenu, polaroidový fotoaparát, uvítací stôl a plán sedenia</p> 
+     </div> 
+    </section> 
+   </section>
+   <img alt="Kytica" class="presetPictureDesktop" src="img/bouquet3.webp"> 
+   <img alt="Bouquetes" class="presetPictureDesktop" src="img/bouquet2.webp"> 
+   <img alt="Gombíkové dierky" class="presetPictureDesktop" src="img/buttonholes3.webp"> 
+   <img alt="Boutonniere" class="presetPictureDesktop" src="img/buttonholes1.webp"> 
+   <img alt="Kytica" class="presetPictureDesktop" src="img/weddingvenue1.webp"> 
+   <img alt="Bouquetes" class="presetPictureDesktop" src="img/weddingvenue3.webp"> 
+   <img alt="Výzdoba kostola" class="presetPictureDesktop" src="img/churchdecorations2.webp"> 
+   <img alt="Dekorácie stoličiek" class="presetPictureDesktop" src="img/churchdecorations1.webp"> 
+   <img alt="Dekorácie pre družičky" class="presetPictureDesktop" src="img/bridesmatesdecoration2.webp"> 
+   <img alt="Dekorácie pre družičky" class="presetPictureDesktop" src="img/bridesmatesdecoration1.webp"> 
+   <img alt="Dekorácie pre družičky" class="presetPictureDesktop" src="img/otherdecorations2.webp"> 
+   <img alt="Dekorácie pre družičky" class="presetPictureDesktop" src="img/otherdecorations3.webp">
+  </section> 
+  <section class="navigationButtonsDesktop">
+   <a href="style-your-wedding.html"> <button class="btn1-light">Späť na predvoľby dekorácií</button> </a> <a href="flower-availability.html"> <button class="btn1-light">Pozrite si, aké kvety sú k dispozícii</button> </a>
+  </section> 
+  <div class="carousel fadePreview"></div><!--Other decorations desktop pictures--><!-- MObile Version start MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx--><!--Bridesmaids decorations desktop pictures--><!--Church decorations desktop pictures--><!--Wedding hall decorations desktop pictures--><!-- part1--><!--Feather for wedding guest desktop pictures--><!--bouquete for bride desktop pictures--><!-- part2--><!-- possibleOptions text--> 
+  <section class="presetPartsTextMobile"> 
+   <h1>Prednastavené časti</h1> 
+  </section> <!--part3-->
+  <section class="bouquetePart"> 
+   <h2 class="underlineLong">Kytica pre nevestu</h2> 
+   <div class="swiper mySwiper"> 
+    <div class="swiper-wrapper"> 
+     <div class="swiper-slide">
+      <img alt="Kvetinové kytice" class="shownProduct" src="img/bouquet1.webp">
+      <p class="swipeText">Potiahnite prstom po stránke</p>
+      <svg class="swipeLine" height="14.916" viewBox="0 0 95.5 14.916" width="95.5">
+       <g data-name="Сгруппировать 62" id="Сгруппировать_62" transform="translate(388 1650.958) rotate(180)"> 
+        <g data-name="Сгруппировать 60" id="Сгруппировать_60"> 
+         <line data-name="Линия 66" fill="none" id="Линия_66" stroke="#fff" stroke-width="1" transform="translate(292.5 1643.5)" x2="95"></line> 
+         <line data-name="Линия 68" fill="none" id="Линия_68" stroke="#fff" stroke-width="1" transform="translate(371.5 1636.5)" x1="16" y1="7"></line> 
+         <line data-name="Линия 69" fill="none" id="Линия_69" stroke="#fff" stroke-width="1" transform="translate(371.5 1643.5)" x1="16" y2="7"></line> 
+        </g> 
+        <g data-name="Эллипс 17" fill="#fff" id="Эллипс_17" stroke="#fff" stroke-width="1" transform="translate(387 1643)"> 
+         <circle cx="0.5" cy="0.5" r="0.5" stroke="none"></circle> 
+         <circle cx="0.5" cy="0.5" fill="none"></circle> 
+        </g> 
+       </g>
+      </svg>
+     </div> 
+     <div class="swiper-slide">
+      <img alt="Kvetinové kytice" class="shownProduct" src="img/bouquet2.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="Kvetinové kytice" class="shownProduct" src="img/bouquet3.webp">
+     </div> 
+    </div> 
+   </div> 
+   <h3></h3> 
+   <section> 
+    <h4 class="underlineLong">Možné možnosti</h4> 
+    <p class="possibleOptionsText">Budete si môcť vybrať z rôznych veľkostí kytíc</p> 
+   </section> 
+  </section> 
+  <section class="bouquetePart"> 
+   <h2 class="underlineLong">Perie pre svadobných hostí</h2> 
+   <div class="swiper mySwiper"> 
+    <div class="swiper-wrapper"> 
+     <div class="swiper-slide">
+      <img alt="buttoniere" class="shownProduct" src="img/buttonholes1.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="buttoniere" class="shownProduct" src="img/buttonholes2.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="buttoniere" class="shownProduct" src="img/buttonholes3.webp">
+     </div> 
+    </div> 
+   </div> 
+   <h3></h3> 
+   <section> 
+    <h4 class="underlineLong">Možné možnosti</h4> 
+    <p class="possibleOptionsText">Ponúkame 3 kategórie. Perie pre ženícha, pre svedkov a svadobných hostí</p> 
+   </section> 
+  </section> <!--part5-->
+  <section class="bouquetePart"> 
+   <h2 class="underlineLong">Výzdoba svadobnej sály</h2> 
+   <div class="swiper mySwiper"> 
+    <div class="swiper-wrapper"> 
+     <div class="swiper-slide">
+      <img alt="Miesto konania svadby" class="shownProduct" src="img/weddingvenue1.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="Miesto konania svadby" class="shownProduct" src="img/weddingvenue2.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="Miesto konania svadby" class="shownProduct" src="img/weddingvenue3.webp">
+     </div> 
+    </div> 
+   </div> 
+   <h3></h3> 
+   <section> 
+    <h4 class="underlineLong">Možné možnosti</h4> 
+    <p class="possibleOptionsText">Tá sa delí na strechu, steny a ostatné požadované časti</p> 
+   </section> 
+  </section> 
+  <section class="bouquetePart"> 
+   <h2 class="underlineLong">Dekorácie pre družičky</h2> 
+   <div class="swiper mySwiper"> 
+    <div class="swiper-wrapper"> 
+     <div class="swiper-slide">
+      <img alt="družičky družičky dekorácie" class="shownProduct" src="img/bridesmatesdecoration1.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="dekorácie pre družičky" class="shownProduct" src="img/bridesmatesdecoration2.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="dekorácie pre družičky" class="shownProduct" src="img/bridesmatesdecoration3.webp">
+     </div> 
+    </div> 
+   </div> 
+   <h3></h3> 
+   <section> 
+    <h4 class="underlineLong">Možné možnosti</h4> 
+    <p class="possibleOptionsText">Do tejto kategórie môžu patriť náramky a čelenky</p> 
+   </section> 
+  </section> <!--part6-->
+  <section class="bouquetePart"> 
+   <h2 class="underlineLong">Ostatné dekorácie</h2> 
+   <div class="swiper mySwiper"> 
+    <div class="swiper-wrapper"> 
+     <div class="swiper-slide">
+      <img alt="Ostatné dekorácie" class="shownProduct" src="img/otherdecorations1.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="Ostatné dekorácie" class="shownProduct" src="img/otherdecorations2.webp">
+     </div> 
+     <div class="swiper-slide">
+      <img alt="Ostatné dekorácie" class="shownProduct" src="img/otherdecorations3.webp">
+     </div> 
+    </div> 
+   </div> 
+   <h3></h3> 
+   <section> 
+    <h4 class="underlineLong">Možné možnosti</h4> 
+    <p class="possibleOptionsText">Ako ďalšie dekorácie ponúkame fotostenu, polaroidový fotoaparát, uvítací stôl a plán sedenia</p> 
+   </section> 
+  </section> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> <!--/* Swiper JS */-->
+  <section class="sliderButtons"> 
+   <div class="slider-cell slider" id="slid1" onclick="currentPresetSlideMob(1)"></div> 
+   <div class="slider-cell slider" id="slid2" onclick="currentPresetSlideMob(2)"></div> 
+   <div class="slider-cell slider" id="slid3" onclick="currentPresetSlideMob(3)"></div> 
+   <div class="slider-cell slider" id="slid5" onclick="currentPresetSlideMob(4)"></div> 
+   <div class="slider-cell slider" id="slid6" onclick="currentPresetSlideMob(5)"></div> 
+  </section> 
+  <section class="navigationButtonsMobile">
+   <button class="btn1-light"> <a href="style-your-wedding.html">Predchádzajúci krok</a> </button> <button class="btn1-light"> <a href="flower-availability.html">Ďalší krok</a> </button>
+  </section> 
+  <footer class="footer-mobile"> 
+   <h5>Kontakt</h5> 
+   <h5>Sociálne médiá</h5> 
+   <div class="footercontent"> 
+    <p class="text-cont2">+421 915 548 878</p> 
+    <p class="text-cont2">kvetycemerica@<br>gmail.com</p> 
+   </div> 
+   <div class="footercontent">
+    <a aria-label="Facebook" href="https://www.facebook.com/kvetycemerica">
+     <svg class="someIcons" height="46.715" viewBox="0 0 47 46.715" width="47">
+      <path d="M55,31.5A23.5,23.5,0,1,0,27.828,54.715V38.293h-5.97V31.5h5.97V26.322c0-5.889,3.506-9.142,8.876-9.142a36.166,36.166,0,0,1,5.261.459v5.78H39c-2.919,0-3.829,1.812-3.829,3.67V31.5h6.517l-1.042,6.793H35.172V54.715A23.508,23.508,0,0,0,55,31.5Z" data-name="facebook-brands (1)" fill="#5a5a5a" id="facebook-brands_1_" transform="translate(-8 -8)"></path>
+     </svg></a><a aria-label="Instagram" href="https://www.instagram.com/kvety_cemerica/">
+     <svg class="someIcons" height="42.466" viewBox="0 0 42.475 42.466" width="42.475">
+      <path d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z" data-name="instagram-brands (1)" fill="#5a5a5a" id="instagram-brands_1_" transform="translate(0.075 -31.825)"></path>
+     </svg></a>
+   </div> 
+  </footer> 
+  <footer class="footer-desktop"> 
+   <h5>Kontakt</h5> 
+   <h5>Sociálne médiá</h5> 
+   <div></div> 
+   <div class="footercontent"> 
+    <p>+421 915 548 878</p> 
+    <p>kvetycemerica@gmail.com</p> 
+    <p>Priehradná 1875/4, Zubrohlava</p> 
+   </div> 
+   <div class="footericons-desktop">
+    <a aria-label="Facebook" href="https://www.facebook.com/kvetycemerica">
+     <svg class="someIcons desktopIcons" height="46.715" viewBox="0 0 47 46.715" width="47">
+      <path d="M55,31.5A23.5,23.5,0,1,0,27.828,54.715V38.293h-5.97V31.5h5.97V26.322c0-5.889,3.506-9.142,8.876-9.142a36.166,36.166,0,0,1,5.261.459v5.78H39c-2.919,0-3.829,1.812-3.829,3.67V31.5h6.517l-1.042,6.793H35.172V54.715A23.508,23.508,0,0,0,55,31.5Z" data-name="facebook-brands (1)" fill="#5a5a5a" id="facebook-brands_1_" transform="translate(-8 -8)"></path>
+     </svg></a><a aria-label="Instagram" href="https://www.instagram.com/kvety_cemerica/">
+     <svg class="someIcons desktopIcons" height="42.466" viewBox="0 0 42.475 42.466" width="42.475">
+      <path d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z" data-name="instagram-brands (1)" fill="#5a5a5a" id="instagram-brands_1_" transform="translate(0.075 -31.825)"></path>
+     </svg></a>
+   </div> 
+   <div class="footercontent">
+    <a href="404.html"><p>Podmienky používania</p></a><a href="404.html"><p>Cookies</p></a><a href="404.html"><p>Zásady ochrany osobných údajov</p></a>
+   </div> 
+  </footer> <!--Footer mobile-->
+  <section class="boringInfo">
+   <a href="404.html">Zásady ochrany osobných údajov</a> <a href="404.html">Podmienky používania</a> <a href="404.html">Zásady používania súborov cookie</a>
+  </section> 
+  <script defer src="main.js"></script> <!-- Footer desktop-->
+  <script defer src="presetPreview.js"></script> 
+ </body>
+</html>

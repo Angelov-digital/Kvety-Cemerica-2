@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en-US">
+ <head> <!--display-->
+  <meta charset="UTF-8"> 
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"> 
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"> 
+  <meta content="Vyberte si program svadobnej výzdoby" name="description"> <!--SEO-->
+  <meta content="Kvetiny, Kvetinové dekorácie, Svadobné programy, Svadobné dekorácie, Kvetinový ateliér" name="keywords"> 
+  <link href="style.css" rel="stylesheet"> 
+  <link href="img/favicon.webp" rel="shortcut icon" type="image/jpg"> <!--Link to css sheet-->
+  <title>Kvety Čemerica</title> 
+  <style>
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
+
+    body{
+        margin: 0;
+        align-items: center;
+    }
+    ul{
+        list-style-type: none; 
+   
+    }
+</style>
+ </head> 
+ <body onload="currentSlide(1)"> <!-- navigation bar-->
+  <header> 
+   <nav class="navbar"> 
+    <ul class="nav-logotype"> 
+     <div>
+      <a href="index.html"><img alt="logo" class="nav-logo" src="img/logo.svg"></a>
+     </div> 
+     <div class="vl"></div> 
+     <li class="nav-item"><a class="nav-link" href="index.html">Kvetinové štúdio</a></li> 
+    </ul> 
+    <ul class="nav-menu"> 
+     <li class="nav-item-desk"><a class="nav-link" href="style-your-wedding.html">Svadobné plány</a></li> 
+     <div class="vl hiddenVl"></div> 
+     <li class="nav-item-desk"><a class="nav-link" href="404.html">Bouquetes</a></li> 
+     <li class="nav-mobile"><a class="nav-link" href="404.hmtl">Bouquetes</a></li> 
+    </ul> 
+   </nav>
+   <hr color="black" height="10px" size="2">
+  </header> 
+  <div class="carousel fadePreview"></div> <!-- featured--><!-- Mobile Version start/ carousel -->
+  <div id="preset-container"> 
+   <section> 
+    <div id="presetPreview"> 
+     <section class="featured-text"> 
+      <p class="featured-inspired">Objavte</p>
+      <hr width="90%">
+      <p id="inspiration">Náš konfigurátor predvolieb</p> 
+      <p class="inspired">Vitajte v našom jedinečnom svadobnom konfigurátore, kde si môžete vybrať z mnohých možností, ktoré ponúkame, aby bol váš výnimočný deň presne taký, aký si želáte</p><button class="button-main" id="downButton">Zobraziť viac</button>
+     </section> 
+     <section class="presetSlideshow">
+      <img alt="obrázok prezentácie" class="mySlides2" src="img/bridesmatesdecoration1.webp"> 
+      <img alt="obrázok prezentácie" class="mySlides2" src="img/bridesmatesdecoration2.webp"> 
+      <img alt="obrázok prezentácie" class="mySlides2" src="img/buttonholes1.webp">
+      <section class="slideShowPreset" style="width: 100%"> 
+       <div class="slider-cellActive white-cell" id="slid1" onclick="currentDiv(1)"></div> 
+       <div class="slider-cellActive white-cell" id="slid2" onclick="currentDiv(2)"></div> 
+       <div class="slider-cellActive white-cell" id="slid3" onclick="currentDiv(3)"></div> 
+      </section> 
+     </section> 
+    </div> 
+   </section> 
+  </div> <!--DESKTOP VERSION-->
+  <section class="programs"> 
+   <div class="prgtxtcnt"> 
+    <div class="content-card-head"> 
+     <p class="headstyle1 underlineDLong">Naše predvoľby dekorácií</p> 
+    </div> 
+   </div> 
+   <div class="programs-container"> 
+    <div class="prog-it-cont">
+     <a href="presetParts.html" onclick="storeClickedProgram('program1')">
+      <div class="prog-img">
+       <img alt="ikona plus" class="whitePlus" src="img/program3.webp">
+       <div class="middle">
+        <svg class="bi-plus" viewBox="0 0 110.985 111" width="70%">
+         <g data-name="Сгруппировать 5" id="Сгруппировать_5" transform="translate(0)"> 
+          <rect data-name="Прямоугольник 5" fill="#fff" height="111" id="Прямоугольник_5" rx="3" transform="translate(52.5)" width="6"></rect> 
+          <rect data-name="Прямоугольник 6" fill="#fff" height="110.985" id="Прямоугольник_6" rx="3.597" transform="translate(110.985 51.896) rotate(90)" width="7.193"></rect> 
+         </g>
+        </svg>
+       </div> 
+      </div> 
+      <div class="prog-desc-frame"> 
+       <p class="title1">Kompletný svadobný program</p>
+       <hr width="70%">
+       <div class="prog-description"> 
+        <p>Ako už názov napovedá, tento program obsahuje dekorácie, ktoré sú nevyhnutnou súčasťou každej svadby. Máme pre vás všetko, od klasickej kytice pre nevestu až po nádherne naaranžované dekorácie na aute.Všetky možnosti je možné prispôsobiť podľa vašich preferencií.</p> 
+       </div> 
+      </div></a>
+    </div> 
+    <div class="prog-it-cont">
+     <a href="partialProgramme.html" onclick="storeClickedProgram('program2')">
+      <div class="prog-img">
+       <img alt="Ikona PLus" class="whitePlus" src="img/program2.webp">
+       <div class="middle">
+        <svg class="bi-plus" viewBox="0 0 110.985 111" width="70%">
+         <g data-name="Сгруппировать 5" id="Сгруппировать_5" transform="translate(0)"> 
+          <rect data-name="Прямоугольник 5" fill="#fff" height="111" id="Прямоугольник_5" rx="3" transform="translate(52.5)" width="6"></rect> 
+          <rect data-name="Прямоугольник 6" fill="#fff" height="110.985" id="Прямоугольник_6" rx="3.597" transform="translate(110.985 51.896) rotate(90)" width="7.193"></rect> 
+         </g>
+        </svg>
+       </div> 
+       <p class="title1">Čiastkový program</p>
+       <hr width="70%">
+      </div> 
+      <div class="prog-description"> 
+       <p>Či už chcete, aby vaša svadba vyzerala jednoduchšie, alebo hľadáte určité dekorácie, táto možnosť je pre vás vhodná. Všetky možnosti je možné prispôsobiť podľa vašich preferencií.</p> 
+      </div></a>
+    </div> 
+    <div class="prog-it-cont">
+     <a href="baseProgramme.html" onclick="storeClickedProgram('program3')">
+      <div class="prog-img">
+       <img alt="Ikona PLus" class="whitePlus" src="img/program1.webp">
+       <div class="middle">
+        <svg class="bi-plus" viewBox="0 0 110.985 111" width="auto">
+         <g data-name="Сгруппировать 5" id="Сгруппировать_5"> 
+          <rect data-name="Прямоугольник 5" fill="#fff" height="111" id="Прямоугольник_5" rx="3" transform="translate(52.5)" width="6"></rect> 
+          <rect data-name="Прямоугольник 6" fill="#fff" height="110.985" id="Прямоугольник_6" rx="3.597" transform="translate(110.985 51.896) rotate(90)" width="7.193"></rect> 
+         </g>
+        </svg>
+       </div> 
+       <p class="title1">Základný program</p>
+       <hr width="70%">
+      </div> 
+      <div class="prog-description"> 
+       <p>Ako už názov napovedá, tento program obsahuje dekorácie, ktoré sú nevyhnutnou súčasťou každej svadby. Objavte základné cenovo výhodné a starostlivo vytvorené produkty, ktoré potrebujete. Všetky možnosti je možné prispôsobiť podľa vašich preferencií. Tento program vám ponúka všetko potrebné pre dokonalú svadbu!</p> 
+      </div></a>
+    </div> 
+   </div> 
+  </section> 
+  <div class="spacer1"></div> <!-- featured END--><!-- promgrammes Desktop-->
+  <div class="spacer2"></div><!-- for plus thanks goes to https://icons.getbootstrap.com/icons/plus/--><!--<button class="info-button">more info</button>--> <!-- promgrammes Desktop END-->
+  <section id="programs-mobile"> 
+   <div class="slideshow"> 
+    <div class="mySlides fade"> 
+     <div class="slide-card"> 
+      <div class="prog-mobile-img-frame">
+       <img alt="Kompletný program" src="img/program3.webp">
+      </div> 
+      <div class="prog-mobile-text-frame"> 
+       <p class="headstyle1 underline">Kompletný program</p> 
+       <p class="text-cont2">V tejto predvoľbe nájdete všetko, čo poskytujeme</p> 
+       <p class="text-cont2">Začína od - 1500€</p> 
+       <div class="centerButtonFix">
+        <a href="presetParts.html"> <button class="btn1-light" id="prog-mobile-btn">Vyberte si tento program</button></a>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="mySlides fade"> 
+     <div class="slide-card"> 
+      <div class="prog-mobile-img-frame">
+       <img alt="Čiastkový program" src="img/program2.webp">
+      </div> 
+      <div class="prog-mobile-text-frame"> 
+       <p class="headstyle1">Čiastočná predvoľba</p>
+       <hr class="line-mobile">
+       <p class="text-cont2">Toto prednastavenie väčšiny našich produktov, ktoré sú medzi zákazníkmi obľúbené</p> 
+       <p class="text-cont2">Cena od - 1000€</p> 
+       <div class="centerButtonFix">
+        <a href="partialProgramme.html"> <button class="btn1-light" id="prog-mobile-btn">Vyberte si tento program</button></a>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="mySlides fade"> 
+     <div class="slide-card"> 
+      <div class="prog-mobile-img-frame">
+       <img alt="Základný program" src="img/program1.webp">
+      </div> 
+      <div class="prog-mobile-text-frame"> 
+       <p class="headstyle1">Základná predvoľba</p>
+       <hr class="line-mobile">
+       <p class="text-cont2">V našej základnej predvoľbe nájdete najbežnejšie časti</p> 
+       <p class="text-cont2">Cena od - 700€</p> 
+       <div class="centerButtonFix">
+        <a href="baseProgramme.html"> <button class="btn1-light" id="prog-mobile-btn">Vyberte si tento program</button></a>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="slider"> 
+     <div class="slider-cell" id="slid1" onclick="currentSlide(1)"></div> 
+     <div class="slider-cell" id="slid2" onclick="currentSlide(2)"></div> 
+     <div class="slider-cell" id="slid3" onclick="currentSlide(3)"></div> 
+    </div> 
+   </div> 
+  </section> 
+  <footer class="footer-mobile"> 
+   <h5>Kontakt</h5> 
+   <h5>Sociálne médiá</h5> 
+   <div class="footercontent"> 
+    <p class="text-cont2">+421 915 548 878</p> 
+    <p class="text-cont2">kvetycemerica@<br>gmail.com</p> 
+   </div> 
+   <div class="footercontent">
+    <a aria-label="Facebook" href="https://www.facebook.com/kvetycemerica">
+     <svg class="someIcons" height="46.715" viewBox="0 0 47 46.715" width="47">
+      <path d="M55,31.5A23.5,23.5,0,1,0,27.828,54.715V38.293h-5.97V31.5h5.97V26.322c0-5.889,3.506-9.142,8.876-9.142a36.166,36.166,0,0,1,5.261.459v5.78H39c-2.919,0-3.829,1.812-3.829,3.67V31.5h6.517l-1.042,6.793H35.172V54.715A23.508,23.508,0,0,0,55,31.5Z" data-name="facebook-brands (1)" fill="#5a5a5a" id="facebook-brands_1_" transform="translate(-8 -8)"></path>
+     </svg></a><a aria-label="Instagram" href="https://www.instagram.com/kvety_cemerica/">
+     <svg class="someIcons" height="42.466" viewBox="0 0 42.475 42.466" width="42.475">
+      <path d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z" data-name="instagram-brands (1)" fill="#5a5a5a" id="instagram-brands_1_" transform="translate(0.075 -31.825)"></path>
+     </svg></a>
+   </div> 
+  </footer> <!-- promgrammes END--><!--Footer mobile-->
+  <footer class="footer-desktop"> 
+   <h5>Kontakt</h5> 
+   <h5>Sociálne médiá</h5> 
+   <div></div> 
+   <div class="footercontent"> 
+    <p>+421 915 548 878</p> 
+    <p>kvetycemerica@gmail.com</p> 
+    <p>Priehradná 1875/4, Zubrohlava</p> 
+   </div> 
+   <div class="footericons-desktop">
+    <a aria-label="Facebook" href="https://www.facebook.com/kvetycemerica">
+     <svg class="someIcons desktopIcons" height="46.715" viewBox="0 0 47 46.715" width="47">
+      <path d="M55,31.5A23.5,23.5,0,1,0,27.828,54.715V38.293h-5.97V31.5h5.97V26.322c0-5.889,3.506-9.142,8.876-9.142a36.166,36.166,0,0,1,5.261.459v5.78H39c-2.919,0-3.829,1.812-3.829,3.67V31.5h6.517l-1.042,6.793H35.172V54.715A23.508,23.508,0,0,0,55,31.5Z" data-name="facebook-brands (1)" fill="#5a5a5a" id="facebook-brands_1_" transform="translate(-8 -8)"></path>
+     </svg></a><a aria-label="Instagram" href="https://www.instagram.com/kvety_cemerica/">
+     <svg class="someIcons desktopIcons" height="42.466" viewBox="0 0 42.475 42.466" width="42.475">
+      <path d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z" data-name="instagram-brands (1)" fill="#5a5a5a" id="instagram-brands_1_" transform="translate(0.075 -31.825)"></path>
+     </svg></a>
+   </div> 
+   <div class="footercontent">
+    <a href="404.html"><p>Podmienky používania</p></a><a href="404.html"><p>Cookies</p></a><a href="404.html"><p>Zásady ochrany osobných údajov</p></a>
+   </div> 
+  </footer> <!-- Footer desktop-->
+  <section class="boringInfo">
+   <a href="404.html">Zásady ochrany osobných údajov</a> <a href="404.html">Podmienky používania</a> <a href="404.html">Zásady používania súborov cookie</a>
+  </section> 
+  <script src="main.js"></script> 
+ </body>
+</html>

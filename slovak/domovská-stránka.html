@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en-US">
+ <head> <!--display-->
+  <meta charset="UTF-8"> 
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"> 
+  <meta content="width=device-width,initial-scale=1.0" name="viewport"> 
+  <meta content="Kvety Cemerica vitajte v našom kvetinovom ateliéri" name="description"> <!--SEO-->
+  <meta content="Kvetiny, Kvetinový ateliér, Kvetinové dekorácie, Svadobné dekorácie" name="keywords"> 
+  <link href="style.css" rel="stylesheet"> 
+  <title>Kvety Čemerica</title> <!--Link to css sheet-->
+  <link href="img/favicon.webp" rel="shortcut icon" type="image/jpg"> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEKWGLVPBP"></script> 
+  <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TEKWGLVPBP');
+    </script> 
+  <style>
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
+
+    body{
+        margin: 0;
+
+        align-items: center;
+    }
+    ul{
+        list-style-type: none; 
+    }
+</style><!-- Global site tag (gtag.js) - Google Analytics -->
+ </head> 
+ <body onload="currentSlide(1); chooseUsSlides(1); chooseUsMobileSlider(1)"> <!-- navigation bar-->
+  <header> 
+   <nav class="navbar"> 
+    <ul class="nav-logotype"> 
+     <div>
+      <a href="index.html"><img alt="logo" class="nav-logo" src="img/logo.svg"></a>
+     </div> 
+     <div class="vl"></div> 
+     <li class="nav-item"><a class="nav-link" href="index.html">Kvetinové štúdio</a></li> 
+    </ul> 
+    <ul class="nav-menu"> 
+     <li class="nav-item-desk"><a class="nav-link" href="style-your-wedding.html">Svadobné plány</a></li> 
+     <div class="vl hiddenVl"></div> 
+     <li class="nav-item-desk"><a class="nav-link" href="404.html">Bouquetes</a></li> 
+     <li class="nav-mobile"><a class="nav-link" href="404.html">Bouquetes</a></li> 
+    </ul> 
+   </nav>
+   <hr color="black" height="10px" size="2">
+  </header> 
+  <section id="featured-container"> 
+   <div id="featured"> 
+    <div class="featured-text"> 
+     <p class="featured-inspired">Inšpirujte sa</p>
+     <hr width="90%">
+     <p id="inspiration">Vitajte v našom ateliéri</p> 
+     <p class="inspired">Naplánujte si s nami svadbu svojich snov! Ako špecializovaná spoločnosť poskytujeme svadobné kvety a dekorácie všetkých druhov a pre všetky chute.</p><button class="button-main" id="downButton">Pozrite si naše produkty</button>
+    </div> 
+    <div class="videoframe">
+     <video autoplay="" id="video-cemerica" loop="" muted>
+      <source src="video/video-cemerica.mp4" type="video/mp4">
+     </video>
+    </div> 
+   </div> 
+   <div id="featured-mobile">
+    <video autoplay="" id="video-cemerica-mobile" loop="" muted>
+     <source src="video/video-cemerica.mp4" type="video/mp4">
+    </video>
+    <div class="featured-text"> 
+     <p class="featured-inspired">Inšpirujte sa</p> 
+     <p id="inspiration">Svadobná inšpirácia</p>
+     <hr width="90%">
+     <p class="inspired">Na našej webovej stránke nájdete pripravené balíky dekorácií spolu s možnosťou prispôsobiť si vlastnú predvoľbu dekorácie</p><a href="style-your-wedding.html"> <button class="btn1-light">Pozrite si naše produkty</button> </a>
+    </div> 
+   </div> 
+  </section> <!-- navigation bar END --><!-- featured-->
+  <section class="slideshow"> 
+   <div class="mySlides fade"> 
+    <div class="slide-card"> 
+     <article class="slide-card-nav"> 
+      <div class="content-card-head"> 
+       <p class="headstyle1 underlineLong">Kytica pre nevestu</p> 
+      </div> 
+     </article> 
+     <div class="presentation-content"> 
+      <div>
+       <img alt="Kytica" class="present-img" loading="lazy" src="img/bouquet2.webp">
+      </div> 
+      <div>
+       <img alt="Kytica" class="present-img" loading="lazy" src="img/bridesbouquete.webp">
+      </div> 
+      <div>
+       <img alt="Kytica" class="present-img" loading="lazy" src="img/bouquet4.webp">
+      </div> 
+     </div> 
+     <div class="slide-description-container"> 
+      <p class="present-description">Či už by ste chceli klasickú kvetinovú výzdobu, alebo dávate prednosť jedinečným farebným kvetom, ktoré vyniknú vo váš výnimočný deň, môžete si vybrať z našich prispôsobiteľných možností.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="mySlides fade"> 
+    <div class="slide-card"> 
+     <article class="slide-card-nav"> 
+      <div class="content-card-head"> 
+       <p class="headstyle1">Otvory na gombíky a chlopne</p>
+       <hr width="90%">
+      </div> 
+     </article> 
+     <div class="presentation-content"> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/buttonholes1.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/buttonholes2.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/buttonholes3.webp">
+      </div> 
+     </div> 
+     <div class="slide-description-container"> 
+      <p class="present-description">Sú známe ako menšia verzia svadobnej kytice a dopĺňajú každý elegantný oblek.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="mySlides fade"> 
+    <div class="slide-card"> 
+     <article class="slide-card-nav"> 
+      <div class="content-card-head"> 
+       <p class="headstyle1">Miesto konania svadby</p>
+       <hr width="90%">
+      </div> 
+     </article> 
+     <div class="presentation-content"> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/weddingvenue1.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/weddingvenue2.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/weddingvenue3.webp">
+      </div> 
+     </div> 
+     <div class="slide-description-container"> 
+      <p class="present-description">Pretože si uvedomujeme, aký dôležitý je príjemný pocit pre hostí a mladomanželov, poskytujeme rôzne druhy dekorácií pre svadobné miesto.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="mySlides fade"> 
+    <div class="slide-card"> 
+     <article class="slide-card-nav"> 
+      <div class="content-card-head"> 
+       <p class="headstyle1">Dekorácie pre družičky</p>
+       <hr width="90%">
+      </div> 
+     </article> 
+     <div class="presentation-content"> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/bridesmatesdecoration1.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/bridesmatesdecoration2.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/bridesmatesdecoration3.webp">
+      </div> 
+     </div> 
+     <div class="slide-description-container"> 
+      <p class="present-description">Zápästné korzety z jemnej saténovej mašle a vybrané kvety. Dodá im štýl a ženský vzhľad.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="mySlides fade"> 
+    <div class="slide-card"> 
+     <article class="slide-card-nav"> 
+      <div class="content-card-head"> 
+       <p class="headstyle1">Dekorácie pre auto</p>
+       <hr width="90%">
+      </div> 
+     </article> 
+     <div class="presentation-content"> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/cardecoration1.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/cardecoration2.webp">
+      </div> 
+     </div> 
+     <div class="slide-description-container"> 
+      <p class="present-description">Jednoduché, ale jemné ozdoby, ktoré dodajú vášmu autu eleganciu.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="mySlides fade"> 
+    <div class="slide-card"> 
+     <article class="slide-card-nav"> 
+      <div class="content-card-head"> 
+       <p class="headstyle1">Výzdoba kostola</p>
+       <hr width="90%">
+      </div> 
+     </article> 
+     <div class="presentation-content"> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/churchdecorations1.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/churchdecorations2.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/churchdecorations3.webp">
+      </div> 
+     </div> 
+     <div class="slide-description-container"> 
+      <p class="present-description">S týmito jednoduchými, ale chytľavými dekoráciami na stoličky a slávnostný stôl môžete asortovať bez toho, aby to bolo príliš veľa.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="mySlides fade"> 
+    <div class="slide-card"> 
+     <article class="slide-card-nav"> 
+      <div class="content-card-head"> 
+       <p class="headstyle1">Ostatné dekorácie</p>
+       <hr width="90%">
+      </div> 
+     </article> 
+     <div class="presentation-content"> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/otherdecorations1.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/otherdecorations2.webp">
+      </div> 
+      <div>
+       <img class="present-img" loading="lazy" src="img/otherdecorations3.webp">
+      </div> 
+     </div> 
+     <div class="slide-description-container"> 
+      <p class="present-description">Vylepšite vzhľad svojej svadby výberom niektorých z našich jednoduchých, ale efektných dekorácií</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="slider"> 
+    <div class="slider-cell cells7" id="slid1" onclick="currentSlide(1)"></div> 
+    <div class="slider-cell cells7" id="slid2" onclick="currentSlide(2)"></div> 
+    <div class="slider-cell cells7" id="slid3" onclick="currentSlide(3)"></div> 
+    <div class="slider-cell cells7" id="slid4" onclick="currentSlide(4)"></div> 
+    <div class="slider-cell cells7" id="slid5" onclick="currentSlide(5)"></div> 
+    <div class="slider-cell cells7" id="slid6" onclick="currentSlide(6)"></div> 
+    <div class="slider-cell cells7" id="slid7" onclick="currentSlide(7)"></div> 
+   </div> 
+  </section> <!-- featured END--><!-- presentation of products-->
+  <section class="styleYourWedding">
+   <a href="style-your-wedding.html"> <button class="btn1-light">Vytvorte si vlastný svadobný štýl</button> </a>
+  </section> <!-- END presentation of products--><!-- Style your wedding button-->
+  <section class="content-card"> 
+   <div class="content-card-frame"> 
+    <div class="content-card-nav"> 
+     <div class="content-card-head"> 
+      <p class="headstyle1 underlineDLong">Prečo si vybrať práve nás</p> 
+     </div> 
+     <div class="chooseus-nav"> 
+      <p class="titleChooseUs underlineD" onclick="chooseUsSlides(1)">Naše myslenie</p> 
+      <p class="titleChooseUs underlineD" onclick="chooseUsSlides(2)">Naše pracovisko</p> 
+      <p class="titleChooseUs underlineD" onclick="chooseUsSlides(3)">Naši partneri</p> 
+     </div> 
+    </div> 
+    <div class="chooseus-content"> 
+     <div class="chooseUsText"> 
+      <p class="text-cont">Sme tím špecializovaných floristov. Chápeme, aké dôležité je vyniknúť kreatívnym a zároveň zaujímavým spôsobom. Prichádzať s novými nápadmi a zlepšovať naše služby je len niekoľko z našich cieľov a každým krokom sa snažíme zachovať krásu a čistotu kvetov.</p> 
+     </div>
+     <img alt="Pracovisko" class="mindsetImg" loading="lazy" src="./img/mindset.webp" width="400px"> 
+     <img alt="Kvetinárstvo" class="mindsetImg" loading="lazy" src="./img/florist.webp" width="400px">
+    </div> 
+    <div class="chooseus-content "> 
+     <div class="chooseUsText"> 
+      <p class="text-cont">Pri každom svadobnom pláne neustále dbáme na to, aby boli kvety dodané v tých najlepších podmienkach, aby ste sa z nich mohli tešiť čo najdlhšie. Veríme, že udržateľnosť je kľúčová, čo znamená, že sa vyhýbame plastovým obalom, ako aj používaniu umelých kvetov. Dôležitou súčasťou starostlivosti o kvety je ich zalievanie dažďovou vodou, ktoré predlžuje ich životnosť a udržuje ich v dobrej kondícii.</p> 
+     </div>
+     <img class="mindsetImg" loading="lazy" src="./img/workplace1.webp" width="400px"> 
+     <img class="mindsetImg" loading="lazy" src="./img/workplace2.webp" width="400px">
+    </div> 
+    <div class="chooseus-content"> 
+     <section> 
+      <div class="chooseUsText"> 
+       <p class="text-contFix">Naša vášeň a záujem o toto odvetvie nás priviedli k miestnym partnerom, ktorí nám ponúkli partnerstvo a dali nám príležitosť rásť ako spoločnosť. Každý kvet, ktorý používame v našom ateliéri, pochádza z miestnej farmy Burina, kde sa nepoužívajú žiadne chemikálie, takže kvety vydržia dlhšie, rastú čisté a krásne. A pretože sa zameriavame na radosť zákazníkov, spolupracovala s nami aj pekáreň Laura, ktorá nám teraz poskytuje sladkosti pre ďalšie úsmevy.</p> 
+      </div> 
+     </section> 
+     <section>
+      <a href="https://www.farmaburina.sk/"><img class="mindsetImgThird" loading="lazy" src="./img/farm2.webp" width="400px"><p class="flowerNBakeryFix underlineDLong">Kvetinová farma Burina</p></a>
+     </section> 
+     <section>
+      <a href="https://instagram.com/lauri.torticky?igshid=YmMyMTA2M2Y="><img class="mindsetImgThird" loading="lazy" src="./img/bakery.webp" width="400px"><p class="flowerNBakeryFix underlineDLong">Pekáreň Laura &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></a>
+     </section> 
+    </div> 
+    <section class="chooseUsMobile"> 
+     <div class="chooseus-nav-mobile"> 
+      <div class="content-card-head"> 
+       <section class="chooseUsmobileHeadings"> 
+        <p class="headstyle1 whyChooseUsFix underline">Prečo si vybrať práve nás</p> 
+        <p class="headstyle2 whyChooseUsFix2">Naše myslenie</p> 
+       </section> 
+      </div> 
+     </div> 
+     <section class="chooseUsMobilePictures">
+      <img alt="Tím" class="mindsetPicture1" loading="lazy" src="img/florist.webp"> 
+      <img alt="Proces" class="mindsetPicture2" loading="lazy" src="img/mindset.webp">
+     </section> 
+     <section class="chooseUsMobileText"> 
+      <p class="present-description">Sme tím špecializovaných floristov. Chápeme, aké dôležité je vyniknúť kreatívnym a zároveň zaujímavým spôsobom. Prichádzať s novými nápadmi a zlepšovať naše služby je len niekoľko z našich cieľov a každým krokom sa snažíme zachovať krásu a čistotu kvetov.</p> 
+     </section> 
+    </section> 
+    <section class="chooseUsMobile"> 
+     <div class="chooseus-nav-mobile"> 
+      <div class="content-card-head"> 
+       <section class="chooseUsmobileHeadings"> 
+        <p class="headstyle1 whyChooseUsFix underline">Prečo si vybrať práve nás</p> 
+        <p class="headstyle2 whyChooseUsFix2">Naše pracovisko</p> 
+       </section> 
+      </div> 
+     </div> 
+     <section class="chooseUsMobilePictures">
+      <img alt="Kvetinová farma" class="mindsetPicture1" loading="lazy" src="img/workplace1.webp"> 
+      <img alt="Pekáreň" class="mindsetPicture2" loading="lazy" src="img/workplace2.webp">
+     </section> 
+     <section class="ourWorkpalceMobileText"> 
+      <p class="present-description">Pri každom svadobnom pláne neustále dbáme na to, aby boli kvety dodané v tých najlepších podmienkach, aby ste sa z nich mohli tešiť čo najdlhšie. Veríme, že udržateľnosť je kľúčová, čo znamená, že sa vyhýbame plastovým obalom, ako aj používaniu umelých kvetov. Dôležitou súčasťou starostlivosti o kvety je ich zalievanie dažďovou vodou, ktoré predlžuje ich životnosť a udržuje ich v dobrej kondícii.</p> 
+     </section> 
+    </section> 
+    <section class="chooseUsMobile"> 
+     <div class="chooseus-nav-mobile"> 
+      <div class="content-card-head"> 
+       <section class="chooseUsmobileHeadings"> 
+        <p class="headstyle1 whyChooseUsFix underline">Prečo si vybrať práve nás</p> 
+        <p class="headstyle2 whyChooseUsFix2">Naši partneri</p> 
+       </section> 
+      </div> 
+     </div> 
+     <section class="chooseUsMobilePictures">
+      <img alt="Pekáreň Laura" class="mindsetPicture1" loading="lazy" src="img/bakery.webp"> 
+      <img alt="Farma Burina" class="mindsetPicture2" loading="lazy" src="img/farm.webp">
+     </section> 
+     <section class="ourWorkpalceMobileText"> 
+      <p class="present-description">Naša vášeň a záujem o toto odvetvie nás priviedli k miestnym partnerom, ktorí nám ponúkli partnerstvo a dali nám príležitosť rásť ako spoločnosť. Každý kvet, ktorý používame v našom ateliéri, pochádza z miestnej farmy Burina, kde sa nepoužívajú žiadne chemikálie, takže kvety vydržia dlhšie, rastú čisté a krásne. A pretože sa zameriavame na radosť zákazníkov, spolupracovala s nami aj pekáreň Laura, ktorá nám teraz poskytuje sladkosti pre ďalšie úsmevy.</p> 
+     </section> 
+    </section> 
+    <section class="sliderChooseUs"> 
+     <div class="slider-cell chooseUs-slider" onclick="chooseUsMobileSlider(1)"></div> 
+     <div class="slider-cell chooseUs-slider" onclick="chooseUsMobileSlider(2)"></div> 
+     <div class="slider-cell chooseUs-slider" onclick="chooseUsMobileSlider(3)"></div> 
+    </section> 
+   </div>
+  </section> <!-- Style your wedding button END--><!-- choose us-->
+  <footer class="footer-mobile"> 
+   <h5><!-- choose us nav desktop-->Kontakt<!--choose us mobile--><!-- choose us nav mobile--><!--contuinue with workplace here--><!--contuinue with partners here--></h5> 
+   <h5>Sociálne médiá</h5> 
+   <div class="footercontent"> 
+    <p class="text-cont2">+421 915 548 878</p> 
+    <p class="text-cont2">kvetycemerica@<br>gmail.com</p> 
+   </div> 
+   <div class="footercontent">
+    <a aria-label="Facebook" href="https://www.facebook.com/kvetycemerica">
+     <svg class="someIcons" height="46.715" viewBox="0 0 47 46.715" width="47">
+      <path d="M55,31.5A23.5,23.5,0,1,0,27.828,54.715V38.293h-5.97V31.5h5.97V26.322c0-5.889,3.506-9.142,8.876-9.142a36.166,36.166,0,0,1,5.261.459v5.78H39c-2.919,0-3.829,1.812-3.829,3.67V31.5h6.517l-1.042,6.793H35.172V54.715A23.508,23.508,0,0,0,55,31.5Z" data-name="facebook-brands (1)" fill="#5a5a5a" id="facebook-brands_1_" transform="translate(-8 -8)"></path>
+     </svg></a><a aria-label="Instagram" href="https://www.instagram.com/kvety_cemerica/">
+     <svg class="someIcons" height="42.466" viewBox="0 0 42.475 42.466" width="42.475">
+      <path d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z" data-name="instagram-brands (1)" fill="#5a5a5a" id="instagram-brands_1_" transform="translate(0.075 -31.825)"></path>
+     </svg></a>
+   </div> 
+  </footer> <!--Footer mobile-->
+  <footer class="footer-desktop"> 
+   <h5>Kontakt</h5> 
+   <h5>Sociálne médiá</h5> 
+   <div></div> 
+   <div class="footercontent"> 
+    <p>+421 915 548 878</p> 
+    <p>kvetycemerica@gmail.com</p> 
+    <p>Priehradná 1875/4, Zubrohlava</p> 
+   </div> 
+   <div class="footericons-desktop">
+    <a aria-label="Facebook" href="https://www.facebook.com/kvetycemerica">
+     <svg class="someIcons desktopIcons" height="46.715" viewBox="0 0 47 46.715" width="47">
+      <path d="M55,31.5A23.5,23.5,0,1,0,27.828,54.715V38.293h-5.97V31.5h5.97V26.322c0-5.889,3.506-9.142,8.876-9.142a36.166,36.166,0,0,1,5.261.459v5.78H39c-2.919,0-3.829,1.812-3.829,3.67V31.5h6.517l-1.042,6.793H35.172V54.715A23.508,23.508,0,0,0,55,31.5Z" data-name="facebook-brands (1)" fill="#5a5a5a" id="facebook-brands_1_" transform="translate(-8 -8)"></path>
+     </svg></a><a aria-label="Instagram" href="https://www.instagram.com/kvety_cemerica/">
+     <svg class="someIcons desktopIcons" height="42.466" viewBox="0 0 42.475 42.466" width="42.475">
+      <path d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z" data-name="instagram-brands (1)" fill="#5a5a5a" id="instagram-brands_1_" transform="translate(0.075 -31.825)"></path>
+     </svg></a>
+   </div> 
+   <div class="footercontent">
+    <a href=""><p>Podmienky používania</p></a><a href=""><p>Cookies</p></a><a href=""><p>Zásady ochrany osobných údajov</p></a>
+   </div> 
+  </footer> 
+  <section class="boringInfo">
+   <a class="headstyle2" href="">Zásady ochrany osobných údajov</a> <a class="headstyle2" href="">Podmienky používania</a> <a class="headstyle2" href="">Zásady používania súborov cookie</a>
+  </section> <!-- Footer desktop-->
+  <script defer src="main.js"></script> 
+ </body>
+</html>

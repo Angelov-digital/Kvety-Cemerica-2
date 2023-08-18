@@ -4,8 +4,8 @@
   <meta charset="UTF-8"> 
   <meta content="IE=edge" http-equiv="X-UA-Compatible"> 
   <meta content="width=device-width,initial-scale=1.0" name="viewport"> 
-  <meta content="Kontaktujte nás pre ďalšiu spoluprácu" name="description"> <!--SEO-->
-  <meta content="Svadobné dekorácie,Kvety,Kvetinový ateliér,Kvetinové dekorácie,Kontakt" name="keywords"> 
+  <meta content="Error 404" name="description"> <!--SEO-->
+  <meta content="Kvetiny, Kvetinový ateliér, Kvetinové dekorácie, Svadobné dekorácie, Error 404" name="keywords"> 
   <link href="style.css" rel="stylesheet"> 
   <link href="styleForPresets.css" rel="stylesheet"> <!--Link to css sheet-->
   <link href="img/favicon.webp" rel="shortcut icon" type="image/jpg"> 
@@ -28,6 +28,11 @@
 
       body {
         margin: 0;
+        background-image: url(img/background.webp);
+        background-repeat: no-repeat, repeat;
+        background-size: 130%;
+        /*background-size: cover; /* Resize the background image to cover the entire container */
+        /*box-shadow: inset 0 0 20vmin 0 #585247;}*/
         align-items: center;
       }
       ul {
@@ -46,103 +51,21 @@
     <ul class="nav-menu"> 
      <li class="nav-item-desk"><a class="nav-link" href="style-your-wedding.html">Svadobné plány</a></li> 
      <div class="vl hiddenVl"></div> 
-     <li class="nav-item-desk"><a class="nav-link" href="404.html">Kytice</a></li> 
-     <li class="nav-mobile"><a class="nav-link" href="404.html">Kytice</a></li> 
+     <li class="nav-item-desk"><a class="nav-link" href="404.html">Bouquetes</a></li> 
+     <li class="nav-mobile"><a class="nav-link" href="404.html">Bouquetes</a></li> 
+     <a href="error-404.html" >English</a>
+     <a href="chyba-404.html">Slovak</a=>
     </ul> 
    </nav>
    <hr color="black" height="10px" size="2">
   </header> 
-  <div id="preset-container"> 
-   <section> 
-    <div id="presetPreview"> 
-     <section class="featured-text"> 
-      <p class="featured-inspired">Objavte</p>
-      <hr width="90%">
-      <p id="inspiration">Náš konfigurátor plánov</p> 
-      <p class="inspired">Toto je váš posledný krok k dokonalému svadobnému dňu. V tomto kroku môžete vidieť svoju konfiguráciu, tu si tiež môžete vybrať, či nás chcete kontaktovať, aby sme sa mohli porozprávať o vašich požiadavkách</p><button class="button-main" id="downButton">Pozrieť si moju predvoľbu</button>
-     </section> 
-     <section class="presetSlideshow">
-      <img alt="obrázok prezentácie" class="mySlides2" src="img/bridesmatesdecoration1.webp"> 
-      <img alt="obrázok prezentácie" class="mySlides2" src="img/bridesmatesdecoration2.webp"> 
-      <img alt="obrázok prezentácie" class="mySlides2" src="img/buttonholes1.webp">
-      <section class="slideShowPreset" style="width: 100%"> 
-       <div class="slider-cellActive white-cell" id="slid1" onclick="currentDiv(1)"></div> 
-       <div class="slider-cellActive white-cell" id="slid2" onclick="currentDiv(2)"></div> 
-       <div class="slider-cellActive white-cell" id="slid3" onclick="currentDiv(3)"></div> 
-      </section> 
-     </section> 
-    </div> 
-   </section> 
-  </div> <!--DESKTOP VERSION-->
-  <h6 class="underlineDLong configurationHeadingFix">Vaša konfigurácia</h6> 
-  <section class="contactDesktopHeadingsGrid"> 
-   <p>Vybraná predvoľba</p> 
-   <p>Dostupné kvety</p> 
-   <p>Kontaktný formulár</p> 
-  </section> <!-- featured END--><!-- contact desktop grid-->
-  <section class="contactDesktopGrid"> 
-   <section> 
-    <p>Kytica pre nevestu</p> 
-    <p>Pierka pre svadobných hostí</p> 
-    <p>Výzdoba svadobnej sály</p> 
-    <p>Výzdoba kostola</p> 
-    <p>Dekorácie auta</p> 
-    <p>Dekorácie pre družičky</p> 
-    <p>Ostatné dekorácie</p> 
-    <section>
-     <a href="flower-availability.html"> <button class="btn1-light buttonWidthFix">Späť na stránku dostupnosti kvetov</button> </a>
-    </section> 
-   </section> 
-   <section class="availableFlowersSlide">
-    <img alt="Kvety" class="availableFlowers" src="img/flowers/spring3.webp"> 
-    <img alt="Kvety" class="availableFlowers" src="img/flowers/spring2a.webp"> 
-    <img alt="Kvety" class="availableFlowers" src="img/flowers/spring1.webp">
-   </section> 
-   <section class="contactMobile"> 
-    <section class="contactMobileContent"> 
-     <p class="contactText">Ak nás budete kontaktovať, dostaneme vašu konfiguráciu a následne vám budeme vedieť poskytnúť cenovú ponuku</p> 
-     <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
-      <input class="contactInput" name="name" placeholder="Názov" required type="text"> 
-      <br> 
-      <input class="contactInput" name="email" placeholder="E-mail" required type="text"> 
-      <br> 
-      <input class="contactInput" name="phone" placeholder="Telefón" type="text"> 
-      <br> 
-      <input class="contactInput yourMessage" name="text" placeholder="Vaša správa" type="text">
-      <br> <button class="btn1-light contactButton" type="submit">Kontakt</button>
-     </form> 
-    </section> 
-   </section> 
+  <section class="errorContainer">
+   <img alt="chyba 404" class="errorPicture" src="img/404image.webp">
+  </section> <!--DESKTOP VERSION-->
+  <section class="errorContainerMobile">
+   <img alt="chyba 404" class="errorPictureMobile" src="img/404image.webp">
   </section> 
-  <div class="carousel fadePreview"></div> 
-  <section class="yourConfigurationSection"> 
-   <h1 class="underlineLong">Vaša konfigurácia</h1>
-   <br>
-   <h2 class="underline">Vybraná predvoľba</h2> 
-   <p class="chosenText">Kompletný program</p> 
-   <h2 class="underlineLong">Váš vybraný mesiac</h2> 
-   <p class="chosenText">Máj</p> 
-   <h2 class="underline">Kontaktný formulár</h2> 
-   <section class="contactMobile"> 
-    <section class="contactMobileContent"> 
-     <p class="contactText">Ak nás budete kontaktovať, dostaneme vašu konfiguráciu a následne vám budeme vedieť poskytnúť cenovú ponuku</p> 
-     <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
-      <input class="contactInput" name="Name" placeholder="Názov" required type="text"> 
-      <br> 
-      <input class="contactInput" name="email" placeholder="E-mail" required type="email"> 
-      <br> 
-      <input class="contactInput" name="phone" placeholder="Telefón" type="text"> 
-      <br> 
-      <input class="contactInput yourMessage" name="text" placeholder="Vaša správa" type="text">
-      <br> <button class="btn1-light contactButton" type="submit">Kontakt</button>
-     </form> 
-    </section> 
-   </section> 
-   <section class="navigationButtonsMobileContact">
-    <button class="btn1-light"> <a href="flower-availability.html">Predchádzajúci krok</a> </button>
-   </section> 
-  </section> <!-- MObile Version start MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx-->
-  <footer class="footer-mobile"> 
+  <footer class="footer-mobile footer-mobile-noBackground"> 
    <h5>Kontakt</h5> 
    <h5>Sociálne médiá</h5> 
    <div class="footercontent"> 
@@ -158,8 +81,8 @@
       <path d="M21.167,42.17A10.888,10.888,0,1,0,32.055,53.058,10.87,10.87,0,0,0,21.167,42.17Zm0,17.966a7.078,7.078,0,1,1,7.078-7.078A7.091,7.091,0,0,1,21.167,60.136ZM35.04,41.725a2.54,2.54,0,1,1-2.54-2.54A2.534,2.534,0,0,1,35.04,41.725ZM42.251,44.3c-.161-3.4-.938-6.415-3.43-8.9s-5.5-3.26-8.9-3.43c-3.506-.2-14.015-.2-17.521,0-3.392.161-6.406.938-8.9,3.421s-3.26,5.5-3.43,8.9c-.2,3.506-.2,14.015,0,17.521.161,3.4.938,6.415,3.43,8.9s5.5,3.26,8.9,3.43c3.506.2,14.015.2,17.521,0,3.4-.161,6.415-.938,8.9-3.43s3.26-5.5,3.43-8.9C42.45,58.307,42.45,47.808,42.251,44.3ZM37.721,65.575a7.166,7.166,0,0,1-4.037,4.037c-2.8,1.109-9.428.853-12.517.853s-9.732.246-12.517-.853a7.166,7.166,0,0,1-4.037-4.037C3.5,62.78,3.76,56.147,3.76,53.058s-.246-9.732.853-12.517A7.166,7.166,0,0,1,8.65,36.5c2.8-1.109,9.428-.853,12.517-.853S30.9,35.4,33.685,36.5a7.166,7.166,0,0,1,4.037,4.037c1.109,2.8.853,9.428.853,12.517S38.83,62.789,37.721,65.575Z" data-name="instagram-brands (1)" fill="#5a5a5a" id="instagram-brands_1_" transform="translate(0.075 -31.825)"></path>
      </svg></a>
    </div> 
-  </footer> 
-  <footer class="footer-desktop"> 
+  </footer> <!--mobile version-->
+  <footer class="footer-desktop footer-desktop-noBackground"> 
    <h5>Kontakt</h5> 
    <h5>Sociálne médiá</h5> 
    <div></div> 
@@ -180,11 +103,9 @@
    <div class="footercontent">
     <a href="404.html"><p>Podmienky používania</p></a><a href="404.html"><p>Cookies</p></a><a href="404.html"><p>Zásady ochrany osobných údajov</p></a>
    </div> 
-  </footer> <!--YOUR CONFIGURATION CONTENT-->
+  </footer> 
   <section class="boringInfo">
    <a href="404.html">Zásady ochrany osobných údajov</a> <a href="404.html">Podmienky používania</a> <a href="404.html">Zásady používania súborov cookie</a>
-  </section> 
-  <script defer src="main.js"></script> <!--Footer mobile-->
-  <script defer src="presetPreview.js"></script> <!-- Footer desktop-->
+  </section> <!--Footer mobile--><!-- Footer desktop-->
  </body>
 </html>

@@ -298,3 +298,17 @@ document.getElementById("englishBtn").addEventListener("click", function () {
 document.getElementById("slovakBtn").addEventListener("click", function () {
   switchLanguage("slovak");
 });
+// translation of a page
+const enButton = document.getElementById("enButton");
+const skButton = document.getElementById("skButton");
+
+enButton.addEventListener("click", loadEnglishContent);
+skButton.addEventListener("click", loadSlovakContent);
+
+function loadEnglishContent() {
+  history.pushState({}, "English", "homepage.html");
+}
+
+function loadSlovakContent() {
+  history.pushState({}, "Slovak", "domovská-stránka.html");
+}

@@ -79,30 +79,51 @@ function changeImage4() {
 }
 // month bar rotation + flower change
 
-function rotateMonthSummer() {
-  document.querySelector("#link-grid").style.transform = "rotate(136deg)";
-  document.getElementById("flower1").src = "img/flowers/summer4.webp";
-  document.getElementById("flower2").src = "img/flowers/summer2.webp";
-  document.getElementById("flower3").src = "img/flowers/summer3.webp";
+
+
+
+function rotate(angle) {
+  document.querySelector("#link-grid").style.transform = `rotate(${angle}deg)`;
+  
 }
-function rotateMonthAutum() {
-  document.querySelector("#link-grid").style.transform = "rotate(226deg)";
-  document.getElementById("flower1").src = "img/flowers/autum1.webp";
-  document.getElementById("flower2").src = "img/flowers/autum2.webp";
-  document.getElementById("flower3").src = "img/flowers/autum3.webp";
+
+const months = [
+  { name: "January", angle: -45 },
+  { name: "February", angle: -15 },
+  { name: "March", angle: 15 },
+  { name: "April", angle: 45 },
+  { name: "May", angle: 75 },
+  { name: "June", angle: 105 },
+  { name: "July", angle: 135 },
+  { name: "August", angle: 165 },
+  { name: "September", angle: -165 },
+  { name: "October", angle: -135 },
+  { name: "November", angle: -105 },
+  { name: "December", angle: -75 },
+];
+
+months.forEach((month) => {
+  window[`rotate${month.name}`] = function () {
+    rotate(month.angle);
+  };
+});
+function clickCheckbox(event, month) {
+  const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+  sessionStorage.setItem("selectedMonth", month); // Use "selectedMonth" consistently here
+  let selectedMonth = sessionStorage.getItem("selectedMonth");
+  console.log(selectedMonth); // Log the selected month
+  if (checkbox) {
+    checkbox.checked = true;
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((box) => {
+      if (box !== checkbox) {
+        box.checked = false;
+      }
+    });
+  }
 }
-function rotateMonthWinter() {
-  document.querySelector("#link-grid").style.transform = "rotate(316deg)";
-  document.getElementById("flower1").src = "img/flowers/winter1.webp";
-  document.getElementById("flower2").src = "img/flowers/winter2.webp";
-  document.getElementById("flower3").src = "img/flowers/winter3.webp";
-}
-function rotateMonthSpring() {
-  document.querySelector("#link-grid").style.transform = "rotate(46deg)";
-  document.getElementById("flower1").src = "img/flowers/spring1.webp";
-  document.getElementById("flower2").src = "img/flowers/spring2a.webp";
-  document.getElementById("flower3").src = "img/flowers/spring3.webp";
-}
+let selectedMonth = sessionStorage.getItem("selectedMonth");
+console.log(selectedMonth);
 // change flower names
 function changeTextSummer() {
   {
@@ -279,36 +300,4 @@ function storeClickedProgram(program) {
   console.log(selectedProgram);
 }
 
-let selectedProgram = sessionStorage.getItem("selectedProgram");
-console.log(selectedProgram); // Output: 'program1', 'program2', or 'program3' (check the browser console)
 
-function switchLanguage(language) {
-  if (language === "english") {
-    window.location.href = "contact.html"; // Redirect to the English version
-  } else if (language === "slovak") {
-    window.location.href = "contactSL.html"; // Redirect to the Slovak version
-  }
-}
-
-// Add click event listeners to the language switch buttons
-document.getElementById("englishBtn").addEventListener("click", function () {
-  switchLanguage("english");
-});
-
-document.getElementById("slovakBtn").addEventListener("click", function () {
-  switchLanguage("slovak");
-});
-// translation of a page
-const enButton = document.getElementById("enButton");
-const skButton = document.getElementById("skButton");
-
-enButton.addEventListener("click", loadEnglishContent);
-skButton.addEventListener("click", loadSlovakContent);
-
-function loadEnglishContent() {
-  history.pushState({}, "English", "homepage.html");
-}
-
-function loadSlovakContent() {
-  history.pushState({}, "Slovak", "domovská-stránka.html");
-}

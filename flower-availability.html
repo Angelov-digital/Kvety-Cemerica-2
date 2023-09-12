@@ -114,39 +114,79 @@
         <div class="wheel-section">
           <div class="wheel-frame">
             <img id="arrow" alt="arrow" src="img/arrow.webp" />
-
-            <div id="link-grid">
-              <div
-                class="link"
-                id="springlink"
-                onclick="rotateMonthSpring();changeImage1();changeTextSpring()"
-                value="Change"
-              ></div>
-              <div
-                class="link"
-                id="winterlink"
-                onclick="rotateMonthWinter();changeImage4();changeTextWinter()"
-                value="Change"
-              ></div>
-              <div
-                class="link"
-                id="summerlink"
-                onclick="rotateMonthSummer();changeImage2();changeTextSummer()"
-                value="Change"
-              ></div>
-              <div
-                class="link"
-                id="autumlink"
-                onclick="rotateMonthAutum();changeImage3();changeTextAutum()"
-                value="Change"
-              ></div>
+              <div id="link-grid">
+            
+             
+                <div id="circleElement" class="circleElement" onclick="rotateFebruary();changeImage4();changeTextWinter();clickCheckbox(event, 'February')">
+                  <input type="checkbox" name="my_checkbox_0" hidden />
+                </div>
+            
+        
+             
+                <div id="circleElement" onclick="rotateJanuary();changeImage4();changeTextWinter();clickCheckbox(event, 'January')">
+                  <input type="checkbox" name="my_checkbox_1" hidden />
+                </div>
+             
+            
+                <div id="circleElement" onclick="rotateDecember();changeImage4();changeTextWinter();clickCheckbox(event, 'December')">
+                  <input type="checkbox" name="my_checkbox_2" hidden />
+                </div>
+           
+              
+                <div id="circleElement" onclick="rotateNovember();changeImage3();changeTextAutum();clickCheckbox(event, 'November')">
+                  <input type="checkbox" name="my_checkbox_3" hidden />
+                </div>
+            
+              
+                <div id="circleElement" onclick="rotateOctober();changeImage3();changeTextAutum();clickCheckbox(event, 'October')">
+                  <input type="checkbox" name="my_checkbox_4" hidden />
+                </div>
+             
+            
+                <div id="circleElement" onclick="rotateSeptember();changeImage3();changeTextAutum();clickCheckbox(event, 'September')">
+                  <input type="checkbox" name="my_checkbox_5" hidden />
+                </div>
+           
+             
+                <div id="circleElement" onclick="rotateAugust();changeImage2();changeTextSummer();clickCheckbox(event, 'August')">
+                  <input type="checkbox" name="my_checkbox_6" hidden />
+                </div>
+             
+              
+                <div id="circleElement" onclick="rotateJuly();changeImage2();changeTextSummer();clickCheckbox(event, 'July')">
+                  <input type="checkbox" name="my_checkbox_7" hidden />
+                </div>
+            
+        
+              
+                <div id="circleElement" onclick="rotateJune();changeImage2();changeTextSummer();clickCheckbox(event, 'June')">
+                  <input type="checkbox" name="my_checkbox_8" hidden />
+                </div>
+              
+              
+                <div id="circleElement" onclick="rotateMay();changeImage1();changeTextSpring();clickCheckbox(event, 'May')">
+                  <input type="checkbox" name="my_checkbox_9" hidden />
+                </div>
+              
+             
+                <div id="circleElement" onclick="rotateApril();changeImage1();changeTextSpring();clickCheckbox(event, 'April')">
+                  <input type="checkbox" name="my_checkbox_10" hidden />
+                </div>
+              
+              
+                <div id="circleElement" onclick="rotateMarch();changeImage1();changeTextSpring();clickCheckbox(event, 'March')">
+                  <input type="checkbox" name="my_checkbox_11" hidden /></div>
+             
               <img
               alt="season wheel"
                 class="season-pics"
                 id="months"
                 src="img/seasons_wheel.webp"
               />
+            </ul>
+            
             </div>
+          
             <img class="season-pics" alt="spring" id="spring" src="img/spring.webp" />
             <img class="season-pics" alt="summer" id="summer" src="img/summer.webp" />
             <img class="season-pics" alt="autumn" id="autum" src="img/autum.webp" />

@@ -1,3 +1,50 @@
+
+#circleElement {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+}
+
+#circleElement:nth-child(1) {
+  transform: rotate(0deg) skewY(-60deg);
+}
+#circleElement:nth-child(2) {
+  transform: rotate(30deg) skewY(-60deg);
+}
+#circleElement:nth-child(3) {
+  transform: rotate(60deg) skewY(-60deg);
+}
+#circleElement:nth-child(4) {
+  transform: rotate(90deg) skewY(-60deg);
+}
+#circleElement:nth-child(5) {
+  transform: rotate(120deg) skewY(-60deg);
+}
+#circleElement:nth-child(6) {
+  transform: rotate(150deg) skewY(-60deg);
+}
+#circleElement:nth-child(7) {
+  transform: rotate(180deg) skewY(-60deg);
+}
+#circleElement:nth-child(8) {
+  transform: rotate(210deg) skewY(-60deg);
+}
+#circleElement:nth-child(9) {
+  transform: rotate(240deg) skewY(-60deg);
+}
+#circleElement:nth-child(10) {
+  transform: rotate(270deg) skewY(-60deg);
+}
+#circleElement:nth-child(11) {
+  transform: rotate(300deg) skewY(-60deg);
+}
+#circleElement:nth-child(12) {
+  transform: rotate(330deg) skewY(-60deg);
+}
 @font-face {
   font-family: sitka;
   src: url(fonts/Sitka.ttc);
@@ -773,45 +820,13 @@ p.underline {
     transform: rotate(46deg);
     transition: all 2s linear;
   }
-  .link {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    rotate: 0deg;
-    margin-right: auto;
-    margin-left: auto;
-    cursor: pointer;
-    z-index: 10;
-  }
+ 
   #months {
     transform: rotate(0deg);
     transition: all 2s linear;
   }
 
-  #springlink {
-    position: relative;
-    border-radius: 20vh 0 0 0;
-    background-color: rgba(72, 255, 0, 0);
-    z-index: 2;
-  }
-  #summerlink {
-    position: relative;
-    border-radius: 0 0 0 20vh;
-    background-color: rgba(255, 230, 0, 0);
-    z-index: 2;
-  }
-  #autumlink {
-    position: relative;
-    border-radius: 0 0 20vh 0;
-    background-color: rgba(255, 60, 0, 0);
-    z-index: 2;
-  }
-  #winterlink {
-    position: relative;
-    border-radius: 0 20vh 0 0;
-    background-color: rgba(0, 132, 255, 0);
-    z-index: 2;
-  }
+
   /*season-wheel-mobile-END*/
 }
 /*media-desktop*/
@@ -1224,6 +1239,7 @@ p.underline {
   /*season-Desktop*/
 
   /*season-wheel-Desktop*/
+  
   .season-title {
     position: relative;
     top: 100px;
@@ -1328,45 +1344,13 @@ p.underline {
     transform: rotate(46deg);
     transition: all 2s linear;
   }
-  .link {
-    position: absolute;
-    width: 250px;
-    height: 250px;
-    rotate: 0deg;
-    margin-right: auto;
-    margin-left: auto;
-    cursor: pointer;
-    z-index: 10;
-  }
+ 
   #months {
     transform: rotate(0deg);
     transition: all 2s linear;
   }
 
-  #springlink {
-    position: relative;
-    border-radius: 20vh 0 0 0;
-    background-color: rgba(72, 255, 0, 0);
-    z-index: 2;
-  }
-  #summerlink {
-    position: relative;
-    border-radius: 0 0 0 20vh;
-    background-color: rgba(255, 230, 0, 0);
-    z-index: 2;
-  }
-  #autumlink {
-    position: relative;
-    border-radius: 0 0 20vh 0;
-    background-color: rgba(255, 60, 0, 0);
-    z-index: 2;
-  }
-  #winterlink {
-    position: relative;
-    border-radius: 0 20vh 0 0;
-    background-color: rgba(0, 132, 255, 0);
-    z-index: 2;
-  }
+ 
   /*preset preview Desktop NEW CSS*/
   #preset-container {
     position: relative;

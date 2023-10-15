@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.webp" />
     <title>Kvety Cemerica</title>
   </head>
-  <body>
+  <body onload="getUserChoise();fillContactPageEN();">
     <style>
       a:link {
         text-decoration: none;
@@ -105,13 +105,7 @@
     </section>
     <section class="contactDesktopGrid">
       <section>
-        <p>Bouquet for bride</p>
-        <p>Feathers for wedding guests</p>
-        <p>Wedding hall decorations</p>
-        <p>Church decorations</p>
-        <p>Car decorations</p>
-        <p>Bridesmaids decorations</p>
-        <p>Other decorations</p>
+        <p class="contactChosenPreset"></p>
         <section>
           <a href="flower-availability.html">
             <button class="btn1-light buttonWidthFix">Back to flower availability</button>

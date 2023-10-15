@@ -296,8 +296,57 @@ function getSlides(n, slides, dots) {
 
 function storeClickedProgram(program) {
   sessionStorage.setItem("selectedProgram", program);
+}
+
+// Function to log the value of selectedProgram at all times
+function logSelectedProgram() {
   let selectedProgram = sessionStorage.getItem("selectedProgram");
   console.log(selectedProgram);
 }
 
+// Call logSelectedProgram whenever needed to log the value of selectedProgram
+logSelectedProgram();
 
+let userChoice ={};
+function getUserChoise() {
+  let selectedProgram = sessionStorage.getItem("selectedProgram");
+  let selectedMonth = sessionStorage.getItem("selectedMonth");
+  userChoise = {
+    "selectedProgram" : selectedProgram,
+    "selectedMonth" : selectedMonth,
+  };
+  console.log(userChoise);
+}
+function fillContactPage() {
+  let selectedProgram = sessionStorage.getItem("selectedProgram");
+  let partsOfPreset = [
+    "Bouquet for bride",
+    "Feather for wedding guests",
+    "Wedding hall decorations",
+    "Church decorations",
+    "Car decorations",
+    "Bridesmaids decorations",
+    "Other decorations",
+  ];
+
+  let numberOfItemsToDisplay = 0;
+
+  // Determine the number of items to display based on the selected program
+  if (selectedProgram === "base-programme") {
+    numberOfItemsToDisplay = 4;
+  } else if (selectedProgram === "full-programme") {
+    numberOfItemsToDisplay = 6;
+  } else if (selectedProgram === "partial-programme") {
+    numberOfItemsToDisplay = 5;
+  }
+
+  // Select the container where you want to add the <p> elements
+  let container = document.getElementById("contactChosenPreset");
+
+  // Loop to create and append the <p> elements
+  for (let i = 0; i < numberOfItemsToDisplay; i++) {
+    let newParagraph = document.createElement("p");
+    newParagraph.textContent = partsOfPreset[i];
+    container.appendChild(newParagraph);
+  }
+}

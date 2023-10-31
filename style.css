@@ -768,6 +768,7 @@ p.underline {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    overflow-y: scroll;
   }
   .flower-frame {
     max-width: 20vh;
@@ -1286,7 +1287,7 @@ p.underline {
     height: 70vh;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    overflow-y: scroll;
     justify-content: center;
   }
   .flower-frame {

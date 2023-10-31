@@ -38,7 +38,7 @@
       }
     </style>
   </head>
-  <body onload="hideOptions()">
+  <body onload="showCurrentMonthFlowers()">
     <!-- navigation bar-->
     <header>
       <nav class="navbar">
@@ -99,64 +99,65 @@
           <div class="wheel-frame">
             <img alt="šípka" id="arrow" src="img/arrow.webp" />
             <div id="link-grid">
-              <div id="circleElement" class="circleElement" onclick="rotateFebruary();changeImage4();changeTextWinter();clickCheckbox(event, 'February')">
+              
+              <div id="circleElement" class="circleElement" onclick="updateImages('February');rotateFebruary();changeImage4();changeTextWinter();clickCheckbox(event, 'February')">
                 <input type="checkbox" name="my_checkbox_0" hidden />
               </div>
           
       
            
-              <div id="circleElement" onclick="rotateJanuary();changeImage4();changeTextWinter();clickCheckbox(event, 'January')">
+              <div id="circleElement" onclick="updateImages('January');rotateJanuary();changeImage4();changeTextWinter();changeFlowersJanuary();clickCheckbox(event, 'January')">
                 <input type="checkbox" name="my_checkbox_1" hidden />
               </div>
            
           
-              <div id="circleElement" onclick="rotateDecember();changeImage4();changeTextWinter();clickCheckbox(event, 'December')">
+              <div id="circleElement" onclick="updateImages('December');rotateDecember();changeImage4();changeTextWinter();changeFlowersDecember();clickCheckbox(event, 'December')">
                 <input type="checkbox" name="my_checkbox_2" hidden />
               </div>
          
             
-              <div id="circleElement" onclick="rotateNovember();changeImage3();changeTextAutum();clickCheckbox(event, 'November')">
+              <div id="circleElement" onclick="updateImages('November');rotateNovember();changeImage3();changeTextAutum();clickCheckbox(event, 'November')">
                 <input type="checkbox" name="my_checkbox_3" hidden />
               </div>
           
             
-              <div id="circleElement" onclick="rotateOctober();changeImage3();changeTextAutum();clickCheckbox(event, 'October')">
+              <div id="circleElement" onclick="updateImages('October');rotateOctober();changeImage3();changeTextAutum();clickCheckbox(event, 'October')">
                 <input type="checkbox" name="my_checkbox_4" hidden />
               </div>
            
           
-              <div id="circleElement" onclick="rotateSeptember();changeImage3();changeTextAutum();clickCheckbox(event, 'September')">
+              <div id="circleElement" onclick="updateImages('September');rotateSeptember();changeImage3();changeTextAutum();clickCheckbox(event, 'September')">
                 <input type="checkbox" name="my_checkbox_5" hidden />
               </div>
          
            
-              <div id="circleElement" onclick="rotateAugust();changeImage2();changeTextSummer();clickCheckbox(event, 'August')">
+              <div id="circleElement" onclick="updateImages('August');rotateAugust();changeImage2();changeTextSummer();updateImages('August');clickCheckbox(event, 'August')">
                 <input type="checkbox" name="my_checkbox_6" hidden />
               </div>
            
             
-              <div id="circleElement" onclick="rotateJuly();changeImage2();changeTextSummer();clickCheckbox(event, 'July')">
+              <div id="circleElement" onclick="updateImages('July');rotateJuly();changeImage2();changeTextSummer();clickCheckbox(event, 'July')">
                 <input type="checkbox" name="my_checkbox_7" hidden />
               </div>
           
       
             
-              <div id="circleElement" onclick="rotateJune();changeImage2();changeTextSummer();clickCheckbox(event, 'June')">
+              <div id="circleElement" onclick="updateImages('June');rotateJune();changeImage2();changeTextSummer();clickCheckbox(event, 'June')">
                 <input type="checkbox" name="my_checkbox_8" hidden />
               </div>
             
             
-              <div id="circleElement" onclick="rotateMay();changeImage1();changeTextSpring();clickCheckbox(event, 'May')">
+              <div id="circleElement" onclick="updateImages('May');rotateMay();changeImage1();changeTextSpring();clickCheckbox(event, 'May')">
                 <input type="checkbox" name="my_checkbox_9" hidden />
               </div>
             
            
-              <div id="circleElement" onclick="rotateApril();changeImage1();changeTextSpring();clickCheckbox(event, 'April')">
+              <div id="circleElement" onclick="updateImages('April');rotateApril();changeImage1();changeTextSpring();updateImages('April');clickCheckbox(event, 'April')">
                 <input type="checkbox" name="my_checkbox_10" hidden />
               </div>
             
             
-              <div id="circleElement" onclick="rotateMarch();changeImage1();changeTextSpring();clickCheckbox(event, 'March')">
+              <div id="circleElement" onclick="updateImages('March');rotateMarch();changeImage1();changeTextSpring();clickCheckbox(event, 'March')">
                 <input type="checkbox" name="my_checkbox_11" hidden /></div>
            
               <img alt="sezónne koleso" class="season-pics" id="months" src="img/seasons_wheel.webp" />
@@ -169,19 +170,13 @@
           </div>
         </div>
       </section>
-      <section class="flowers-container">
+      <section class="flowers-container" id="english-rose2">
         <div class="flower-frame" id="english-rose">
-          <img alt="kvety" class="flower" id="flower1" src="img/flowers/spring1.webp" />
-          <p class="flower-name" id="flowerName1">Lisianthus</p>
+          <img src="img/flowers/aprilwebp/Lilac.webp" alt="kvety" class="flower" id="flower1" />
+          <p class="flower-name" id="flowerName1"></p>
         </div>
-        <div class="flower-frame" id="">
-          <img alt="kvety" class="flower" id="flower2" src="img/flowers/spring2a.webp" />
-          <p class="flower-name" id="flowerName2">Biela ruža</p>
-        </div>
-        <div class="flower-frame" id="">
-          <img alt="kvety" class="flower" id="flower3" src="img/flowers/spring3.webp" />
-          <p class="flower-name" id="flowerName3">Anglická ruža</p>
-        </div>
+
+       
       </section>
     </section>
     <!-- season wheel --><!-- MObile Version start/ carousel -->

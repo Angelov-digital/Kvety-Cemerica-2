@@ -14,6 +14,7 @@ startCarousel = () => {
   if (index > images.length - 1) index = 0;
 };
 //CArousel for preset preview end
+
 //Preset preview slideshow  thanks goes again to https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_dots2
 var slideIndex2 = 1;
 showDivs(slideIndex2);
@@ -167,19 +168,121 @@ function changeTextAutum() {
     element.innerHTML = "Modrý bodlák";
   }
 }
-function changeTextWinter() {
-  {
-    var element = document.getElementById("flowerName1");
-    element.innerHTML = "Winter Rose";
+function showCurrentMonthFlowers(){
+  var currentMonth = new Date().toLocaleString('default', { month: 'long' });
+  const functionCall = `rotate${currentMonth}();`;
+  eval(functionCall);
+updateImages(currentMonth);
+}
+
+var monthsData = {
+  December: [
+    "img/flowers/december/Dhalia.webp",
+    "img/flowers/december/English rose.webp",
+    "img/flowers/december/Lisianthus.webp"
+  ],
+  April: [
+    "img/flowers/april/Lilac.webp",
+    "img/flowers/april/Ranunculus.webp"
+  ],
+  August: [
+    "img/flowers/august/Chamelaucium.webp",
+    "img/flowers/august/Cinia.webp",
+    "img/flowers/august/Leander.webp",
+    "img/flowers/august/Lilac.webp",
+    "img/flowers/august/Limonium.webp",
+    "img/flowers/august/Tanacetum.webp",
+    "img/flowers/august/Eringium.webp",
+  ],
+  January: [
+    "img/flowers/february/English rose.webp",
+    "img/flowers/february/Hellebore.webp",
+    "img/flowers/february/Lisianthus.webp",
+  ],
+  February: [
+    "img/flowers/february/English rose.webp",
+    "img/flowers/february/Hellebore.webp",
+    "img/flowers/february/Lisianthus.webp",
+  ],
+  July: [
+    "img/flowers/july/Chamelaucium.webp",
+    "img/flowers/july/Astrania.webp",
+    "img/flowers/july/Cinia.webp",
+    "img/flowers/july/Leander.webp",
+    "img/flowers/july/Lilac.webp",
+    "img/flowers/july/Limonium.webp",
+    "img/flowers/july/peony.webp",
+    "img/flowers/july/Tanacetum.webp",
+    "img/flowers/july/Eringium.webp",
+  ],
+  June: [
+    "img/flowers/june/Chamelaucium.webp",
+    "img/flowers/june/Astrania.webp",
+    "img/flowers/june/Lilac.webp",
+    "img/flowers/june/Ranunculus.webp",
+    "img/flowers/june/Peony.webp",
+    "img/flowers/june/Tanacetum.webp",
+    "img/flowers/june/Eringium.webp",
+  ],
+  May: [
+    "img/flowers/may/Lilac.webp",
+    "img/flowers/may/Ranunculus.webp",
+  ],
+  March: [
+    "img/flowers/february/English rose.webp",
+    "img/flowers/february/Hellebore.webp",
+    "img/flowers/february/Lisianthus.webp",
+  ],
+  November: [
+    "img/flowers/november/Dhalia.webp",
+    "img/flowers/november/English rose.webp",
+  ],
+  October: [
+    "img/flowers/november/Dhalia.webp",
+    "img/flowers/november/English rose.webp",
+  ],
+  September: [
+    "img/flowers/september/Cinia.webp",
+    "img/flowers/september/Leander.webp",
+    "img/flowers/september/Limonium.webp",
+  ],
+};
+
+// Function to update the displayed images based on the selected month
+function updateImages(selectedMonth) {
+  let flowerContainer = document.getElementById("english-rose2");
+
+  // Clear the existing images in the container
+  flowerContainer.innerHTML = '';
+
+  if (monthsData.hasOwnProperty(selectedMonth)) {
+    var monthImages = monthsData[selectedMonth];
+
+    // Loop through the image sources for the selected month and create and append images
+    for (let i = 0; i < monthImages.length; i++) {
+      let flowerFrame = document.createElement("div");
+      flowerFrame.className = "flower-frame";
+
+      let newFlowerImg = document.createElement("img");
+      newFlowerImg.src = monthImages[i];
+      newFlowerImg.alt = "flowers";
+      newFlowerImg.className = "flower";
+
+      let flowerName = document.createElement("p");
+      flowerName.className = "flower-name";
+      let imageName = monthImages[i].split('/').pop().replace(".webp", "");
+      flowerName.textContent = imageName;
+
+      flowerFrame.appendChild(newFlowerImg);
+      flowerFrame.appendChild(flowerName);
+      flowerContainer.appendChild(flowerFrame);
+    }
   }
-  {
-    var element = document.getElementById("flowerName2");
-    element.innerHTML = "Plevel Krásný";
-  }
-  {
-    var element = document.getElementById("flowerName3");
-    element.innerHTML = "Bělavka úžasná";
-  }
+}
+
+// Function to call updateImages based on the selected month
+function displayImagesForMonth(selectedMonth) {
+  updateImages(selectedMonth);
 }
 
 // choose us 3 ailes

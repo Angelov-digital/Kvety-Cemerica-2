@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.webp" />
     <title>Kvety Cemerica</title>
   </head>
-  <body onload="getUserChoise();fillContactPageEN();">
+  <body onload="getUserChoise();fillContactPresetOptions('en');fillContactFlowers();displayChosenMonthMobile('en')">
     <style>
       a:link {
         text-decoration: none;
@@ -143,9 +143,9 @@
       <h1 class="underlineLong">Your configuration</h1>
       <br />
       <h2 class="underline">Chosen preset</h2>
-      <p class="chosenText">Complete programme</p>
+      <p class="contactChosenPreset chosenText"></p>
       <h2 class="underlineLong">Your chosen month</h2>
-      <p class="chosenText">May</p>
+      <p class="chosenText" id="chosenMonthEn"></p>
       <h2 class="underline">Contact form</h2>
       <section class="contactMobile">
         <section class="contactMobileContent">

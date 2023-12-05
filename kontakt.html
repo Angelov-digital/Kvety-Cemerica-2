@@ -14,7 +14,7 @@
     <link href="img/favicon.webp" rel="shortcut icon" type="image/jpg" />
     <title>Kvety Čemerica</title>
   </head>
-  <body onload="getUserChoise();fillContactPageSL();">
+  <body onload="getUserChoise();fillContactPresetOptions('sl'); displayChosenMonthMobile('sl')">
     <style>
       a:link {
         text-decoration: none;
@@ -50,8 +50,8 @@
         <ul class="nav-menu">
           <li class="nav-item-desk"><a class="nav-link" href="style-your-wedding.html">Svadobné plány</a></li>
           <div class="vl hiddenVl"></div>
-          <li class="nav-item-desk"><a class="nav-link" href="404.html">Kytice</a></li>
-          <li class="nav-mobile"><a class="nav-link" href="404.html">Kytice</a></li>
+          <li class="nav-item-desk"><a class="nav-link" href="chyba-404.html">Kytice</a></li>
+          <li class="nav-mobile"><a class="nav-link" href="chyba-404.html">Kytice</a></li>
           <a href="contact.html">English</a>
           <a href="kontakt.html">Slovak</a>
         </ul>
@@ -94,7 +94,7 @@
     <!-- featured END--><!-- contact desktop grid-->
     <section class="contactDesktopGrid">
       <section>
-        <p id="contactChosenPresetSL">12312</p>
+        <p class="contactChosenPreset"></p>
         <section>
           <a href="flower-availability.html">
             <button class="btn1-light buttonWidthFix">Späť na stránku dostupnosti kvetov</button>
@@ -128,12 +128,13 @@
     <div class="carousel fadePreview"></div>
     <section class="yourConfigurationSection">
       <h1 class="underlineLong">Vaša konfigurácia</h1>
-      <p class="contactChosenPresetSL"></p>
+      
       <br />
       <h2 class="underline">Vybraná predvoľba</h2>
+      <p class="contactChosenPreset chosenText"></p>
       <p class="chosenText">Kompletný program</p>
       <h2 class="underlineLong">Váš vybraný mesiac</h2>
-      <p class="chosenText">Máj</p>
+      <p class="chosenText" id="chosenMonthSl"></p>
       <h2 class="underline">Kontaktný formulár</h2>
       <section class="contactMobile">
         <section class="contactMobileContent">
@@ -218,14 +219,14 @@
         ></a>
       </div>
       <div class="footercontent">
-        <a href="404.html"><p>Podmienky používania</p></a><a href="404.html"><p>Cookies</p></a
+        <a href="chyba-404.html"><p>Podmienky používania</p></a><a href="chyba-404.html"><p>Cookies</p></a
         ><a href="404.html"><p>Zásady ochrany osobných údajov</p></a>
       </div>
     </footer>
     <!--YOUR CONFIGURATION CONTENT-->
     <section class="boringInfo">
-      <a href="404.html">Zásady ochrany osobných údajov</a> <a href="404.html">Podmienky používania</a>
-      <a href="404.html">Zásady používania súborov cookie</a>
+      <a href="chyba-404.html">Zásady ochrany osobných údajov</a> <a href="chyba-404.html">Podmienky používania</a>
+      <a href="chyba-404.html">Zásady používania súborov cookie</a>
     </section>
     <script defer src="main.js"></script>
     <!--Footer mobile-->

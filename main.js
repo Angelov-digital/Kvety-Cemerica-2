@@ -1,21 +1,4 @@
-//CAROUSEL for preset preview thanks goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx
-var images = ["img/bouquet1.webp", "img/bouquet2.webp", "img/bouquet3.webp"];
-var carousel = document.querySelector(".carousel");
-var interval = setInterval(function () {
-  startCarousel();
-}, 3000);
-var index = 1;
 
-startCarousel = () => {
-  carousel.style.backgroundImage = `url(${images[index++]})`;
-  carousel.classList.remove("fade");
-  void carousel.offsetWidth;
-  carousel.classList.add("fade");
-  if (index > images.length - 1) index = 0;
-};
-//CArousel for preset preview end
-
-//Preset preview slideshow  thanks goes again to https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_dots2
 var slideIndex2 = 1;
 showDivs(slideIndex2);
 

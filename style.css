@@ -193,21 +193,6 @@ p.underline {
   font-size: 1.4rem;
   margin: 0;
 }
-/*Mobile carousel style start*/
-/* CAROUSEL*/
-.carousel {
-  aspect-ratio: 1/1;
-  background-size: cover;
-  background-position: center;
-  background-image: url(img/bouquet1.webp);
-}
-.fadePreview {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 0.7s;
-  animation-name: fade;
-  animation-duration: 0.7s;
-}
-/*Mobile carousel style end*/
 /*buttons*/
 .button-main {
   position: absolute;
@@ -1516,8 +1501,7 @@ p.underline {
 
 /* hiding mobile elements for Making desktop ver */
 @media screen and (min-width: 768px) {
-  .footer-mobile,
-  .carousel {
+  .footer-mobile {
     display: none;
   }
 }

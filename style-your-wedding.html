@@ -10,7 +10,11 @@
     <meta name="keywords" content="Wedding decorations,Flowers, Flower atelier,Flower decorations, Wedding programmes">
     <!--Link to css sheet-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForPresets.css" />
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.webp"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.webp" />
     <title>Kvety Cemerica</title>
     
 </head>
@@ -29,7 +33,7 @@
    
     }
 </style>
-<body onload="currentSlide(1)">
+<body onload="currentSlide(1);currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);showCurrentMonthFlowers();getUserChoise();fillContactPresetOptions('en');fillContactFlowers();displayChosenMonthMobile('en')">
     <!-- navigation bar-->
     <header>
         <nav class="navbar">
@@ -264,7 +268,540 @@
 
 </section>
 <!-- promgrammes END-->    
+<!-- START OF ADDING PROGRAMMES / full programme-->
+<section class="gridPresetPreviewDesktop">
+    <section class="presetOptions">
+      <h6 class="underlineDLong">Parts of this preset</h6>
+      <p class="activeOption" onclick="currentPresetSlide(1)">Bouquet for bride</p>
+      <p class="activeOption" onclick="currentPresetSlide(2)">Feather for wedding guests</p>
+      <p class="activeOption" onclick="currentPresetSlide(3)">Wedding hall decorations</p>
+      <p class="activeOption" onclick="currentPresetSlide(4)">Church decorations</p>
+      <p class="activeOption" onclick="currentPresetSlide(5)">Car decorations</p>
+      <p class="activeOption" onclick="currentPresetSlide(6)">Bridesmaids decorations</p>
+      <p class="activeOption" onclick="currentPresetSlide(7)">Other decorations</p>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">You will be able to choose from different bouquet sizes</p>
+        </div>
+      </section>
+      <!-- copy from here start-->
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">We offer 3 categories. Feathers for groom, for witnesses and wedding guests</p>
+        </div>
+      </section>
+      <!-- copy from here end-->
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">This divides into- roof, walls and other requested parts</p>
+        </div>
+      </section>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">
+            This can be divided into altar decorations, chairs for newlyweds and other small decorations
+          </p>
+        </div>
+      </section>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">This category varies from each car type and is a matter of consultation</p>
+        </div>
+      </section>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">This category can include bracelets and headbands</p>
+        </div>
+      </section>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">
+            As our other decorations, we offer photo wall, polaroid camera, welcome table and seating plan
+          </p>
+        </div>
+      </section>
+    </section>
+    <!--bouquete for bride desktop pictures-->
+    <img class="presetPictureDesktop" src="img/bouquet3.webp" alt="Bouquet" />
+    <img class="presetPictureDesktop" src="img/bouquet2.webp" alt="Bouquetes" />
+    <!--Feather for wedding guest desktop pictures-->
+    <img class="presetPictureDesktop" src="img/buttonholes3.webp" alt="Buttonhole" />
+    <img class="presetPictureDesktop" src="img/buttonholes1.webp" alt="Boutonniere" />
+    <!--Wedding hall decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/weddingvenue1.webp" alt="Bouquet" />
+    <img class="presetPictureDesktop" src="img/weddingvenue3.webp" alt="Bouquetes" />
+    <!--Church decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/churchdecorations2.webp" alt="Church decorations" />
+    <img class="presetPictureDesktop" src="img/churchdecorations1.webp" alt="Chair decorations" />
+    <!--Car decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/cardecoration2.webp" alt="Car decoration" />
+    <img class="presetPictureDesktop" src="img/cardecoration1.webp" alt="Car decoration" />
+    <!--Bridesmaids decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/bridesmatesdecoration2.webp" alt="Bridesmaids decoration" />
+    <img class="presetPictureDesktop" src="img/bridesmatesdecoration1.webp" alt="Bridesmaids decoration" />
+    <!--Other decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/otherdecorations2.webp" alt="Bridesmaids decoration" />
+    <img class="presetPictureDesktop" src="img/otherdecorations3.webp" alt="Bridesmaids decoration" />
+  </section>
 
+  <section class="navigationButtonsDesktop">
+    <a href="style-your-wedding.html">
+      <button class="btn1-light">Back to decoration presets</button>
+    </a>
+
+    <a href="flower-availability.html">
+      <button class="btn1-light">See what flowers are available</button>
+    </a>
+  </section>
+  <section class="presetPartsTextMobile">
+    <h1>Preset parts</h1>
+  </section>
+  <!-- part1-->
+  <section class="bouquetePart">
+    <h2 class="underlineLong">Bouquet for bride</h2>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/bouquet2.webp" alt="Flower Bouquetes" />
+          <p class="swipeText">Swipe</p>
+          <svg
+            class="swipeLine"
+            xmlns="http://www.w3.org/2000/svg"
+            width="95.5"
+            height="14.916"
+            viewBox="0 0 95.5 14.916"
+          >
+            <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(388 1650.958) rotate(180)">
+              <g id="Сгруппировать_60" data-name="Сгруппировать 60">
+                <line
+                  id="Линия_66"
+                  data-name="Линия 66"
+                  x2="95"
+                  transform="translate(292.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_68"
+                  data-name="Линия 68"
+                  x1="16"
+                  y1="7"
+                  transform="translate(371.5 1636.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_69"
+                  data-name="Линия 69"
+                  x1="16"
+                  y2="7"
+                  transform="translate(371.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+              </g>
+              <g
+                id="Эллипс_17"
+                data-name="Эллипс 17"
+                transform="translate(387 1643)"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="1"
+              >
+                <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                <circle cx="0.5" cy="0.5" fill="none" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/bouquet3.webp" alt="Flower Bouquetes" />
+        </div>
+      </div>
+    </div>
+
+    <h3></h3>
+    <section>
+      <h4 class="underlineLong">Possible options</h4>
+      <p class="possibleOptionsText">You will be able to choose from different bouquet sizes</p>
+    </section>
+  </section>
+  <!-- part2-->
+  <section class="bouquetePart">
+    <h2 class="underlineLong">Feathers for wedding guests</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/buttonholes1.webp" alt="buttoniere" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/buttonholes2.webp" alt="buttoniere" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/buttonholes3.webp" alt="buttoniere" />
+        </div>
+      </div>
+    </div>
+    <h3></h3>
+    <section>
+      <h4 class="underlineLong">Possible options</h4>
+      <p class="possibleOptionsText">We offer 3 categories. Feathers for groom, for witnesses and wedding guests</p>
+    </section>
+  </section>
+  <!--part3-->
+  <section class="bouquetePart">
+    <h2 class="underlineLong">Wedding hall decorations</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/weddingvenue1.webp" alt="Wedding venue" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/weddingvenue2.webp" alt="Wedding venue" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/weddingvenue3.webp" alt="Wedding venue" />
+        </div>
+      </div>
+    </div>
+    <h3></h3>
+    <section>
+      <h4 class="underlineLong">Possible options</h4>
+      <p class="possibleOptionsText">This divides into- roof, walls and other requested parts</p>
+    </section>
+  </section>
+  <!--part4-->
+  <section class="bouquetePart">
+    <h2 class="underlineLong">Church decorations</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/churchdecorations1.webp" alt="Church decoration" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/churchdecorations2.webp" alt="Church decoration" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/churchdecorations3.webp" alt="Church decoration" />
+        </div>
+      </div>
+    </div>
+    <h3></h3>
+    <section>
+      <h4 class="underlineLong">Possible options</h4>
+      <p class="possibleOptionsText">
+        This can be divided into altar decorations, chairs for newlyweds and other small decorations
+      </p>
+    </section>
+  </section>
+  <!--part5-->
+  <section class="bouquetePart">
+    <h2 class="underlineLong">Car decorations</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/cardecoration1.webp" alt="Car decorations" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/cardecoration2.webp" alt="Car decorations" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/cardecoration3.webp" alt="Car decorations" />
+        </div>
+      </div>
+    </div>
+    <h3></h3>
+    <section>
+      <h4 class="underlineLong">Possible options</h4>
+      <p class="possibleOptionsText">This category varies from each car type and is a matter of consultaion</p>
+    </section>
+  </section>
+  <!--part6-->
+  <section class="bouquetePart">
+    <h2 class="underlineLong">Bridesmaids decorations</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/bridesmatesdecoration1.webp" alt="bridesmaids decoration" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/bridesmatesdecoration2.webp" alt="bridesmaids decoration" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/bridesmatesdecoration3.webp" alt="bridesmaids decoration" />
+        </div>
+      </div>
+    </div>
+    <h3></h3>
+    <section>
+      <h4 class="underlineLong">Possible options</h4>
+      <p class="possibleOptionsText">This category can include bracelets and headbands</p>
+    </section>
+  </section>
+  <!--part7-->
+  <section class="bouquetePart">
+    <h2 class="underlineLong">Other decorations</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/otherdecorations1.webp" alt="Other decorations" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/otherdecorations2.webp" alt="Other decorations" />
+        </div>
+        <div class="swiper-slide">
+          <img class="shownProduct" src="img/otherdecorations3.webp" alt="Other decorations" />
+        </div>
+      </div>
+    </div>
+    <!--/* Swiper JS */-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <h3></h3>
+    <section>
+      <h4 class="underlineLong">Possible options</h4>
+      <p class="possibleOptionsText">
+        As our other decorations, we offer photo wall, polaroid camera, welcome table and seating plan
+      </p>
+    </section>
+  </section>
+  <section class="sliderButtons">
+    <div class="slider-cell slider" id="slid1" onclick="currentPresetSlideMob(1)"></div>
+    <div class="slider-cell slider" id="slid2" onclick="currentPresetSlideMob(2)"></div>
+    <div class="slider-cell slider" id="slid3" onclick="currentPresetSlideMob(3)"></div>
+    <div class="slider-cell slider" id="slid4" onclick="currentPresetSlideMob(4)"></div>
+    <div class="slider-cell slider" id="slid5" onclick="currentPresetSlideMob(5)"></div>
+    <div class="slider-cell slider" id="slid6" onclick="currentPresetSlideMob(6)"></div>
+    <div class="slider-cell slider" id="slid7" onclick="currentPresetSlideMob(7)"></div>
+  </section>
+  <section class="navigationButtonsMobile">
+    <button class="btn1-light">
+      <a href="style-your-wedding.html">Previous step</a>
+    </button>
+    <button class="btn1-light">
+      <a href="flower-availability.html">Next step</a>
+    </button>
+  </section>
+  <!-- Flower wheel start-->
+  <section class="season-title">
+    <p class="headstyle1 underlineD" >Season wheel</p>
+  </section>
+
+  <!-- season wheel -->
+            <!-- MObile Version start/ carousel -->
+            <div class="carousel fadePreview"></div>
+          
+
+  <section id="season-desktop-frame">
+    <section class="season-wheel">
+      <div class="wheel-section">
+        <div class="wheel-frame">
+          <img id="arrow" alt="arrow" src="img/arrow.webp" />
+            <div id="link-grid">
+          
+           
+              <div id="circleElement" class="circleElement" onclick="updateImages('February');rotateFebruary();changeImage4();clickCheckbox(event, 'February')">
+                <input type="checkbox" name="my_checkbox_0" hidden />
+              </div>
+          
+      
+           
+              <div id="circleElement" onclick="updateImages('January');changeImage4();clickCheckbox(event, 'January')">
+                <input type="checkbox" name="my_checkbox_1" hidden />
+              </div>
+           
+          
+              <div id="circleElement" onclick="updateImages('December');rotateDecember();changeImage4();clickCheckbox(event, 'December')">
+                <input type="checkbox" name="my_checkbox_2" hidden />
+              </div>
+         
+            
+              <div id="circleElement" onclick="updateImages('November');rotateNovember();changeImage3();clickCheckbox(event, 'November')">
+                <input type="checkbox" name="my_checkbox_3" hidden />
+              </div>
+          
+            
+              <div id="circleElement" onclick="updateImages('October');rotateOctober();changeImage3();clickCheckbox(event, 'October')">
+                <input type="checkbox" name="my_checkbox_4" hidden />
+              </div>
+           
+          
+              <div id="circleElement" onclick="updateImages('September');rotateSeptember();changeImage3();clickCheckbox(event, 'September')">
+                <input type="checkbox" name="my_checkbox_5" hidden />
+              </div>
+         
+           
+              <div id="circleElement" onclick="updateImages('August');rotateAugust();changeImage2();clickCheckbox(event, 'August')">
+                <input type="checkbox" name="my_checkbox_6" hidden />
+              </div>
+           
+            
+              <div id="circleElement" onclick="updateImages('July');rotateJuly();changeImage2();clickCheckbox(event, 'July')">
+                <input type="checkbox" name="my_checkbox_7" hidden />
+              </div>
+          
+      
+            
+              <div id="circleElement" onclick="updateImages('June');rotateJune();changeImage2();clickCheckbox(event, 'June')">
+                <input type="checkbox" name="my_checkbox_8" hidden />
+              </div>
+            
+            
+              <div id="circleElement" onclick="updateImages('May');rotateMay();changeImage1();clickCheckbox(event, 'May')">
+                <input type="checkbox" name="my_checkbox_9" hidden />
+              </div>
+            
+           
+              <div id="circleElement" onclick="updateImages('April');rotateApril();changeImage1();clickCheckbox(event, 'April')">
+                <input type="checkbox" name="my_checkbox_10" hidden />
+              </div>
+            
+            
+              <div id="circleElement" onclick="updateImages('March');rotateMarch();changeImage1();clickCheckbox(event, 'March')">
+                <input type="checkbox" name="my_checkbox_11" hidden /></div>
+           
+            <img
+            alt="season wheel"
+              class="season-pics"
+              id="months"
+              src="img/seasons_wheel.webp"
+            />
+          </ul>
+          
+          </div>
+        
+          <img class="season-pics" alt="spring" id="spring" src="img/spring.webp" />
+          <img class="season-pics" alt="summer" id="summer" src="img/summer.webp" />
+          <img class="season-pics" alt="autumn" id="autum" src="img/autum.webp" />
+          <img class="season-pics" alt="winter" id="winter" src="img/winter.webp" />
+          <img
+          alt="choose season"
+            class="season-pics"
+            id="season-featured"
+            src="img/choose-season.webp"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="flowers-container" id="english-rose2">
+      <div class="flower-frame" id="english-rose">
+        <p class="flower-name" id="flowerName1"></p>
+      </div>
+
+     
+    </section>
+  </section>
+  <section class="seasons-btns-mobile seasons-btns-mobile-Fix">
+    <!--should add logics where was user before!!!-->
+    <a href="full-programme.html">
+      <button class="btn2-light">Previous step</button>
+    </a>
+
+    <a href="contact.html">
+      <button class="btn2-light">Next step</button>
+    </a>
+  </section>
+  <section class="seasons-btns-desktop">
+    <a href="full-programme.html">
+      <button class="btn1-light">Back to preset preview</button>
+    </a>
+
+    <a href="contact.html">
+      <button class="btn1-light">See your configuration</button>
+    </a>
+  </section>
+
+  <!-- season wheel END -->
+  <!--Contact section start-->
+  <h6 class="underlineDLong configurationHeadingFix">Your configuration</h6>
+  <section class="contactDesktopHeadingsGrid">
+    <p>Your chosen preset</p>
+    <p>Available flowers</p>
+    <p>Contact form</p>
+  </section>
+  <section class="contactDesktopGrid">
+    <section>
+      <p class="contactChosenPreset"></p>
+      <section>
+        <a href="flower-availability.html">
+          <button class="btn1-light buttonWidthFix">Back to flower availability</button>
+        </a>
+      </section>
+    </section>
+    <section class="availableFlowersSlide">
+      <img src="img/flowers/spring3.webp" class="availableFlowers" alt="Flowers" />
+      <img src="img/flowers/spring2a.webp" class="availableFlowers" alt="Flowers" />
+      <img src="img/flowers/spring1.webp" class="availableFlowers" alt="Flowers" />
+    </section>
+    <section class="contactMobile">
+      <section class="contactMobileContent">
+        <p class="contactText">
+          By contacting us, we will receive your customisation and then we will be able to give you a price estimate
+        </p>
+        <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
+          <input type="text" required name="name" placeholder="Name" class="contactInput" />
+          <br />
+          <input type="text" required name="email" placeholder="E-mail" class="contactInput" />
+          <br />
+          <input type="text" name="phone" placeholder="Phone" class="contactInput" />
+          <br />
+          <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
+          <button type="submit" class="btn1-light contactButton">Contact</button>
+        </form>
+      </section>
+    </section>
+  </section>
+
+  <!--YOUR CONFIGURATION CONTENT-->
+  <section class="yourConfigurationSection">
+    <h1 class="underlineLong">Your configuration</h1>
+    <br />
+    <h2 class="underline">Chosen preset</h2>
+    <p class="contactChosenPreset chosenText"></p>
+    <h2 class="underlineLong">Your chosen month</h2>
+    <p class="chosenText" id="chosenMonthEn"></p>
+    <h2 class="underline">Contact form</h2>
+    <section class="contactMobile">
+      <section class="contactMobileContent">
+        <p class="contactText">
+          By contacting us, we will receive your customisation and then we will be able to give you a price estimate
+        </p>
+        <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
+          <input type="text" required name="Name" placeholder="Name" class="contactInput" />
+          <br />
+          <input type="email" required name="email" placeholder="E-mail" class="contactInput" />
+          <br />
+          <input type="text" name="phone" placeholder="Phone" class="contactInput" />
+          <br />
+          <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
+          <button type="submit" class="btn1-light contactButton">Contact</button>
+        </form>
+      </section>
+    </section>
+    <section class="navigationButtonsMobileContact">
+      <button class="btn1-light">
+        <a href="flower-availability.html">Previous step</a>
+      </button>
+    </section>
+  </section>
 <!--Footer mobile-->
 <footer class="footer-mobile">
 
@@ -381,6 +918,7 @@
     </section>
 
     
-<script src="main.js"></script>
+    <script defer src="main.js"></script>
+    <script defer src="presetPreview.js"></script>
 
 </body>

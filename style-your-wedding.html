@@ -33,7 +33,7 @@
    
     }
 </style>
-<body onload="currentSlide(1);currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);showCurrentMonthFlowers();getUserChoise();fillContactPresetOptions('en');fillContactFlowers();displayChosenMonthMobile('en')">
+<body onload="showCurrentMonthFlowers();currentSlide(1);currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);getUserChoise();displayChosenMonthMobile('en')">
     <!-- navigation bar-->
     <header>
         <nav class="navbar">
@@ -114,7 +114,7 @@
         <div class="programs-container">
 
             <div class="prog-it-cont">
-                <a href="full-programme.html" onclick="storeClickedProgram('full-programme')">
+                <a href="#presetParts" onclick="storeClickedProgram('full-programme');fillPresetParts('en');fillContactPresetOptions('en');">
                 <div class="prog-img">
                     <img src="img/program3.webp" alt="plus icon" class="whitePlus">
                         <div class="middle">
@@ -129,7 +129,7 @@
                     </img>
                 </div>
 
-                <div class="prog-desc-frame">
+                <div class="prog-desc-frame" >
                     <p class="title1">Full wedding program</p>
                     <hr width="70%">
                     <div class="prog-description">
@@ -142,7 +142,7 @@
             </div>
 
             <div class="prog-it-cont">
-                <a href="partial-programme.html" onclick="storeClickedProgram('partial-programme')">
+                <a href="#presetParts" onclick="storeClickedProgram('partial-programme');fillPresetParts('en');fillContactPresetOptions('en');">
                 <div class="prog-img">
                     <img src="img/program2.webp" alt="PLus icon" class="whitePlus">
                         <div class="middle">
@@ -164,7 +164,7 @@
             </div>
 
             <div class="prog-it-cont">
-                <a href="base-programme.html" onclick="storeClickedProgram('base-programme')">
+                <a href="#presetParts" onclick="storeClickedProgram('base-programme');fillPresetParts('en');fillContactPresetOptions('en')">
                 <div class="prog-img">
                     <img src="img/program1.webp" alt="PLus icon" class="whitePlus">
                         <div class="middle">
@@ -269,16 +269,10 @@
 </section>
 <!-- promgrammes END-->    
 <!-- START OF ADDING PROGRAMMES / full programme-->
-<section class="gridPresetPreviewDesktop">
+<section id="presetParts" class="gridPresetPreviewDesktop">
     <section class="presetOptions">
       <h6 class="underlineDLong">Parts of this preset</h6>
-      <p class="activeOption" onclick="currentPresetSlide(1)">Bouquet for bride</p>
-      <p class="activeOption" onclick="currentPresetSlide(2)">Feather for wedding guests</p>
-      <p class="activeOption" onclick="currentPresetSlide(3)">Wedding hall decorations</p>
-      <p class="activeOption" onclick="currentPresetSlide(4)">Church decorations</p>
-      <p class="activeOption" onclick="currentPresetSlide(5)">Car decorations</p>
-      <p class="activeOption" onclick="currentPresetSlide(6)">Bridesmaids decorations</p>
-      <p class="activeOption" onclick="currentPresetSlide(7)">Other decorations</p>
+      <p class="presetParts"></p>
       <section class="presetTextAdjust">
         <div class="presetText">
           <p class="underline">Possible options</p>
@@ -618,64 +612,64 @@
             <div id="link-grid">
           
            
-              <div id="circleElement" class="circleElement" onclick="updateImages('February');rotateFebruary();changeImage4();clickCheckbox(event, 'February')">
+              <div id="circleElement" class="circleElement" onclick="updateImages('February');rotateFebruary();changeSeasonImage('winter');clickCheckbox(event, 'February')">
                 <input type="checkbox" name="my_checkbox_0" hidden />
               </div>
           
       
            
-              <div id="circleElement" onclick="updateImages('January');changeImage4();clickCheckbox(event, 'January')">
+              <div id="circleElement" onclick="updateImages('January');changeSeasonImage('winter');clickCheckbox(event, 'January')">
                 <input type="checkbox" name="my_checkbox_1" hidden />
               </div>
            
           
-              <div id="circleElement" onclick="updateImages('December');rotateDecember();changeImage4();clickCheckbox(event, 'December')">
+              <div id="circleElement" onclick="updateImages('December');rotateDecember();changeSeasonImage('winter');clickCheckbox(event, 'December')">
                 <input type="checkbox" name="my_checkbox_2" hidden />
               </div>
          
             
-              <div id="circleElement" onclick="updateImages('November');rotateNovember();changeImage3();clickCheckbox(event, 'November')">
+              <div id="circleElement" onclick="updateImages('November');rotateNovember();changeSeasonImage('autum');clickCheckbox(event, 'November')">
                 <input type="checkbox" name="my_checkbox_3" hidden />
               </div>
           
             
-              <div id="circleElement" onclick="updateImages('October');rotateOctober();changeImage3();clickCheckbox(event, 'October')">
+              <div id="circleElement" onclick="updateImages('October');rotateOctober();changeSeasonImage('autum');clickCheckbox(event, 'October')">
                 <input type="checkbox" name="my_checkbox_4" hidden />
               </div>
            
           
-              <div id="circleElement" onclick="updateImages('September');rotateSeptember();changeImage3();clickCheckbox(event, 'September')">
+              <div id="circleElement" onclick="updateImages('September');rotateSeptember();changeSeasonImage('autum');clickCheckbox(event, 'September')">
                 <input type="checkbox" name="my_checkbox_5" hidden />
               </div>
          
            
-              <div id="circleElement" onclick="updateImages('August');rotateAugust();changeImage2();clickCheckbox(event, 'August')">
+              <div id="circleElement" onclick="updateImages('August');rotateAugust();changeSeasonImage('summer');clickCheckbox(event, 'August')">
                 <input type="checkbox" name="my_checkbox_6" hidden />
               </div>
            
             
-              <div id="circleElement" onclick="updateImages('July');rotateJuly();changeImage2();clickCheckbox(event, 'July')">
+              <div id="circleElement" onclick="updateImages('July');rotateJuly();changeSeasonImage('summer');clickCheckbox(event, 'July')">
                 <input type="checkbox" name="my_checkbox_7" hidden />
               </div>
           
       
             
-              <div id="circleElement" onclick="updateImages('June');rotateJune();changeImage2();clickCheckbox(event, 'June')">
+              <div id="circleElement" onclick="updateImages('June');rotateJune();changeSeasonImage('summer');clickCheckbox(event, 'June')">
                 <input type="checkbox" name="my_checkbox_8" hidden />
               </div>
             
             
-              <div id="circleElement" onclick="updateImages('May');rotateMay();changeImage1();clickCheckbox(event, 'May')">
+              <div id="circleElement" onclick="updateImages('May');rotateMay();changeSeasonImage('spring');clickCheckbox(event, 'May')">
                 <input type="checkbox" name="my_checkbox_9" hidden />
               </div>
             
            
-              <div id="circleElement" onclick="updateImages('April');rotateApril();changeImage1();clickCheckbox(event, 'April')">
+              <div id="circleElement" onclick="updateImages('April');rotateApril();changeSeasonImage('spring');clickCheckbox(event, 'April')">
                 <input type="checkbox" name="my_checkbox_10" hidden />
               </div>
             
             
-              <div id="circleElement" onclick="updateImages('March');rotateMarch();changeImage1();clickCheckbox(event, 'March')">
+              <div id="circleElement" onclick="updateImages('March');rotateMarch();changeSeasonImage('spring');clickCheckbox(event, 'March')">
                 <input type="checkbox" name="my_checkbox_11" hidden /></div>
            
             <img

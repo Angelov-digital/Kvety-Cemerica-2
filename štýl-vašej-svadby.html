@@ -39,7 +39,7 @@
     </style>
   </head>
   <body
-    onload="currentSlide(1);currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);showCurrentMonthFlowers();getUserChoise();fillContactPresetOptions('sl');fillContactFlowers();displayChosenMonthMobile('sl')"
+    onload="showCurrentMonthFlowers();currentSlide(1);currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);;getUserChoise();fillContactPresetOptions('sl');displayChosenMonthMobile('sl')"
   >
     <!-- navigation bar-->
     <header>
@@ -98,7 +98,7 @@
       </div>
       <div class="programs-container">
         <div class="prog-it-cont">
-          <a href="kompletný-program.html" onclick="storeClickedProgram('full-programme')">
+          <a href="#presetParts" onclick="storeClickedProgram('full-programme');fillPresetParts('sl');fillContactPresetOptions('sl');">
             <div class="prog-img">
               <img alt="ikona plus" class="whitePlus" src="img/program3.webp" />
               <div class="middle">
@@ -140,7 +140,7 @@
           >
         </div>
         <div class="prog-it-cont">
-          <a href="ciastkový-program.html" onclick="storeClickedProgram('partial-programme')">
+          <a href="#presetParts" onclick="storeClickedProgram('partial-programme');fillPresetParts('sl');fillContactPresetOptions('sl');">
             <div class="prog-img">
               <img alt="Ikona PLus" class="whitePlus" src="img/program2.webp" />
               <div class="middle">
@@ -179,7 +179,7 @@
           >
         </div>
         <div class="prog-it-cont">
-          <a href="základný-program.html" onclick="storeClickedProgram('base-programme')">
+          <a href="#presetParts" onclick="storeClickedProgram('base-programme');fillPresetParts('sl');fillContactPresetOptions('sl')">
             <div class="prog-img">
               <img alt="Ikona PLus" class="whitePlus" src="img/program1.webp" />
               <div class="middle">
@@ -282,16 +282,10 @@
       </div>
     </section>
     <!--kompletny program /full start-->
-    <section class="gridPresetPreviewDesktop">
+    <section id="presetParts"  class="gridPresetPreviewDesktop">
       <section class="presetOptions">
         <h6 class="underlineDLong">Časti tejto predvoľby</h6>
-        <p class="activeOption" onclick="currentPresetSlide(1)">Kytica pre nevestu</p>
-        <p class="activeOption" onclick="currentPresetSlide(2)">Pero pre svadobných hostí</p>
-        <p class="activeOption" onclick="currentPresetSlide(3)">Výzdoba svadobnej sály</p>
-        <p class="activeOption" onclick="currentPresetSlide(4)">Výzdoba kostola</p>
-        <p class="activeOption" onclick="currentPresetSlide(5)">Dekorácie do auta</p>
-        <p class="activeOption" onclick="currentPresetSlide(6)">Dekorácie pre družičky</p>
-        <p class="activeOption" onclick="currentPresetSlide(7)">Ostatné dekorácie</p>
+        <p class="presetParts"></p>
         <section class="presetTextAdjust">
           <div class="presetText">
             <p class="underline">Možné možnosti</p>
@@ -580,64 +574,64 @@
             <img alt="šípka" id="arrow" src="img/arrow.webp" />
             <div id="link-grid">
               
-              <div id="circleElement" class="circleElement" onclick="updateImages('February');rotateFebruary();changeImage4();clickCheckbox(event, 'February')">
+              <div id="circleElement" class="circleElement" onclick="updateImages('February');rotateFebruary();changeSeasonImage('winter');clickCheckbox(event, 'February')">
                 <input type="checkbox" name="my_checkbox_0" hidden />
               </div>
           
       
            
-              <div id="circleElement" onclick="updateImages('January');rotateJanuary();changeImage4();clickCheckbox(event, 'January')">
+              <div id="circleElement" onclick="updateImages('January');rotateJanuary();changeSeasonImage('winter');clickCheckbox(event, 'January')">
                 <input type="checkbox" name="my_checkbox_1" hidden />
               </div>
            
           
-              <div id="circleElement" onclick="updateImages('December');rotateDecember();changeImage4();clickCheckbox(event, 'December')">
+              <div id="circleElement" onclick="updateImages('December');rotateDecember();changeSeasonImage('winter');clickCheckbox(event, 'December')">
                 <input type="checkbox" name="my_checkbox_2" hidden />
               </div>
          
             
-              <div id="circleElement" onclick="updateImages('November');rotateNovember();changeImage3();clickCheckbox(event, 'November')">
+              <div id="circleElement" onclick="updateImages('November');rotateNovember();changeSeasonImage('autum');clickCheckbox(event, 'November')">
                 <input type="checkbox" name="my_checkbox_3" hidden />
               </div>
           
             
-              <div id="circleElement" onclick="updateImages('October');rotateOctober();changeImage3();clickCheckbox(event, 'October')">
+              <div id="circleElement" onclick="updateImages('October');rotateOctober();changeSeasonImage('autum');clickCheckbox(event, 'October')">
                 <input type="checkbox" name="my_checkbox_4" hidden />
               </div>
            
           
-              <div id="circleElement" onclick="updateImages('September');rotateSeptember();changeImage3();clickCheckbox(event, 'September')">
+              <div id="circleElement" onclick="updateImages('September');rotateSeptember();changeSeasonImage('autum');clickCheckbox(event, 'September')">
                 <input type="checkbox" name="my_checkbox_5" hidden />
               </div>
          
            
-              <div id="circleElement" onclick="updateImages('August');rotateAugust();changeImage2();updateImages('August');clickCheckbox(event, 'August')">
+              <div id="circleElement" onclick="updateImages('August');rotateAugust();changeImage2();changeSeasonImage('summer');clickCheckbox(event, 'August')">
                 <input type="checkbox" name="my_checkbox_6" hidden />
               </div>
            
             
-              <div id="circleElement" onclick="updateImages('July');rotateJuly();changeImage2();clickCheckbox(event, 'July')">
+              <div id="circleElement" onclick="updateImages('July');rotateJuly();changeSeasonImage('summer');clickCheckbox(event, 'July')">
                 <input type="checkbox" name="my_checkbox_7" hidden />
               </div>
           
       
             
-              <div id="circleElement" onclick="updateImages('June');rotateJune();changeImage2();clickCheckbox(event, 'June')">
+              <div id="circleElement" onclick="updateImages('June');rotateJune();changeSeasonImage('summer');clickCheckbox(event, 'June')">
                 <input type="checkbox" name="my_checkbox_8" hidden />
               </div>
             
             
-              <div id="circleElement" onclick="updateImages('May');rotateMay();changeImage1();clickCheckbox(event, 'May')">
+              <div id="circleElement" onclick="updateImages('May');rotateMay();changeSeasonImage('spring');clickCheckbox(event, 'May')">
                 <input type="checkbox" name="my_checkbox_9" hidden />
               </div>
             
            
-              <div id="circleElement" onclick="updateImages('April');rotateApril();changeImage1();updateImages('April');clickCheckbox(event, 'April')">
+              <div id="circleElement" onclick="updateImages('April');rotateApril();changeSeasonImage('spring');updateImages('April');clickCheckbox(event, 'April')">
                 <input type="checkbox" name="my_checkbox_10" hidden />
               </div>
             
             
-              <div id="circleElement" onclick="updateImages('March');rotateMarch();changeImage1();clickCheckbox(event, 'March')">
+              <div id="circleElement" onclick="updateImages('March');rotateMarch();changeSeasonImage('spring');clickCheckbox(event, 'March')">
                 <input type="checkbox" name="my_checkbox_11" hidden /></div>
            
               <img alt="sezónne koleso" class="season-pics" id="months" src="img/seasons_wheel.webp" />

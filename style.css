@@ -1,4 +1,11 @@
+.activeOption{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
 
+#presetParts {
+  display: none;
+}
 #circleElement {
   overflow: hidden;
   position: absolute;
@@ -147,8 +154,8 @@ h5 {
 .underline,
 .underlineLong,
 .underlineD,
-.underlineDLong {
-  display: inline-block;
+.underlineDLong{
+  display: inline;
   position: relative;
 }
 /*mobileunderline*/
@@ -188,6 +195,22 @@ h5 {
   position: absolute;
   left: 12%;
   bottom: -4px;
+}
+.underlineDLongNoMargins{
+  display: block;
+  width: fit-content;
+  position: relative;
+}
+.underlineDLongNoMargins::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #5a5a5a;
+  position: absolute;
+  left: 12%;
+  bottom: -4px;
+  margin: 0px;
+  padding: 0px;
 }
 p.underline {
   font-size: 1.4rem;

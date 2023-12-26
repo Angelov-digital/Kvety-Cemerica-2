@@ -1,3 +1,83 @@
+function fillPresetParts(language) {
+  let selectedProgram = sessionStorage.getItem("selectedProgram");
+  let partsOfPreset = [];
+  if (language === "en") {
+    partsOfPreset = [
+      "Bouquet for bride",
+      "Feather for wedding guests",
+      "Wedding hall decorations",
+      "Church decorations",
+      "Car decorations",
+      "Bridesmaids decorations",
+      "Other decorations",
+    ];
+  } else if (language === "sl") {
+    partsOfPreset = [
+      "Kytica pre nevestu",
+      "Pero pre svadobných hostí",
+      "Výzdoba svadobnej sály",
+      "Výzdoba kostola",
+      "Dekorácie do auta",
+      "Dekorácie pre družičky",
+      "Ostatné dekorácie",
+    ];
+  }
+
+  let numberOfItemsToDisplay = 0;
+
+
+gavno.style.display = "block";
+  // Determine the number of items to display based on the selected program
+  if (selectedProgram === "base-programme") {
+    numberOfItemsToDisplay = 4;
+  } else if (selectedProgram === "full-programme") {
+    numberOfItemsToDisplay = 7;
+  } else if (selectedProgram === "partial-programme") {
+    numberOfItemsToDisplay = 5;
+  } else if (selectedProgram === null) {
+    alert("please go back and choose a program");
+  }
+  let containers = document.getElementsByClassName("presetParts");
+
+  // Convert containers to an array and use map to create and append the <p> elements
+  Array.from(containers).forEach((container) => {
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
+    partsOfPreset.slice(0, numberOfItemsToDisplay).forEach((part) => {
+      let newParagraph = document.createElement("p");
+      newParagraph.addEventListener("click", function () {
+        newParagraph.classList.add("underlineDLongNoMargins");
+      });
+      document.addEventListener("click", function (event) {
+        const isClickedInside = newParagraph.contains(event.target);
+
+        if (!isClickedInside) {
+          // Remove the style if the click is outside the paragraph
+          newParagraph.classList.remove("underlineDLongNoMargins");
+        }
+      });
+      newParagraph.textContent = part;
+      container.appendChild(newParagraph);
+    });
+  });
+}
+function displayElement(n) {
+  const elements = document.getElementsByClassName("presetPictureDesktop");
+
+  // Ensure n is within the valid range
+  if (n >= 1 && n <= elements.length) {
+    // Hide all elements
+    for (let element of elements) {
+      element.style.display = "none";
+    }
+
+    // Display the nth element
+    elements[n - 1].style.display = "block";
+  } else {
+    console.log(`Invalid number: ${n}. Please provide a number between 1 and ${elements.length}.`);
+  }
+}
 
 var slideIndex2 = 1;
 showDivs(slideIndex2);
@@ -25,50 +105,15 @@ function showDivs(n) {
   dots[slideIndex2 - 1].className += "active";
 }
 //Preset preview slideshow end
-//changing images onclick
-function changeImage1() {
-  var image = document.getElementById("season-featured");
-  if (image.src.match("img/spring.webp")) {
-    image.src = "img/spring.webp";
-  } else {
-    image.src = "img/spring.webp";
-  }
-}
 
-function changeImage2() {
-  var image = document.getElementById("season-featured");
-  if (image.src.match("summer")) {
-    image.src = "img/summer.webp";
-  } else {
-    image.src = "img/summer.webp";
-  }
-}
-
-function changeImage3() {
-  var image = document.getElementById("season-featured");
-  if (image.src.match("autum")) {
-    image.src = "img/autum.webp";
-  } else {
-    image.src = "img/autum.webp";
-  }
-}
-
-function changeImage4() {
-  var image = document.getElementById("season-featured");
-  if (image.src.match("winter")) {
-    image.src = "img/winter.webp";
-  } else {
-    image.src = "img/winter.webp";
-  }
+function changeSeasonImage(season) {
+  let image = document.getElementById("season-featured");
+  image.src = "img/" + season + ".webp";
 }
 // month bar rotation + flower change
 
-
-
-
 function rotate(angle) {
   document.querySelector("#link-grid").style.transform = `rotate(${angle}deg)`;
-  
 }
 
 const months = [
@@ -109,25 +154,18 @@ let selectedMonth = sessionStorage.getItem("selectedMonth");
 console.log(selectedMonth);
 // change flower names
 
-function showCurrentMonthFlowers(){
-  var currentMonth = new Date().toLocaleString('default', { month: 'long' });
+function showCurrentMonthFlowers() {
+  let currentMonth = new Date().toLocaleString("default", { month: "long" });
   const functionCall = `rotate${currentMonth}();`;
   eval(functionCall);
-updateImages(currentMonth);
-sessionStorage.setItem("selectedMonth", currentMonth);
+  updateImages(currentMonth);
+  sessionStorage.setItem("selectedMonth", currentMonth);
   console.log("selectedMonth:", currentMonth);
 }
 
 var monthsData = {
-  December: [
-    "img/flowers/december/Dhalia.webp",
-    "img/flowers/december/English rose.webp",
-    "img/flowers/december/Lisianthus.webp"
-  ],
-  April: [
-    "img/flowers/april/Lilac.webp",
-    "img/flowers/april/Ranunculus.webp"
-  ],
+  December: ["img/flowers/december/Dhalia.webp", "img/flowers/december/English rose.webp", "img/flowers/december/Lisianthus.webp"],
+  April: ["img/flowers/april/Lilac.webp", "img/flowers/april/Ranunculus.webp"],
   August: [
     "img/flowers/august/Chamelaucium.webp",
     "img/flowers/august/Cinia.webp",
@@ -137,16 +175,8 @@ var monthsData = {
     "img/flowers/august/Tanacetum.webp",
     "img/flowers/august/Eringium.webp",
   ],
-  January: [
-    "img/flowers/february/English rose.webp",
-    "img/flowers/february/Hellebore.webp",
-    "img/flowers/february/Lisianthus.webp",
-  ],
-  February: [
-    "img/flowers/february/English rose.webp",
-    "img/flowers/february/Hellebore.webp",
-    "img/flowers/february/Lisianthus.webp",
-  ],
+  January: ["img/flowers/february/English rose.webp", "img/flowers/february/Hellebore.webp", "img/flowers/february/Lisianthus.webp"],
+  February: ["img/flowers/february/English rose.webp", "img/flowers/february/Hellebore.webp", "img/flowers/february/Lisianthus.webp"],
   July: [
     "img/flowers/july/Chamelaucium.webp",
     "img/flowers/july/Astrania.webp",
@@ -167,28 +197,11 @@ var monthsData = {
     "img/flowers/june/Tanacetum.webp",
     "img/flowers/june/Eringium.webp",
   ],
-  May: [
-    "img/flowers/may/Lilac.webp",
-    "img/flowers/may/Ranunculus.webp",
-  ],
-  March: [
-    "img/flowers/february/English rose.webp",
-    "img/flowers/february/Hellebore.webp",
-    "img/flowers/february/Lisianthus.webp",
-  ],
-  November: [
-    "img/flowers/november/Dhalia.webp",
-    "img/flowers/november/English rose.webp",
-  ],
-  October: [
-    "img/flowers/november/Dhalia.webp",
-    "img/flowers/november/English rose.webp",
-  ],
-  September: [
-    "img/flowers/september/Cinia.webp",
-    "img/flowers/september/Leander.webp",
-    "img/flowers/september/Limonium.webp",
-  ],
+  May: ["img/flowers/may/Lilac.webp", "img/flowers/may/Ranunculus.webp"],
+  March: ["img/flowers/february/English rose.webp", "img/flowers/february/Hellebore.webp", "img/flowers/february/Lisianthus.webp"],
+  November: ["img/flowers/november/Dhalia.webp", "img/flowers/november/English rose.webp"],
+  October: ["img/flowers/november/Dhalia.webp", "img/flowers/november/English rose.webp"],
+  September: ["img/flowers/september/Cinia.webp", "img/flowers/september/Leander.webp", "img/flowers/september/Limonium.webp"],
 };
 
 // Function to update the displayed images based on the selected month
@@ -196,7 +209,7 @@ function updateImages(selectedMonth) {
   let flowerContainer = document.getElementById("english-rose2");
 
   // Clear the existing images in the container
-  flowerContainer.innerHTML = '';
+  flowerContainer.innerHTML = "";
 
   if (monthsData.hasOwnProperty(selectedMonth)) {
     var monthImages = monthsData[selectedMonth];
@@ -213,7 +226,7 @@ function updateImages(selectedMonth) {
 
       let flowerName = document.createElement("p");
       flowerName.className = "flower-name";
-      let imageName = monthImages[i].split('/').pop().replace(".webp", "");
+      let imageName = monthImages[i].split("/").pop().replace(".webp", "");
       flowerName.textContent = imageName;
 
       flowerFrame.appendChild(newFlowerImg);
@@ -342,6 +355,13 @@ function getSlides(n, slides, dots) {
 
 function storeClickedProgram(program) {
   sessionStorage.setItem("selectedProgram", program);
+  moveDownAndDisplayPresetParts();
+}
+function moveDownAndDisplayPresetParts() {
+  let selectedProgramme = sessionStorage.getItem("selectedProgram");
+  let element = document.getElementById("presetParts");
+  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+  console.log("SelectedProgramme2:", selectedProgramme);
 }
 
 // Function to log the value of selectedProgram at all times
@@ -353,103 +373,102 @@ function logSelectedProgram() {
 // Call logSelectedProgram whenever needed to log the value of selectedProgram
 logSelectedProgram();
 
-let userChoice ={};
+let userChoice = {};
 function getUserChoise() {
   let selectedProgram = sessionStorage.getItem("selectedProgram");
   let selectedMonth = sessionStorage.getItem("selectedMonth");
   userChoise = {
-    "selectedProgram" : selectedProgram,
-    "selectedMonth" : selectedMonth,
+    selectedProgram: selectedProgram,
+    selectedMonth: selectedMonth,
   };
   console.log(userChoise);
 }
 function fillContactPresetOptions(language) {
   let selectedProgram = sessionStorage.getItem("selectedProgram");
   let partsOfPreset = [];
- if (language === 'en') {
-  partsOfPreset = [
-    "Bouquet for bride",
-    "Feather for wedding guests",
-    "Wedding hall decorations",
-    "Church decorations",
-    "Car decorations",
-    "Bridesmaids decorations",
-    "Other decorations",
-  ];
-} else if (language === 'sl') {
-  partsOfPreset = [
-    "Kytica pre nevestu",
-    "Pero pre svadobných hostí",
-    "Výzdoba svadobnej sály",
-    "Výzdoba kostola",
-    "Dekorácie do auta",
-    "Dekorácie pre družičky",
-    "Ostatné dekorácie",
-  ];
-}
-  
+  if (language === "en") {
+    partsOfPreset = [
+      "Bouquet for bride",
+      "Feather for wedding guests",
+      "Wedding hall decorations",
+      "Church decorations",
+      "Car decorations",
+      "Bridesmaids decorations",
+      "Other decorations",
+    ];
+  } else if (language === "sl") {
+    partsOfPreset = [
+      "Kytica pre nevestu",
+      "Pero pre svadobných hostí",
+      "Výzdoba svadobnej sály",
+      "Výzdoba kostola",
+      "Dekorácie do auta",
+      "Dekorácie pre družičky",
+      "Ostatné dekorácie",
+    ];
+  }
+
   let numberOfItemsToDisplay = 0;
 
   // Determine the number of items to display based on the selected program
   if (selectedProgram === "base-programme") {
     numberOfItemsToDisplay = 4;
   } else if (selectedProgram === "full-programme") {
-    numberOfItemsToDisplay = 6;
+    numberOfItemsToDisplay = 7;
   } else if (selectedProgram === "partial-programme") {
     numberOfItemsToDisplay = 5;
-  }
-  else if (selectedProgram === null) {
+  } else if (selectedProgram === null) {
     alert("please go back and choose a program");
   }
 
   // Select the container where you want to add the <p> elements
   let containers = document.getElementsByClassName("contactChosenPreset");
 
-// Loop through all elements with the class name "contactChosenPreset"
-for (let j = 0; j < containers.length; j++) {
+  // Loop through all elements with the class name "contactChosenPreset"
+  for (let j = 0; j < containers.length; j++) {
     let container = containers[j];
+
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
 
     // Loop to create and append the <p> elements
     for (let i = 0; i < numberOfItemsToDisplay; i++) {
-        let newParagraph = document.createElement("p");
-        newParagraph.textContent = partsOfPreset[i];
-        container.appendChild(newParagraph);
+      let newParagraph = document.createElement("p");
+      newParagraph.textContent = partsOfPreset[i];
+      container.appendChild(newParagraph);
     }
-}}
-function fillContactFlowers()  {
-
+  }
 }
 function displayChosenMonthMobile(language) {
   let selectedMonth = sessionStorage.getItem("selectedMonth");
-  if (language==="en"){
-        let container = document.getElementById("chosenMonthEn");
-      
-          let newParagraph = document.createElement("p");
-          newParagraph.textContent = selectedMonth;
-          container.appendChild(newParagraph);
-        }
-        if (language==="sl"){
-          const slovakMonthMappings = {
-            January: "Január",
-            February: "Február",
-            March: "Marec",
-            April: "Apríl",
-            May: "Máj",
-            June: "Jún",
-            July: "Júl",
-            August: "August",
-            September: "September",
-            October: "Október",
-            November: "November",
-            December: "December"
-          };
-          let container = document.getElementById("chosenMonthSl");
-          if (container && slovakMonthMappings[selectedMonth]) {
-            let newParagraph = document.createElement("p");
-            newParagraph.textContent = slovakMonthMappings[selectedMonth];
-            container.appendChild(newParagraph);
-          }
-         
-        }
-        
+  if (language === "en") {
+    let container = document.getElementById("chosenMonthEn");
+
+    let newParagraph = document.createElement("p");
+    newParagraph.textContent = selectedMonth;
+    container.appendChild(newParagraph);
+  }
+  if (language === "sl") {
+    const slovakMonthMappings = {
+      January: "Január",
+      February: "Február",
+      March: "Marec",
+      April: "Apríl",
+      May: "Máj",
+      June: "Jún",
+      July: "Júl",
+      August: "August",
+      September: "September",
+      October: "Október",
+      November: "November",
+      December: "December",
+    };
+    let container = document.getElementById("chosenMonthSl");
+    if (container && slovakMonthMappings[selectedMonth]) {
+      let newParagraph = document.createElement("p");
+      newParagraph.textContent = slovakMonthMappings[selectedMonth];
+      container.appendChild(newParagraph);
+    }
+  }
 }

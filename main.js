@@ -26,7 +26,6 @@ function fillPresetParts(language) {
   let numberOfItemsToDisplay = 0;
 
 
-gavno.style.display = "block";
   // Determine the number of items to display based on the selected program
   if (selectedProgram === "base-programme") {
     numberOfItemsToDisplay = 4;
@@ -444,7 +443,9 @@ function displayChosenMonthMobile(language) {
   let selectedMonth = sessionStorage.getItem("selectedMonth");
   if (language === "en") {
     let container = document.getElementById("chosenMonthEn");
-
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
     let newParagraph = document.createElement("p");
     newParagraph.textContent = selectedMonth;
     container.appendChild(newParagraph);
@@ -465,6 +466,9 @@ function displayChosenMonthMobile(language) {
       December: "December",
     };
     let container = document.getElementById("chosenMonthSl");
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
+    }
     if (container && slovakMonthMappings[selectedMonth]) {
       let newParagraph = document.createElement("p");
       newParagraph.textContent = slovakMonthMappings[selectedMonth];

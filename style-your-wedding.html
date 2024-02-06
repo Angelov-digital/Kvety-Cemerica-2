@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <!--display-->
     <meta charset="UTF-8">
@@ -33,7 +33,7 @@
    
     }
 </style>
-<body onload="showCurrentMonthFlowers();currentSlide(1);currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);getUserChoise();displayChosenMonthMobile('en')">
+<body onload="showCurrentMonthFlowers();currentSlide(1);currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);getUserChoise();currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);">
     <!-- navigation bar-->
     <header>
         <nav class="navbar">
@@ -52,26 +52,56 @@
                 <div class="vl hiddenVl"></div>
 
                 <li class="nav-item-desk">
-                    <a class="nav-link" href="error-404.html" class="nav-link">Bouquetes</a>
+                    <a class="nav-link" href="contact.html" class="nav-link">Contact</a>
                 </li>
 
                 <li class="nav-mobile">
-                    <a class="nav-link" href="error-404.html" class="nav-link">Bouquetes</a>
+                    <a class="nav-link" href="contact.html" class="nav-link">Contact</a>
                 </li>
                 <a href="style-your-wedding.html" >English</a>
                 <a href="štýl-vašej-svadby.html">Slovak</a>
             </ul>
         </nav>
 
-        <hr size="2" height="10px" color="black">
 
     </header>
 
     
 
  <!-- featured-->
-           <!-- Mobile Version start/ carousel -->
-           <div class="carousel fadePreview"></div>
+ <section id="featured-container">
+
+  <div id="featured">
+      <div class="featured-text">
+          <p class="featured-inspired">Get inspired</p>
+              <hr width="90%">
+          <p id="inspiration">Welcome to our atelier</p>    
+          <p class="inspired"> Plan the wedding of your dreams with us! As a dedicated company, we provide wedding flowers and decorations of all kinds and for all tastes. </p>     
+          <button class="button-main" id="downButton" >See our products</button>
+      </div>
+      <div class="videoframe">
+          <video autoplay muted loop id="video-cemerica">
+              <source src="video/video-cemerica.mp4" type="video/mp4">
+          </video>
+      </div>
+  </div>
+
+  <div id="featured-mobile">
+      <video autoplay muted loop id="video-cemerica-mobile">
+          <source src="video/video-cemerica.mp4" type="video/mp4">
+      </video>
+      
+      <div class="featured-text">
+          <p class="featured-inspired">Get inspired</p>    
+          <p id="inspiration">Wedding inspiration</p> 
+          <hr width="90%">   
+          <p class="inspired">On our website you can find prepared decoration bundles, alongside with option to customize your own decoration preset</p>     
+          <a href="style-your-wedding.html">
+              <button class="btn1-light">See our products</button>
+          </a> 
+      </div>
+  </div>
+</section>
     <!--DESKTOP VERSION-->
     <div id="preset-container">
         <section>
@@ -105,7 +135,7 @@
 
     <div class="prgtxtcnt">
         <div class="content-card-head">
-            <p class="headstyle1 underlineDLong">Our decoration presets</p>
+            <p class="headstyle1 underlineDLong">We offer</p>
         </div>
         <!--<button class="info-button">more info</button>-->
     </div>
@@ -114,11 +144,11 @@
         <div class="programs-container">
 
             <div class="prog-it-cont">
-                <a href="#presetParts" onclick="storeClickedProgram('full-programme');fillPresetParts('en');fillContactPresetOptions('en');">
+                <a href="#presetParts"  onclick="storeClickedProgram('full-programme');fillPresetParts('en');fillContactPresetOptions('en');">
                 <div class="prog-img">
                     <img src="img/program3.webp" alt="plus icon" class="whitePlus">
                         <div class="middle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi-plus" width="70%" viewBox="0 0 110.985 111">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi-plus" width="30%" viewBox="0 0 110.985 111">
                                 <g id="Сгруппировать_5" data-name="Сгруппировать 5" transform="translate(0)">
                                   <rect id="Прямоугольник_5" data-name="Прямоугольник 5" width="6" height="111" rx="3" transform="translate(52.5)" fill="#fff"/>
                                   <rect id="Прямоугольник_6" data-name="Прямоугольник 6" width="7.193" height="110.985" rx="3.597" transform="translate(110.985 51.896) rotate(90)" fill="#fff"/>
@@ -130,7 +160,7 @@
                 </div>
 
                 <div class="prog-desc-frame" >
-                    <p class="title1">Full wedding program</p>
+                    <p class="title1">Complete wedding experience</p>
                     <hr width="70%">
                     <div class="prog-description">
                         <p>As the name suggests, this program includes the decorations that are a must for every wedding. From the classic bride bouquet to beautifully arranged car decorations, we’ve got it all covered for you.All of the options are customizable, according to your preferences.
@@ -146,14 +176,14 @@
                 <div class="prog-img">
                     <img src="img/program2.webp" alt="PLus icon" class="whitePlus">
                         <div class="middle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi-plus" width="70%" viewBox="0 0 110.985 111">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="bi-plus" width="30%" viewBox="0 0 110.985 111">
                                 <g id="Сгруппировать_5" data-name="Сгруппировать 5" transform="translate(0)">
                                   <rect id="Прямоугольник_5" data-name="Прямоугольник 5" width="6" height="111" rx="3" transform="translate(52.5)" fill="#fff"/>
                                   <rect id="Прямоугольник_6" data-name="Прямоугольник 6" width="7.193" height="110.985" rx="3.597" transform="translate(110.985 51.896) rotate(90)" fill="#fff"/>
                                 </g>
                               </svg>
                         </div>
-                    <p class="title1">Partial program</p>
+                    <p class="title1">Customized packages</p>
                     <hr width="70%">
                 </div>
                 <div class="prog-description">
@@ -161,30 +191,6 @@
                    </p>
                 </div>    
             </a>   
-            </div>
-
-            <div class="prog-it-cont">
-                <a href="#presetParts" onclick="storeClickedProgram('base-programme');fillPresetParts('en');fillContactPresetOptions('en')">
-                <div class="prog-img">
-                    <img src="img/program1.webp" alt="PLus icon" class="whitePlus">
-                        <div class="middle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="bi-plus" width="auto" viewBox="0 0 110.985 111">
-                                <g id="Сгруппировать_5" data-name="Сгруппировать 5">
-                                  <rect id="Прямоугольник_5" data-name="Прямоугольник 5" width="6" height="111" rx="3" transform="translate(52.5)" fill="#fff"/>
-                                  <rect id="Прямоугольник_6" data-name="Прямоугольник 6" width="7.193" height="110.985" rx="3.597" transform="translate(110.985 51.896) rotate(90)" fill="#fff"/>
-                                </g>
-                              </svg>
-                        </div>
-                    <p class="title1">Base program</p>
-                    <hr width="70%">
-                </div>
-                <div class="prog-description">
-                    <p>As the name suggests, this program includes the decorations that are a must for every wedding. Discover the essential budget friendly, and carefully crafted products you need. All of the options are customizable, according to your preferences.
-                    This program offers you all the essentials for a perfect wedding!                        
-                   </p>
-                </div>  
-               
-            </a>      
             </div>
         </div>
 </section>
@@ -207,10 +213,7 @@
             <div class="prog-mobile-text-frame">
                 <p class="headstyle1 underline">Complete program</p>
                 <p class="text-cont2">In this preset you can find everything we are providing</p>
-                <p class="text-cont2">Starts from - 1500&#8364</p>
-                <div class="centerButtonFix">
-                   <a href="full-programme.html"> <button class="btn1-light" id="prog-mobile-btn">Choose this program</button></a>
-                </div>
+
             </div>
 
         </div>
@@ -228,40 +231,16 @@
                 <p class="headstyle1">Partial preset</p>
                 <hr class="line-mobile"> 
                 <p class="text-cont2">This preset most of our products that are favorite among customers</p>
-                <p class="text-cont2">Price from - 1000&#8364</p>
-                <div class="centerButtonFix">
-                    <a href="partial-programme.html"> <button class="btn1-light" id="prog-mobile-btn">Choose this program</button></a>
-                </div>
             </div>
 
         </div>
     </div>
 
-    <div class="mySlides fade">
 
-        <div class="slide-card">
-
-            <div class="prog-mobile-img-frame">
-                <img src="img/program1.webp" alt="Base programme">
-            </div>
-           
-            <div class="prog-mobile-text-frame">
-                <p class="headstyle1">Base preset</p>
-                <hr class="line-mobile"> 
-                <p class="text-cont2">In our base preset you will find most common parts</p>
-                <p class="text-cont2">Price from - 700&#8364</p>
-                <div  class="centerButtonFix">
-                    <a href="base-programme.html"> <button class="btn1-light" id="prog-mobile-btn">Choose this program</button></a>
-                </div>
-            </div>
-
-        </div>
-    </div>
 
     <div class="slider">
         <div class="slider-cell" id="slid1" onclick="currentSlide(1)"></div>
         <div class="slider-cell" id="slid2" onclick="currentSlide(2)"></div>
-        <div class="slider-cell" id="slid3" onclick="currentSlide(3)"></div>    
     </div>
 
 </div>
@@ -269,98 +248,7 @@
 </section>
 <!-- promgrammes END-->    
 <!-- START OF ADDING PROGRAMMES / full programme-->
-<section id="presetParts" class="gridPresetPreviewDesktop">
-    <section class="presetOptions">
-      <h6 class="underlineDLong">Parts of this preset</h6>
-      <p class="presetParts"></p>
-      <section class="presetTextAdjust">
-        <div class="presetText">
-          <p class="underline">Possible options</p>
-          <br />
-          <p class="possibleOptText">You will be able to choose from different bouquet sizes</p>
-        </div>
-      </section>
-      <!-- copy from here start-->
-      <section class="presetTextAdjust">
-        <div class="presetText">
-          <p class="underline">Possible options</p>
-          <br />
-          <p class="possibleOptText">We offer 3 categories. Feathers for groom, for witnesses and wedding guests</p>
-        </div>
-      </section>
-      <!-- copy from here end-->
-      <section class="presetTextAdjust">
-        <div class="presetText">
-          <p class="underline">Possible options</p>
-          <br />
-          <p class="possibleOptText">This divides into- roof, walls and other requested parts</p>
-        </div>
-      </section>
-      <section class="presetTextAdjust">
-        <div class="presetText">
-          <p class="underline">Possible options</p>
-          <br />
-          <p class="possibleOptText">
-            This can be divided into altar decorations, chairs for newlyweds and other small decorations
-          </p>
-        </div>
-      </section>
-      <section class="presetTextAdjust">
-        <div class="presetText">
-          <p class="underline">Possible options</p>
-          <br />
-          <p class="possibleOptText">This category varies from each car type and is a matter of consultation</p>
-        </div>
-      </section>
-      <section class="presetTextAdjust">
-        <div class="presetText">
-          <p class="underline">Possible options</p>
-          <br />
-          <p class="possibleOptText">This category can include bracelets and headbands</p>
-        </div>
-      </section>
-      <section class="presetTextAdjust">
-        <div class="presetText">
-          <p class="underline">Possible options</p>
-          <br />
-          <p class="possibleOptText">
-            As our other decorations, we offer photo wall, polaroid camera, welcome table and seating plan
-          </p>
-        </div>
-      </section>
-    </section>
-    <!--bouquete for bride desktop pictures-->
-    <img class="presetPictureDesktop" src="img/bouquet3.webp" alt="Bouquet" />
-    <img class="presetPictureDesktop" src="img/bouquet2.webp" alt="Bouquetes" />
-    <!--Feather for wedding guest desktop pictures-->
-    <img class="presetPictureDesktop" src="img/buttonholes3.webp" alt="Buttonhole" />
-    <img class="presetPictureDesktop" src="img/buttonholes1.webp" alt="Boutonniere" />
-    <!--Wedding hall decorations desktop pictures-->
-    <img class="presetPictureDesktop" src="img/weddingvenue1.webp" alt="Bouquet" />
-    <img class="presetPictureDesktop" src="img/weddingvenue3.webp" alt="Bouquetes" />
-    <!--Church decorations desktop pictures-->
-    <img class="presetPictureDesktop" src="img/churchdecorations2.webp" alt="Church decorations" />
-    <img class="presetPictureDesktop" src="img/churchdecorations1.webp" alt="Chair decorations" />
-    <!--Car decorations desktop pictures-->
-    <img class="presetPictureDesktop" src="img/cardecoration2.webp" alt="Car decoration" />
-    <img class="presetPictureDesktop" src="img/cardecoration1.webp" alt="Car decoration" />
-    <!--Bridesmaids decorations desktop pictures-->
-    <img class="presetPictureDesktop" src="img/bridesmatesdecoration2.webp" alt="Bridesmaids decoration" />
-    <img class="presetPictureDesktop" src="img/bridesmatesdecoration1.webp" alt="Bridesmaids decoration" />
-    <!--Other decorations desktop pictures-->
-    <img class="presetPictureDesktop" src="img/otherdecorations2.webp" alt="Bridesmaids decoration" />
-    <img class="presetPictureDesktop" src="img/otherdecorations3.webp" alt="Bridesmaids decoration" />
-  </section>
 
-  <section class="navigationButtonsDesktop">
-    <a href="style-your-wedding.html">
-      <button class="btn1-light">Back to decoration presets</button>
-    </a>
-
-    <a href="flower-availability.html">
-      <button class="btn1-light">See what flowers are available</button>
-    </a>
-  </section>
   <section class="presetPartsTextMobile">
     <h1>Preset parts</h1>
   </section>
@@ -586,13 +474,94 @@
     <div class="slider-cell slider" id="slid6" onclick="currentPresetSlideMob(6)"></div>
     <div class="slider-cell slider" id="slid7" onclick="currentPresetSlideMob(7)"></div>
   </section>
-  <section class="navigationButtonsMobile">
-    <button class="btn1-light">
-      <a href="style-your-wedding.html">Previous step</a>
-    </button>
-    <button class="btn1-light">
-      <a href="flower-availability.html">Next step</a>
-    </button>
+
+  <section class="gridPresetPreviewDesktop" id="presetParts">
+    <section class="presetOptions">
+      <h6 class="underlineDLong">We offer or smth</h6>
+      <p class="activeOption" onclick="currentPresetSlide(1)">Bouquet for bride</p>
+      <p class="activeOption" onclick="currentPresetSlide(2)">Feather for wedding guests</p>
+      <p class="activeOption" onclick="currentPresetSlide(3)">Wedding hall decorations</p>
+      <p class="activeOption" onclick="currentPresetSlide(4)">Church decorations</p>
+      <p class="activeOption" onclick="currentPresetSlide(5)">Car decorations</p>
+      <p class="activeOption" onclick="currentPresetSlide(6)">Bridesmaids decorations</p>
+      <p class="activeOption" onclick="currentPresetSlide(7)">Other decorations</p>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">You will be able to choose from different bouquet sizes</p>
+        </div>
+      </section>
+      <!-- copy from here start-->
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">We offer 3 categories. Feathers for groom, for witnesses and wedding guests</p>
+        </div>
+      </section>
+      <!-- copy from here end-->
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">This divides into- roof, walls and other requested parts</p>
+        </div>
+      </section>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">
+            This can be divided into altar decorations, chairs for newlyweds and other small decorations
+          </p>
+        </div>
+      </section>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">This category varies from each car type and is a matter of consultation</p>
+        </div>
+      </section>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">This category can include bracelets and headbands</p>
+        </div>
+      </section>
+      <section class="presetTextAdjust">
+        <div class="presetText">
+          <p class="underline">Possible options</p>
+          <br />
+          <p class="possibleOptText">
+            As our other decorations, we offer photo wall, polaroid camera, welcome table and seating plan
+          </p>
+        </div>
+      </section>
+    </section>
+    <!--bouquete for bride desktop pictures-->
+    <img class="presetPictureDesktop" src="img/bouquet3.webp" alt="Bouquet" />
+    <img class="presetPictureDesktop" src="img/bouquet2.webp" alt="Bouquetes" />
+    <!--Feather for wedding guest desktop pictures-->
+    <img class="presetPictureDesktop" src="img/buttonholes3.webp" alt="Buttonhole" />
+    <img class="presetPictureDesktop" src="img/buttonholes1.webp" alt="Boutonniere" />
+    <!--Wedding hall decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/weddingvenue1.webp" alt="Bouquet" />
+    <img class="presetPictureDesktop" src="img/weddingvenue3.webp" alt="Bouquetes" />
+    <!--Church decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/churchdecorations2.webp" alt="Church decorations" />
+    <img class="presetPictureDesktop" src="img/churchdecorations1.webp" alt="Chair decorations" />
+    <!--Car decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/cardecoration2.webp" alt="Car decoration" />
+    <img class="presetPictureDesktop" src="img/cardecoration1.webp" alt="Car decoration" />
+    <!--Bridesmaids decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/bridesmatesdecoration2.webp" alt="Bridesmaids decoration" />
+    <img class="presetPictureDesktop" src="img/bridesmatesdecoration1.webp" alt="Bridesmaids decoration" />
+    <!--Other decorations desktop pictures-->
+    <img class="presetPictureDesktop" src="img/otherdecorations2.webp" alt="Bridesmaids decoration" />
+    <img class="presetPictureDesktop" src="img/otherdecorations3.webp" alt="Bridesmaids decoration" />
   </section>
   <!-- Flower wheel start-->
   <section class="season-title">
@@ -606,8 +575,8 @@
 
   <section id="season-desktop-frame">
     <section class="season-wheel">
-      <div class="wheel-section">
-        <div class="wheel-frame">
+      <div>
+        <div class="wheel-frame" onclick="displayChosenMonthMobile('en')">
           <img id="arrow" alt="arrow" src="img/arrow.webp" />
             <div id="link-grid">
           
@@ -618,7 +587,7 @@
           
       
            
-              <div id="circleElement" onclick="updateImages('January');changeSeasonImage('winter');clickCheckbox(event, 'January')">
+              <div id="circleElement" onclick="updateImages('January');rotateJanuary();changeSeasonImage('winter');clickCheckbox(event, 'January')">
                 <input type="checkbox" name="my_checkbox_1" hidden />
               </div>
            
@@ -703,99 +672,32 @@
      
     </section>
   </section>
-  <section class="seasons-btns-mobile seasons-btns-mobile-Fix">
-    <!--should add logics where was user before!!!-->
-    <a href="full-programme.html">
-      <button class="btn2-light">Previous step</button>
-    </a>
-
-    <a href="contact.html">
-      <button class="btn2-light">Next step</button>
-    </a>
-  </section>
-  <section class="seasons-btns-desktop">
-    <a href="full-programme.html">
-      <button class="btn1-light">Back to preset preview</button>
-    </a>
-
-    <a href="contact.html">
-      <button class="btn1-light">See your configuration</button>
-    </a>
-  </section>
-
   <!-- season wheel END -->
   <!--Contact section start-->
-  <h6 class="underlineDLong configurationHeadingFix">Your configuration</h6>
+  <h6 class="underlineDLong configurationHeadingFix">Contact us</h6>
   <section class="contactDesktopHeadingsGrid">
-    <p>Your chosen preset</p>
-    <p>Available flowers</p>
-    <p>Contact form</p>
+
   </section>
-  <section class="contactDesktopGrid">
-    <section>
-      <p class="contactChosenPreset"></p>
-      <section>
-        <a href="flower-availability.html">
-          <button class="btn1-light buttonWidthFix">Back to flower availability</button>
-        </a>
-      </section>
-    </section>
-    <section class="availableFlowersSlide">
-      <img src="img/flowers/spring3.webp" class="availableFlowers" alt="Flowers" />
-      <img src="img/flowers/spring2a.webp" class="availableFlowers" alt="Flowers" />
-      <img src="img/flowers/spring1.webp" class="availableFlowers" alt="Flowers" />
-    </section>
-    <section class="contactMobile">
-      <section class="contactMobileContent">
-        <p class="contactText">
-          By contacting us, we will receive your customisation and then we will be able to give you a price estimate
-        </p>
-        <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
-          <input type="text" required name="name" placeholder="Name" class="contactInput" />
-          <br />
-          <input type="text" required name="email" placeholder="E-mail" class="contactInput" />
-          <br />
-          <input type="text" name="phone" placeholder="Phone" class="contactInput" />
-          <br />
-          <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
-          <button type="submit" class="btn1-light contactButton">Contact</button>
-        </form>
-      </section>
-    </section>
+  
+    <section class="contactMobile">  
+      <p class="contactText">
+        By contacting us, we will receive your customisation and then we will be able to give you a price estimate
+      </p>
+      <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
+        <input type="text" required name="Name" placeholder="Name" class="contactInput" />
+        <br />
+        <input type="email" required name="email" placeholder="E-mail" class="contactInput" />
+        <br />
+        <input type="text" name="phone" placeholder="Phone" class="contactInput" />
+        <br />
+        <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
+        <button type="submit" class="btn1-light contactButton">Contact</button>
+      </form>
+
   </section>
 
   <!--YOUR CONFIGURATION CONTENT-->
-  <section class="yourConfigurationSection">
-    <h1 class="underlineLong">Your configuration</h1>
-    <br />
-    <h2 class="underline">Chosen preset</h2>
-    <p class="contactChosenPreset chosenText"></p>
-    <h2 class="underlineLong">Your chosen month</h2>
-    <p class="chosenText" id="chosenMonthEn"></p>
-    <h2 class="underline">Contact form</h2>
-    <section class="contactMobile">
-      <section class="contactMobileContent">
-        <p class="contactText">
-          By contacting us, we will receive your customisation and then we will be able to give you a price estimate
-        </p>
-        <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
-          <input type="text" required name="Name" placeholder="Name" class="contactInput" />
-          <br />
-          <input type="email" required name="email" placeholder="E-mail" class="contactInput" />
-          <br />
-          <input type="text" name="phone" placeholder="Phone" class="contactInput" />
-          <br />
-          <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
-          <button type="submit" class="btn1-light contactButton">Contact</button>
-        </form>
-      </section>
-    </section>
-    <section class="navigationButtonsMobileContact">
-      <button class="btn1-light">
-        <a href="flower-availability.html">Previous step</a>
-      </button>
-    </section>
-  </section>
+
 <!--Footer mobile-->
 <footer class="footer-mobile">
 

@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/jpg" href="img/favicon.webp" />
     <title>Kvety Cemerica</title>
   </head>
-  <body onload="getUserChoise();fillContactPresetOptions('en');displayChosenMonthMobile('en')">
+  <body onload="chooseUsSlides(1);">
     <style>
       a:link {
         text-decoration: none;
@@ -56,120 +56,95 @@
           </li>
           <div class="vl hiddenVl"></div>
           <li class="nav-item-desk">
-            <a class="nav-link" href="error-404.html" class="nav-link">Bouquetes</a>
+            <a class="nav-link" href="contact.html" class="nav-link">Contact</a>
           </li>
           <li class="nav-mobile">
-            <a class="nav-link" href="error-404.html" class="nav-link">Bouquetes</a>
+            <a class="nav-link" href="contact.html" class="nav-link">Contact</a>
           </li>
           <a href="contact.html">English</a>
           <a href="kontakt.html">Slovak</a>
         </ul>
       </nav>
 
-      <hr size="2" height="10px" color="black" />
     </header>
     <!--DESKTOP VERSION-->
-    <div id="preset-container">
-      <section>
-        <div id="presetPreview">
-          <section class="featured-text">
-            <p class="featured-inspired">Discover</p>
-            <hr width="90%" />
-            <p id="inspiration">Our preset configurator</p>
-            <p class="inspired">
-              This is your last step to perfect wedding day. In this step you can see your configuration, here you can
-              also choose to contact us so we can talk more about your requirements
-            </p>
-            <button class="button-main" id="downButton">See my preset</button>
-          </section>
-          <section class="presetSlideshow">
-            <img class="mySlides2" alt="slideshow picture" src="img/bridesmatesdecoration1.webp" />
-            <img class="mySlides2" alt="slideshow picture" src="img/bridesmatesdecoration2.webp" />
-            <img class="mySlides2" alt="slideshow picture" src="img/buttonholes1.webp" />
-            <section class="slideShowPreset" style="width: 100%">
-              <div class="slider-cellActive white-cell" id="slid1" onclick="currentDiv(1)"></div>
-              <div class="slider-cellActive white-cell" id="slid2" onclick="currentDiv(2)"></div>
-              <div class="slider-cellActive white-cell" id="slid3" onclick="currentDiv(3)"></div>
-            </section>
-          </section>
-        </div>
-      </section>
-    </div>
     <!-- featured END-->
-    <!-- contact desktop grid-->
-    <h6 class="underlineDLong configurationHeadingFix">Your configuration</h6>
-    <section class="contactDesktopHeadingsGrid">
-      <p>Your chosen preset</p>
-      <p>Available flowers</p>
-      <p>Contact form</p>
-    </section>
-    <section class="contactDesktopGrid">
-      <section>
-        <p class="contactChosenPreset"></p>
-        <section>
-          <a href="flower-availability.html">
-            <button class="btn1-light buttonWidthFix">Back to flower availability</button>
-          </a>
-        </section>
-      </section>
-      <section class="availableFlowersSlide">
-        <img src="img/flowers/spring3.webp" class="availableFlowers" alt="Flowers" />
-        <img src="img/flowers/spring2a.webp" class="availableFlowers" alt="Flowers" />
-        <img src="img/flowers/spring1.webp" class="availableFlowers" alt="Flowers" />
-      </section>
-      <section class="contactMobile">
-        <section class="contactMobileContent">
-          <p class="contactText">
-            By contacting us, we will receive your customisation and then we will be able to give you a price estimate
-          </p>
-          <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
-            <input type="text" required name="name" placeholder="Name" class="contactInput" />
-            <br />
-            <input type="text" required name="email" placeholder="E-mail" class="contactInput" />
-            <br />
-            <input type="text" name="phone" placeholder="Phone" class="contactInput" />
-            <br />
-            <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
-            <button type="submit" class="btn1-light contactButton">Contact</button>
-          </form>
-        </section>
-      </section>
-    </section>
+      <!--YOUR CONFIGURATION CONTENT-->
+        <h1 class="underline">Contact form</h1>
+        <section class="contactMobile">
+          
 
-    <!-- MObile Version start MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx-->
-    <div class="carousel fadePreview"></div>
-    <!--YOUR CONFIGURATION CONTENT-->
-    <section class="yourConfigurationSection">
-      <h1 class="underlineLong">Your configuration</h1>
-      <br />
-      <h2 class="underline">Chosen preset</h2>
-      <p class="contactChosenPreset chosenText"></p>
-      <h2 class="underlineLong">Your chosen month</h2>
-      <p class="chosenText" id="chosenMonthEn"></p>
-      <h2 class="underline">Contact form</h2>
-      <section class="contactMobile">
-        <section class="contactMobileContent">
-          <p class="contactText">
-            By contacting us, we will receive your customisation and then we will be able to give you a price estimate
-          </p>
-          <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
-            <input type="text" required name="Name" placeholder="Name" class="contactInput" />
-            <br />
-            <input type="email" required name="email" placeholder="E-mail" class="contactInput" />
-            <br />
-            <input type="text" name="phone" placeholder="Phone" class="contactInput" />
-            <br />
-            <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
-            <button type="submit" class="btn1-light contactButton">Contact</button>
-          </form>
+            
+            <p class="contactText">
+              By contacting us, we will receive your customisation and then we will be able to give you a price estimate
+            </p>
+            <form action="https://formsubmit.co/sosiso4ki64@gmail.com" method="POST">
+              <input type="text" required name="Name" placeholder="Name" class="contactInput" />
+              <br />
+              <input type="email" required name="email" placeholder="E-mail" class="contactInput" />
+              <br />
+              <input type="text" name="phone" placeholder="Phone" class="contactInput" />
+              <br />
+              <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
+              <button type="submit" class="btn1-light contactButton">Contact</button>
+            </form>
+
         </section>
-      </section>
-      <section class="navigationButtonsMobileContact">
-        <button class="btn1-light">
-          <a href="flower-availability.html">Previous step</a>
-        </button>
-      </section>
+
+    <section class="content-card">
+    <div class="content-card-frame">
+      <!-- choose us nav desktop-->
+      <div class="content-card-nav">
+
+          <div class="content-card-head">
+              <p class="headstyle1 underlineDLong">Why choose us</p>
+          </div>
+
+          <div class="chooseus-nav">
+              <p class="titleChooseUs underlineD" onclick="chooseUsSlides(1)">Our mindset</p>
+              <p class="titleChooseUs underlineD" onclick="chooseUsSlides(2)">Our workplace</p>
+              <p class="titleChooseUs underlineD" onclick="chooseUsSlides(3)">Our partners</p>
+          </div>
+      </div>
+      <div class="chooseus-content">
+          <div class="chooseUsText">
+              <p class="text-cont" >We are a team of dedicated florists. We understand how important it is to stand out in a creative yet interesting way. Coming up with new ideas and improving our services are just a few of our goals and we try to maintain the beauty and purity of flowers with each step we take.</p>     
+          </div>
+          <img loading="lazy" class="mindsetImg" width="400px" alt="Workplace" src="./img/mindset.webp"></img>
+          <img loading="lazy" class="mindsetImg" width="400px" alt="Florist" src="./img/florist.webp"></img>
+      </div>
+      
+      <div class="chooseus-content ">
+          <div class="chooseUsText">
+              <p class="text-cont" >With each wedding plan, we are constantly making sure the flowers are delivered in the best conditions, so you can enjoy them for the longest time. We believe sustainability is key, which means we avoid plastic wraps, as well as using artificial flowers. The important part in taking care of the flowers is watering them with rain water, which extends their lifespan and keeps them thriving.
+              </p>     
+          </div>
+          <img loading="lazy" class="mindsetImg" width="400px" src="./img/workplace1.webp"></img>
+      <img loading="lazy" class="mindsetImg" width="400px" src="./img/workplace2.webp"></img>
+  </div>
+  <div class="chooseus-content">
+      <section>
+      <div class="chooseUsText">
+          <p class="text-contFix" >Our passion and interest for the industry brought us local partners, who offered us partnership and gave us the opportunity to grow as a company.
+              Every flower we use in our atelier comes from the local farm Burina, where no chemicals are used so the flowers can last longer, grow pure and beautiful.
+              And because our focus is the customer’s joy, Laura bakery partnered with us in the process and now she is providing us with sweets, for extra smiles.
+              </p>     
+      </div>
+  </section>
+  <section>
+      <img loading="lazy" class="mindsetImgThird" width="400px" src="./img/farm2.webp"></img>
+      <a href="https://www.farmaburina.sk/"><p  class="flowerNBakeryFix underlineDLongNoMargins">Flower farm Burina</p></a>
+  </section>
+  <section>
+  <img loading="lazy" class="mindsetImgThird" width="400px" src="./img/bakery.webp"></img>
+  <a href="https://instagram.com/lauri.torticky?igshid=YmMyMTA2M2Y="><p  class="flowerNBakeryFix underlineDLongNoMargins">Laura's Bakery &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p></a>
+</section>
+</div>
+    </div>
     </section>
+    
+
+  
     <!--Footer mobile-->
     <footer class="footer-mobile">
       <h5>Contact</h5>
@@ -275,7 +250,7 @@
       <a href="#">Cookie policy</a>
     </section>
 
-    <script defer src="main.js"></script>
+    <script  src="main.js"></script>
     <script defer src="presetPreview.js"></script>
   </body>
 </html>

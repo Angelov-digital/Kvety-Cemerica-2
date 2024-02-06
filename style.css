@@ -1,10 +1,9 @@
-.activeOption{
+.activeOption {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-
-#presetParts {
-  display: none;
+html {
+  scroll-behavior: smooth;
 }
 #circleElement {
   overflow: hidden;
@@ -69,6 +68,7 @@ body {
   height: 100%;
   background-image: url(img/background.webp);
   background-size: cover;
+  position: static;
 }
 
 a {
@@ -154,7 +154,7 @@ h5 {
 .underline,
 .underlineLong,
 .underlineD,
-.underlineDLong{
+.underlineDLong {
   display: inline;
   position: relative;
 }
@@ -196,7 +196,7 @@ h5 {
   left: 12%;
   bottom: -4px;
 }
-.underlineDLongNoMargins{
+.underlineDLongNoMargins {
   display: block;
   width: fit-content;
   position: relative;
@@ -371,9 +371,6 @@ p.underline {
     user-select: none;
     width: 180px;
     will-change: transform;
-  }
-  .centerButtonFix {
-    display: flex;
   }
   .btn2-light {
     appearance: none;
@@ -612,11 +609,6 @@ p.underline {
     margin-bottom: 10px;
     margin-top: 15px;
   }
-  #prog-mobile-btn {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .line-mobile {
     width: 50%;
     padding: 0;
@@ -717,6 +709,7 @@ p.underline {
     border-color: #5a5a5a;
     margin: 10px;
     transition: background-color 0.6s ease;
+    z-index: 10;
   }
   .slider-cell:hover {
     background-color: #717171;
@@ -753,18 +746,6 @@ p.underline {
     position: relative;
     top: 60px;
   }
-  .seasons-btns-mobile {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: -20px;
-  }
   .seasons-btns-desktop {
     display: none;
   }
@@ -777,12 +758,14 @@ p.underline {
     margin-left: auto;
     margin-right: auto;
     overflow-y: scroll;
+    padding-bottom: 200px;
   }
   .flower-frame {
     max-width: 20vh;
     text-align: center;
     margin: 10px;
     height: 220px;
+    padding-top: 40px;
   }
   .flower {
     position: relative;
@@ -803,6 +786,8 @@ p.underline {
     height: 320px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+
   }
   #arrow {
     position: absolute;
@@ -829,12 +814,11 @@ p.underline {
     transform: rotate(46deg);
     transition: all 2s linear;
   }
- 
+
   #months {
     transform: rotate(0deg);
     transition: all 2s linear;
   }
-
 
   /*season-wheel-mobile-END*/
 }
@@ -1117,12 +1101,10 @@ p.underline {
 
   .programs {
     position: relative;
-    display: grid;
-    grid-template-rows: 1fr 50fr;
     top: 12vh;
     width: 90%;
     height: 95vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1135,17 +1117,18 @@ p.underline {
     align-items: center;
     text-align: center;
     margin-bottom: 30px;
+    max-height: 400px;
   }
 
   .programs-container {
     position: relative;
     top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
+    max-height: 400px;
   }
   .prog-it-cont {
     height: 80vh;
@@ -1166,6 +1149,7 @@ p.underline {
     margin-right: auto;
     margin-top: 0;
     border-radius: 10px;
+    max-height: 500px;
   }
   .prog-desc-frame {
     position: relative;
@@ -1248,7 +1232,7 @@ p.underline {
   /*season-Desktop*/
 
   /*season-wheel-Desktop*/
-  
+
   .season-title {
     position: relative;
     top: 100px;
@@ -1283,9 +1267,6 @@ p.underline {
     align-items: center;
     align-content: center;
     text-align: center;
-  }
-  .seasons-btns-mobile {
-    display: none;
   }
   .flowers-container {
     position: relative;
@@ -1327,6 +1308,7 @@ p.underline {
     height: 500px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
   }
   #arrow {
     position: absolute;
@@ -1353,13 +1335,12 @@ p.underline {
     transform: rotate(46deg);
     transition: all 2s linear;
   }
- 
+
   #months {
     transform: rotate(0deg);
     transition: all 2s linear;
   }
 
- 
   /*preset preview Desktop NEW CSS*/
   #preset-container {
     position: relative;
@@ -1434,8 +1415,8 @@ p.underline {
 .bi-plus {
   margin: 0;
   position: absolute;
-  bottom: 1px;
-  right: 30%;
+  bottom: -100px;
+  right: 35%;
   max-width: 40%;
   margin-bottom: 30.5%;
 }
@@ -1639,11 +1620,6 @@ p.underline {
 }
 hr {
   background-color: #3b3b3b;
-}
-.configurationHeadingFix {
-  margin-bottom: 2%;
-  margin-top: 6%;
-  margin-left: 5%;
 }
 .flower-frame:hover {
   -ms-transform: scale(1.5); /* IE 9 */

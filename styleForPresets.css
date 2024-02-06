@@ -51,19 +51,6 @@ h5 {
   right: 6%;
 }
 /* NAVIGATION BUTTONS*/
-.navigationButtonsDesktop {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 6%;
-  margin-left: 6%;
-}
-.navigationButtonsMobile {
-  display: flex;
-  justify-content: space-around;
-}
-.navigationButtonsMobile {
-  margin-top: 4%;
-}
 /*FOOTER*/
 .footer-desktop {
   margin-top: -6%;
@@ -116,8 +103,7 @@ a:active {
   .sliderButtons,
   .shownProduct,
   .bouquetePart,
-  .boringInfo,
-  .navigationButtonsMobile {
+  .boringInfo{
     display: none;
   }
   .bouquetePart {
@@ -137,7 +123,6 @@ a:active {
   .mySlides2,
   .presetSlideshow,
   .discoverPresetsText,
-  .navigationButtonsDesktop,
   .presetPictureDesktop,
   .gridPresetPreviewDesktop,
   h6 {
@@ -155,6 +140,7 @@ a:active {
   background-color: #e9e7deb7;
   padding: 2% 2% 2% 2%;
   border-radius: 15px;
+  max-width: 700px;
 }
 .chosenText {
   margin-left: 10%;
@@ -207,7 +193,7 @@ h6 {
 }
 .contactDesktopGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr  1fr;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -223,16 +209,7 @@ h6 {
   max-width: 300px;
 }
 
-.navigationButtonsMobileContact {
-  margin-top: 6%;
-  margin-left: 8%;
-}
 /* hiding mobile elements for Making desktop ver for Contact page */
-@media screen and (min-width: 769px) {
-  .yourConfigurationSection {
-    display: none;
-  }
-}
 /*  hiding DEsktop elements for  phone version*/
 @media screen and (max-width: 768px) {
   .gridPresetPreviewDesktop,

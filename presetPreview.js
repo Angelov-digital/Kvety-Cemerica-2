@@ -25,6 +25,12 @@ function showPresetSlidesMob(n) {
 }
 function currentPresetSlide(n) {
   showPresetSlides((pSlideIndex = n));
+  const sliders = document.getElementsByClassName("slider");
+  for (let slider of sliders) {
+    slider.style.backgroundColor = "";
+  }
+  const clickedSlider = document.getElementById("slid" + n + "1");
+  clickedSlider.style.backgroundColor = "gray";
 }
 
 function showPresetSlides(n) {

@@ -14,16 +14,16 @@ html {
   height: 50%;
   transform-origin: 0% 100%;
 }
-.contactHeadingPos {
+.contactHeadingPos{
   display: flex;
   margin-inline: auto;
-  width: 90%;
+  width:90%;
   padding-bottom: 20px;
 }
-.weOfferSpecificHeadingPos {
+.weOfferSpecificHeadingPos{
   display: flex;
   margin-inline: auto;
-  width: 90%;
+  width:90%;
   margin-bottom: -180px;
 }
 
@@ -588,6 +588,7 @@ p.underline {
     left: 0;
     width: 100%;
     opacity: 0;
+
   }
   .middle {
     display: none;
@@ -797,6 +798,7 @@ p.underline {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
+
   }
   #arrow {
     position: absolute;
@@ -891,11 +893,11 @@ p.underline {
   #featured-mobile {
     display: none;
   }
-  .productsSelectButtons {
+  .productsSelectButtons{
     display: flex;
     justify-content: center;
   }
-
+  
   #featured {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1116,7 +1118,7 @@ p.underline {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     max-height: 400px;
   }
 
@@ -1226,7 +1228,7 @@ p.underline {
   .season-title {
     position: relative;
     top: 100px;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -1428,7 +1430,7 @@ p.underline {
   .chooseus-content {
     display: none;
   }
-  .productsSelectButtons {
+  .productsSelectButtons{
     display: none;
   }
 
@@ -1492,18 +1494,19 @@ p.underline {
     margin-bottom: 8px;
   }
   .season-title,
-  .presetPartsTextMobile {
+  .presetPartsTextMobile{
     display: flex;
     margin-inline: auto;
     width: 90%;
+    
   }
-
-  .content-card-head {
+  
+  .content-card-head{
     display: flex;
     margin-inline: auto;
     width: 90%;
     padding-top: 40px;
-    margin-bottom: -70px;
+  margin-bottom: -70px;
   }
 }
 
@@ -1512,11 +1515,11 @@ p.underline {
   .footer-mobile {
     display: none;
   }
-  .presetPartsTextMobile {
+  .presetPartsTextMobile{
     display: flex;
     width: 90%;
     margin-inline: auto;
-    padding-top: 30px;
+padding-top: 120px;
     margin-bottom: -200px;
   }
 }

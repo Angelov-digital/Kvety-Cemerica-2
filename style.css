@@ -14,6 +14,18 @@ html {
   height: 50%;
   transform-origin: 0% 100%;
 }
+.contactHeadingPos {
+  display: flex;
+  margin-inline: auto;
+  width: 90%;
+  padding-bottom: 20px;
+}
+.weOfferSpecificHeadingPos {
+  display: flex;
+  margin-inline: auto;
+  width: 90%;
+  margin-bottom: -180px;
+}
 
 #circleElement:nth-child(1) {
   transform: rotate(0deg) skewY(-60deg);
@@ -515,7 +527,6 @@ p.underline {
     top: 0;
     width: 100%;
   }
-
   /*Our programs-mobile*/
   .programs {
     display: none;
@@ -577,7 +588,6 @@ p.underline {
     left: 0;
     width: 100%;
     opacity: 0;
-
   }
   .middle {
     display: none;
@@ -769,7 +779,7 @@ p.underline {
   }
   .flower {
     position: relative;
-    max-width: 20vh;
+    max-width: 15vh;
     border-radius: 10px;
   }
 
@@ -787,7 +797,6 @@ p.underline {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-
   }
   #arrow {
     position: absolute;
@@ -812,12 +821,12 @@ p.underline {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     transform: rotate(46deg);
-    transition: all 2s linear;
+    transition: all 1.3s linear;
   }
 
   #months {
     transform: rotate(0deg);
-    transition: all 2s linear;
+    transition: all 1.3s linear;
   }
 
   /*season-wheel-mobile-END*/
@@ -882,11 +891,11 @@ p.underline {
   #featured-mobile {
     display: none;
   }
-  .productsSelectButtons{
+  .productsSelectButtons {
     display: flex;
     justify-content: center;
   }
-  
+
   #featured {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1224,7 +1233,7 @@ p.underline {
   }
   #season-desktop-frame {
     position: relative;
-    width: 80%;
+    width: 90%;
     height: 80vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1314,12 +1323,12 @@ p.underline {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     transform: rotate(46deg);
-    transition: all 2s linear;
+    transition: all 1.3s linear;
   }
 
   #months {
     transform: rotate(0deg);
-    transition: all 2s linear;
+    transition: all 1.3s linear;
   }
 
   /*preset preview Desktop NEW CSS*/
@@ -1419,7 +1428,7 @@ p.underline {
   .chooseus-content {
     display: none;
   }
-  .productsSelectButtons{
+  .productsSelectButtons {
     display: none;
   }
 
@@ -1464,7 +1473,6 @@ p.underline {
 @media screen and (max-width: 768px) {
   .footer-desktop,
   .vl2,
-  .underlineDLong,
   .underlineD {
     display: none;
   }
@@ -1483,12 +1491,33 @@ p.underline {
     height: 47px;
     margin-bottom: 8px;
   }
+  .season-title,
+  .presetPartsTextMobile {
+    display: flex;
+    margin-inline: auto;
+    width: 90%;
+  }
+
+  .content-card-head {
+    display: flex;
+    margin-inline: auto;
+    width: 90%;
+    padding-top: 40px;
+    margin-bottom: -70px;
+  }
 }
 
 /* hiding mobile elements for Making desktop ver */
 @media screen and (min-width: 768px) {
   .footer-mobile {
     display: none;
+  }
+  .presetPartsTextMobile {
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    padding-top: 30px;
+    margin-bottom: -200px;
   }
 }
 

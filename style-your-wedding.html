@@ -58,8 +58,20 @@
                 <li class="nav-mobile">
                     <a class="nav-link" href="contact.html" class="nav-link">Contact</a>
                 </li>
-                <a href="style-your-wedding.html" >English</a>
-                <a href="štýl-vašej-svadby.html">Slovak</a>
+                <label for="pet-select">Language</label>
+
+<select name="pets" id="pet-select" onchange="redirect(this)">
+  <option value="style-your-wedding.html">English</option>
+  <option value="štýl-vašej-svadby.html">Slovak</option>
+</select>
+<script>
+  function redirect(select) {
+    const url = select.value;
+    if (url) {
+      window.location.href = url;
+    }
+  }
+  </script>
             </ul>
         </nav>
 
@@ -80,9 +92,9 @@
       
       <div class="featured-text">
           <p class="featured-inspired">Get inspired</p>    
-          <p id="inspiration">Wedding inspiration</p> 
+          <h1 id="inspiration">Welcome to our atelier</h1> 
           <hr width="90%">   
-          <p class="inspired">On our website you can find prepared decoration bundles, alongside with option to customize your own decoration preset</p>     
+          <p class="inspired">Plan the wedding of your dreams with us! As a dedicated company, we provide wedding flowers and decorations of all kinds and for all tastes.</p>     
           <a href="style-your-wedding.html">
               <button class="btn1-light">See our products</button>
           </a> 
@@ -96,7 +108,7 @@
             <section class="featured-text">
               <p class="featured-inspired">Discover</p>
               <hr width="90%" />
-              <p id="inspiration">Welcome to our atelier</p>
+              <h1 id="inspiration">Welcome to our atelier</h1>
               <p class="inspired">Plan the wedding of your dreams with us! As a dedicated company, we provide wedding flowers and decorations of all kinds and for all tastes.
               </p>
               <button class="button-main" id="downButton">Show more</button>
@@ -122,7 +134,7 @@
 
     <div class="prgtxtcnt">
         <div class="content-card-head">
-            <p class="headstyle1 underlineDLong">We offer</p>
+            <h2 class="headstyle1 underlineDLong">We offer</h2>
         </div>
         <!--<button class="info-button">more info</button>-->
     </div>
@@ -184,7 +196,9 @@
 <!-- promgrammes Desktop END-->
 
 <section id="programs-mobile">
-
+  <div class="content-card-head">
+    <h2 class="headstyle1 underlineDLong">We offer</h2>
+</div>
 <div class="slideshow">
 
     <div class="mySlides fade">
@@ -235,17 +249,18 @@
 <!-- START OF ADDING PROGRAMMES / full programme-->
 
   <section class="presetPartsTextMobile">
-    <h1>Preset parts</h1>
+      <h2 class="headstyle1 underlineDLong">We offer or smth</h2>
   </section>
   <!-- part1-->
   <section class="bouquetePart">
+    
     <h2 class="underlineLong">Bouquet for bride</h2>
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="shownProduct" src="img/bouquet2.webp" alt="Flower Bouquetes" />
-          <p class="swipeText">Swipe</p>
+          <p class="swipeText">Swipe for more</p>
           <svg
             class="swipeLine"
             xmlns="http://www.w3.org/2000/svg"
@@ -318,6 +333,59 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="shownProduct" src="img/buttonholes1.webp" alt="buttoniere" />
+          <p class="swipeText">Swipe for more</p>
+          <svg
+            class="swipeLine"
+            xmlns="http://www.w3.org/2000/svg"
+            width="95.5"
+            height="14.916"
+            viewBox="0 0 95.5 14.916"
+          >
+            <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(388 1650.958) rotate(180)">
+              <g id="Сгруппировать_60" data-name="Сгруппировать 60">
+                <line
+                  id="Линия_66"
+                  data-name="Линия 66"
+                  x2="95"
+                  transform="translate(292.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_68"
+                  data-name="Линия 68"
+                  x1="16"
+                  y1="7"
+                  transform="translate(371.5 1636.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_69"
+                  data-name="Линия 69"
+                  x1="16"
+                  y2="7"
+                  transform="translate(371.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+              </g>
+              <g
+                id="Эллипс_17"
+                data-name="Эллипс 17"
+                transform="translate(387 1643)"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="1"
+              >
+                <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                <circle cx="0.5" cy="0.5" fill="none" />
+              </g>
+            </g>
+          </svg>
         </div>
         <div class="swiper-slide">
           <img class="shownProduct" src="img/buttonholes2.webp" alt="buttoniere" />
@@ -340,6 +408,59 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="shownProduct" src="img/weddingvenue1.webp" alt="Wedding venue" />
+          <p class="swipeText">Swipe for more</p>
+          <svg
+            class="swipeLine"
+            xmlns="http://www.w3.org/2000/svg"
+            width="95.5"
+            height="14.916"
+            viewBox="0 0 95.5 14.916"
+          >
+            <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(388 1650.958) rotate(180)">
+              <g id="Сгруппировать_60" data-name="Сгруппировать 60">
+                <line
+                  id="Линия_66"
+                  data-name="Линия 66"
+                  x2="95"
+                  transform="translate(292.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_68"
+                  data-name="Линия 68"
+                  x1="16"
+                  y1="7"
+                  transform="translate(371.5 1636.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_69"
+                  data-name="Линия 69"
+                  x1="16"
+                  y2="7"
+                  transform="translate(371.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+              </g>
+              <g
+                id="Эллипс_17"
+                data-name="Эллипс 17"
+                transform="translate(387 1643)"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="1"
+              >
+                <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                <circle cx="0.5" cy="0.5" fill="none" />
+              </g>
+            </g>
+          </svg>
         </div>
         <div class="swiper-slide">
           <img class="shownProduct" src="img/weddingvenue2.webp" alt="Wedding venue" />
@@ -362,6 +483,59 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="shownProduct" src="img/churchdecorations1.webp" alt="Church decoration" />
+          <p class="swipeText">Swipe for more</p>
+          <svg
+            class="swipeLine"
+            xmlns="http://www.w3.org/2000/svg"
+            width="95.5"
+            height="14.916"
+            viewBox="0 0 95.5 14.916"
+          >
+            <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(388 1650.958) rotate(180)">
+              <g id="Сгруппировать_60" data-name="Сгруппировать 60">
+                <line
+                  id="Линия_66"
+                  data-name="Линия 66"
+                  x2="95"
+                  transform="translate(292.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_68"
+                  data-name="Линия 68"
+                  x1="16"
+                  y1="7"
+                  transform="translate(371.5 1636.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_69"
+                  data-name="Линия 69"
+                  x1="16"
+                  y2="7"
+                  transform="translate(371.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+              </g>
+              <g
+                id="Эллипс_17"
+                data-name="Эллипс 17"
+                transform="translate(387 1643)"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="1"
+              >
+                <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                <circle cx="0.5" cy="0.5" fill="none" />
+              </g>
+            </g>
+          </svg>
         </div>
         <div class="swiper-slide">
           <img class="shownProduct" src="img/churchdecorations2.webp" alt="Church decoration" />
@@ -386,6 +560,59 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="shownProduct" src="img/cardecoration1.webp" alt="Car decorations" />
+          <p class="swipeText">Swipe for more</p>
+          <svg
+            class="swipeLine"
+            xmlns="http://www.w3.org/2000/svg"
+            width="95.5"
+            height="14.916"
+            viewBox="0 0 95.5 14.916"
+          >
+            <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(388 1650.958) rotate(180)">
+              <g id="Сгруппировать_60" data-name="Сгруппировать 60">
+                <line
+                  id="Линия_66"
+                  data-name="Линия 66"
+                  x2="95"
+                  transform="translate(292.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_68"
+                  data-name="Линия 68"
+                  x1="16"
+                  y1="7"
+                  transform="translate(371.5 1636.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_69"
+                  data-name="Линия 69"
+                  x1="16"
+                  y2="7"
+                  transform="translate(371.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+              </g>
+              <g
+                id="Эллипс_17"
+                data-name="Эллипс 17"
+                transform="translate(387 1643)"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="1"
+              >
+                <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                <circle cx="0.5" cy="0.5" fill="none" />
+              </g>
+            </g>
+          </svg>
         </div>
         <div class="swiper-slide">
           <img class="shownProduct" src="img/cardecoration2.webp" alt="Car decorations" />
@@ -408,6 +635,59 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="shownProduct" src="img/bridesmatesdecoration1.webp" alt="bridesmaids decoration" />
+          <p class="swipeText">Swipe for more</p>
+          <svg
+            class="swipeLine"
+            xmlns="http://www.w3.org/2000/svg"
+            width="95.5"
+            height="14.916"
+            viewBox="0 0 95.5 14.916"
+          >
+            <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(388 1650.958) rotate(180)">
+              <g id="Сгруппировать_60" data-name="Сгруппировать 60">
+                <line
+                  id="Линия_66"
+                  data-name="Линия 66"
+                  x2="95"
+                  transform="translate(292.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_68"
+                  data-name="Линия 68"
+                  x1="16"
+                  y1="7"
+                  transform="translate(371.5 1636.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_69"
+                  data-name="Линия 69"
+                  x1="16"
+                  y2="7"
+                  transform="translate(371.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+              </g>
+              <g
+                id="Эллипс_17"
+                data-name="Эллипс 17"
+                transform="translate(387 1643)"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="1"
+              >
+                <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                <circle cx="0.5" cy="0.5" fill="none" />
+              </g>
+            </g>
+          </svg>
         </div>
         <div class="swiper-slide">
           <img class="shownProduct" src="img/bridesmatesdecoration2.webp" alt="bridesmaids decoration" />
@@ -430,6 +710,59 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="shownProduct" src="img/otherdecorations1.webp" alt="Other decorations" />
+          <p class="swipeText">Swipe for more</p>
+          <svg
+            class="swipeLine"
+            xmlns="http://www.w3.org/2000/svg"
+            width="95.5"
+            height="14.916"
+            viewBox="0 0 95.5 14.916"
+          >
+            <g id="Сгруппировать_62" data-name="Сгруппировать 62" transform="translate(388 1650.958) rotate(180)">
+              <g id="Сгруппировать_60" data-name="Сгруппировать 60">
+                <line
+                  id="Линия_66"
+                  data-name="Линия 66"
+                  x2="95"
+                  transform="translate(292.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_68"
+                  data-name="Линия 68"
+                  x1="16"
+                  y1="7"
+                  transform="translate(371.5 1636.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+                <line
+                  id="Линия_69"
+                  data-name="Линия 69"
+                  x1="16"
+                  y2="7"
+                  transform="translate(371.5 1643.5)"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="1"
+                />
+              </g>
+              <g
+                id="Эллипс_17"
+                data-name="Эллипс 17"
+                transform="translate(387 1643)"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="1"
+              >
+                <circle cx="0.5" cy="0.5" r="0.5" stroke="none" />
+                <circle cx="0.5" cy="0.5" fill="none" />
+              </g>
+            </g>
+          </svg>
         </div>
         <div class="swiper-slide">
           <img class="shownProduct" src="img/otherdecorations2.webp" alt="Other decorations" />
@@ -459,10 +792,10 @@
     <div class="slider-cell slider" id="slid6" onclick="currentPresetSlideMob(6)"></div>
     <div class="slider-cell slider" id="slid7" onclick="currentPresetSlideMob(7)"></div>
   </section>
-
   <section class="gridPresetPreviewDesktop" id="presetParts">
     <section class="presetOptions">
-      <h6 class="underlineDLong">We offer or smth</h6>
+      
+      
       <p class="activeOption" onclick="currentPresetSlide(1)">Bouquet for bride</p>
       <p class="activeOption" onclick="currentPresetSlide(2)">Feather for wedding guests</p>
       <p class="activeOption" onclick="currentPresetSlide(3)">Wedding hall decorations</p>
@@ -559,7 +892,7 @@
   </section>
   <!-- Flower wheel start-->
   <section class="season-title">
-    <p class="headstyle1 underlineD" >Season wheel</p>
+    <h2 class="headstyle1 underlineDLong" >Season wheel</h2>
   </section>
 
   <!-- season wheel -->
@@ -668,11 +1001,9 @@
   </section>
   <!-- season wheel END -->
   <!--Contact section start-->
-  <h6 class="underlineDLong configurationHeadingFix">Contact us</h6>
-  <section class="contactDesktopHeadingsGrid">
-
-  </section>
-  
+  <div class="contactHeadingPos">
+  <h2 class="headstyle1 underlineDLong">Contact us</h2>
+</div>
     <section class="contactMobile">  
       <p class="contactText">
         By contacting us, we will receive your customisation and then we will be able to give you a price estimate

@@ -41,7 +41,8 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-top: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 .swipeText {
   position: absolute;
@@ -98,14 +99,14 @@ a:active {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .slider-cell {
     margin: 6px;
   }
 }
 
 /* hiding mobile elements for Making desktop ver */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 961px) {
   .carousel,
   .sliderButtons,
   .shownProduct,
@@ -124,7 +125,7 @@ a:active {
     margin-bottom: 150px;
   }
 } /*  hiding DEsktop elements for  phone version*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 961px) {
   .gridPresetPreviewDesktop,
   .presetOptions,
   .presetPictureMobile .preview-text,
@@ -221,7 +222,7 @@ h6 {
 
 /* hiding mobile elements for Making desktop ver for Contact page */
 /*  hiding DEsktop elements for  phone version*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width:961px) {
   .gridPresetPreviewDesktop,
   .contactDesktopHeadingsGrid,
   .contactDesktopGrid h6 {
@@ -263,13 +264,13 @@ h6 {
   margin-top: 37%;
 }
 /* hiding mobile elements for Making desktop ver for 404 */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 960px) {
   .errorContainerMobile {
     display: none;
   }
 }
 /*  hiding DEsktop elements for  phone version 404*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 961px) {
   .errorContainer,
   .contactDesktopGrid {
     display: none;

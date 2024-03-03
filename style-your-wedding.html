@@ -18,22 +18,7 @@
     <title>Kvety Cemerica</title>
     
 </head>
-<style>
-    a:link { text-decoration: none; }
-    a:visited { text-decoration: none; }
-    a:hover { text-decoration: none; }
-    a:active { text-decoration: none; }
-
-    body{
-        margin: 0;
-        align-items: center;
-    }
-    ul{
-        list-style-type: none; 
-   
-    }
-</style>
-<body onload="showCurrentMonthFlowers();currentSlide(1);currentDiv(1); currentPresetSlide(1); currentPresetSlideMob(1);getUserChoise();currentDiv(1); currentPresetSlide(1);">
+<body onload="showCurrentMonthFlowers(); currentPresetSlideMob(1);currentSlide(1);currentDiv(1); currentPresetSlide(1);getUserChoise();currentDiv(1);">
     <!-- navigation bar-->
     <header>
         <nav class="navbar">
@@ -58,7 +43,6 @@
                 <li class="nav-mobile">
                     <a class="nav-link" href="contact.html" class="nav-link">Contact</a>
                 </li>
-                <label for="pet-select">Language</label>
 
 <select name="pets" id="pet-select" onchange="redirect(this)">
   <option value="style-your-wedding.html">English</option>
@@ -136,7 +120,6 @@
         <div class="content-card-head">
             <h2 class="headstyle1 underlineDLong">We offer</h2>
         </div>
-        <!--<button class="info-button">more info</button>-->
     </div>
         <!-- for plus thanks goes to https://icons.getbootstrap.com/icons/plus/-->
 
@@ -210,7 +193,8 @@
             </div>
            
             <div class="prog-mobile-text-frame">
-                <p class="headstyle1 underline">Complete program</p>
+                <p class="headstyle1">Complete program</p>
+                <hr class="line-mobile"> 
                 <p class="text-cont2">In this preset you can find everything we are providing</p>
 
             </div>
@@ -238,8 +222,8 @@
 
 
     <div class="slider">
-        <div class="slider-cell" id="slid1" onclick="currentSlide(1)"></div>
-        <div class="slider-cell" id="slid2" onclick="currentSlide(2)"></div>
+        <div class="slider-cell" onclick="currentSlide(1)"></div>
+        <div class="slider-cell" onclick="currentSlide(2)"></div>
     </div>
 
 </div>
@@ -1017,6 +1001,7 @@
         <br />
         <input type="text" name="text" placeholder="Your message" class="contactInput yourMessage" /><br />
         <button type="submit" class="btn1-light contactButton">Contact</button>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
       </form>
 
   </section>

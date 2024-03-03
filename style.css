@@ -1,3 +1,26 @@
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+}
+.active{
+  background-color: pink;
+}
 .activeOption {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -14,16 +37,16 @@ html {
   height: 50%;
   transform-origin: 0% 100%;
 }
-.contactHeadingPos{
+.contactHeadingPos {
   display: flex;
   margin-inline: auto;
-  width:90%;
+  width: 90%;
   padding-bottom: 20px;
 }
-.weOfferSpecificHeadingPos{
+.weOfferSpecificHeadingPos {
   display: flex;
   margin-inline: auto;
-  width:90%;
+  width: 90%;
   margin-bottom: -180px;
 }
 
@@ -338,7 +361,7 @@ p.underline {
 /*media*/
 
 /*media-mobile*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   /*headstyles-mobile*/
   .headstyle1 {
     color: #5a5a5a;
@@ -490,7 +513,7 @@ p.underline {
   }
   #featured-mobile {
     position: relative;
-    width: 100%;
+    max-width: 90%;
     margin: auto;
   }
   .featured-text {
@@ -588,7 +611,6 @@ p.underline {
     left: 0;
     width: 100%;
     opacity: 0;
-
   }
   .middle {
     display: none;
@@ -798,7 +820,6 @@ p.underline {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-
   }
   #arrow {
     position: absolute;
@@ -834,7 +855,7 @@ p.underline {
   /*season-wheel-mobile-END*/
 }
 /*media-desktop*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 961px) {
   /*navigation*/
   .nav-mobile {
     display: none;
@@ -893,11 +914,11 @@ p.underline {
   #featured-mobile {
     display: none;
   }
-  .productsSelectButtons{
+  .productsSelectButtons {
     display: flex;
     justify-content: center;
   }
-  
+
   #featured {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1423,14 +1444,14 @@ p.underline {
 
 /*choose us-Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .content-card-nav {
     display: none;
   }
   .chooseus-content {
     display: none;
   }
-  .productsSelectButtons{
+  .productsSelectButtons {
     display: none;
   }
 
@@ -1461,7 +1482,7 @@ p.underline {
     width: 50px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 961px) {
   .chooseUsMobilePictures,
   .chooseUsMobileText,
   .sliderChooseUs,
@@ -1472,7 +1493,7 @@ p.underline {
 /*fix for flexboxdesktop*/
 
 /*  hiding Desktop elements for  phone version*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .footer-desktop,
   .vl2,
   .underlineD {
@@ -1494,38 +1515,37 @@ p.underline {
     margin-bottom: 8px;
   }
   .season-title,
-  .presetPartsTextMobile{
+  .presetPartsTextMobile {
     display: flex;
     margin-inline: auto;
     width: 90%;
-    
   }
-  
-  .content-card-head{
+
+  .content-card-head {
     display: flex;
     margin-inline: auto;
     width: 90%;
     padding-top: 40px;
-  margin-bottom: -70px;
+    margin-bottom: -70px;
   }
 }
 
 /* hiding mobile elements for Making desktop ver */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 961px) {
   .footer-mobile {
     display: none;
   }
-  .presetPartsTextMobile{
+  .presetPartsTextMobile {
     display: flex;
     width: 90%;
     margin-inline: auto;
-padding-top: 120px;
+    padding-top: 120px;
     margin-bottom: -200px;
   }
 }
 
 /*footer mobile Aleks*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   h5 {
     font-size: 18px;
     margin: 10px;
@@ -1577,7 +1597,7 @@ padding-top: 120px;
   }
 }
 /*footer desktop Aleks*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 961px) {
   .boringInfo {
     display: none;
   }

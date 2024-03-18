@@ -6,8 +6,10 @@ function currentPresetSlideMob(n) {
 }
 
 function showPresetSlidesMob(n) {
+  
   let slides = document.getElementsByClassName("bouquetePart");
-  let dots = document.getElementsByClassName("slider");
+  let dots = document.getElementsByClassName("productSliderCellMobile");
+
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -18,11 +20,12 @@ function showPresetSlidesMob(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" productSliderCellMobileActive", "");
   }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  dots[slideIndex -1].className += " productSliderCellMobileActive";
 }
+
 function currentPresetSlide(n) {
   showPresetSlides((pSlideIndex = n));
   const sliders = document.getElementsByClassName("slider");

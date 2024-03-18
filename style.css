@@ -18,8 +18,10 @@ body {
 ul {
   list-style-type: none;
 }
-.active{
-  background-color: pink;
+
+.productSliderCellMobileActive,
+.active {
+  background-color: #717171;
 }
 .activeOption {
   margin-top: 16px;
@@ -731,6 +733,18 @@ p.underline {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
+  }
+  .productSliderCellMobile {
+    position: relative;
+    width: 50px;
+    height: 11px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #5a5a5a;
+    margin: 10px;
+    transition: background-color 0.6s ease;
+    z-index: 10;
   }
   .slider-cell {
     position: relative;

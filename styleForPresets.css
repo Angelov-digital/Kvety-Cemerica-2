@@ -9,6 +9,10 @@ h1 {
 h2 {
   margin-left: 8%;
 }
+h3{
+  margin-left: 10%;
+  font-size: 22px;
+}
 
 h4 {
   margin-left: 5%;
@@ -37,6 +41,8 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 .swipeText {
   position: absolute;
@@ -51,19 +57,6 @@ h5 {
   right: 6%;
 }
 /* NAVIGATION BUTTONS*/
-.navigationButtonsDesktop {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 6%;
-  margin-left: 6%;
-}
-.navigationButtonsMobile {
-  display: flex;
-  justify-content: space-around;
-}
-.navigationButtonsMobile {
-  margin-top: 4%;
-}
 /*FOOTER*/
 .footer-desktop {
   margin-top: -6%;
@@ -84,7 +77,10 @@ h5 {
   height: 420px;
   
 }
-
+.bouquetePart{
+  padding-left: 30px;
+  padding-top: 10px;
+}
 .presetPictureMobile {
   width: 80%;
 }
@@ -103,21 +99,19 @@ a:active {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .slider-cell {
     margin: 6px;
   }
 }
 
 /* hiding mobile elements for Making desktop ver */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 961px) {
   .carousel,
-  .presetPartsTextMobile,
   .sliderButtons,
   .shownProduct,
   .bouquetePart,
-  .boringInfo,
-  .navigationButtonsMobile {
+  .boringInfo{
     display: none;
   }
   .bouquetePart {
@@ -127,8 +121,11 @@ a:active {
     width: 370px;
     max-height: 60px;
   }
+  .contactMobile{
+    margin-bottom: 150px;
+  }
 } /*  hiding DEsktop elements for  phone version*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 961px) {
   .gridPresetPreviewDesktop,
   .presetOptions,
   .presetPictureMobile .preview-text,
@@ -137,7 +134,6 @@ a:active {
   .mySlides2,
   .presetSlideshow,
   .discoverPresetsText,
-  .navigationButtonsDesktop,
   .presetPictureDesktop,
   .gridPresetPreviewDesktop,
   h6 {
@@ -155,6 +151,7 @@ a:active {
   background-color: #e9e7deb7;
   padding: 2% 2% 2% 2%;
   border-radius: 15px;
+  max-width: 700px;
 }
 .chosenText {
   margin-left: 10%;
@@ -207,7 +204,7 @@ h6 {
 }
 .contactDesktopGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr  1fr;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -223,18 +220,9 @@ h6 {
   max-width: 300px;
 }
 
-.navigationButtonsMobileContact {
-  margin-top: 6%;
-  margin-left: 8%;
-}
 /* hiding mobile elements for Making desktop ver for Contact page */
-@media screen and (min-width: 769px) {
-  .yourConfigurationSection {
-    display: none;
-  }
-}
 /*  hiding DEsktop elements for  phone version*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width:961px) {
   .gridPresetPreviewDesktop,
   .contactDesktopHeadingsGrid,
   .contactDesktopGrid h6 {
@@ -276,13 +264,13 @@ h6 {
   margin-top: 37%;
 }
 /* hiding mobile elements for Making desktop ver for 404 */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 960px) {
   .errorContainerMobile {
     display: none;
   }
 }
 /*  hiding DEsktop elements for  phone version 404*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 961px) {
   .errorContainer,
   .contactDesktopGrid {
     display: none;

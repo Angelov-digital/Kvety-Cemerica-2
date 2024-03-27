@@ -44,11 +44,11 @@
       <nav class="navbar">
         <ul class="nav-logotype">
           <div>
-            <a href="index.html"><img src="img/logo.svg" alt="logo" class="nav-logo" /></a>
+            <a href="homepage.html"><img src="img/logo.svg" alt="logo" class="nav-logo" /></a>
           </div>
           <div class="vl"></div>
           <li class="nav-item">
-            <a class="nav-link" href="index.html" class="nav-link">Flower studio</a>
+            <a class="nav-link" href="homepage.html" class="nav-link">Flower studio</a>
           </li>
         </ul>
 
@@ -58,11 +58,13 @@
           </li>
           <div class="vl hiddenVl"></div>
           <li class="nav-item-desk">
-            <a class="nav-link" href="404.html" class="nav-link">Bouquetes</a>
+            <a class="nav-link" href="error-404.html" class="nav-link">Bouquetes</a>
           </li>
           <li class="nav-mobile">
-            <a class="nav-link" href="404.html" class="nav-link">Bouquetes</a>
+            <a class="nav-link" href="error-404.html" class="nav-link">Bouquetes</a>
           </li>
+          <a href="partial-programme.html">English</a>
+          <a href="ciastkový-program.html">Slovak</a>
         </ul>
       </nav>
 
@@ -86,25 +88,23 @@
             <img class="mySlides2" alt="slideshow picture" src="img/bridesmatesdecoration2.webp" />
             <img class="mySlides2" alt="slideshow picture" src="img/buttonholes1.webp" />
             <section class="slideShowPreset" style="width: 100%">
-              <div class="slider-cellActive
-               white-cell" id="slid1" onclick="currentDiv(1)"></div>
-              <div class="slider-cellActive
-               white-cell" id="slid2" onclick="currentDiv(2)"></div>
-              <div class="slider-cellActive
-               white-cell" id="slid3" onclick="currentDiv(3)"></div>
+              <div class="slider-cellActive white-cell" id="slid1" onclick="currentDiv(1)"></div>
+              <div class="slider-cellActive white-cell" id="slid2" onclick="currentDiv(2)"></div>
+              <div class="slider-cellActive white-cell" id="slid3" onclick="currentDiv(3)"></div>
             </section>
           </section>
         </div>
       </section>
     </div>
-
     <section class="gridPresetPreviewDesktop">
       <section class="presetOptions">
         <h6 class="underlineDLong">Parts of this preset</h6>
         <p class="activeOption" onclick="currentPresetSlide(1)">Bouquet for bride</p>
         <p class="activeOption" onclick="currentPresetSlide(2)">Feather for wedding guests</p>
         <p class="activeOption" onclick="currentPresetSlide(3)">Wedding hall decorations</p>
-        <p class="activeOption" onclick="currentPresetSlide(4)">Other decorations</p>
+        <p class="activeOption" onclick="currentPresetSlide(4)">Church decorations</p>
+        <p class="activeOption" onclick="currentPresetSlide(5)">Bridesmaids decorations</p>
+        <p class="activeOption" onclick="currentPresetSlide(6)">Other decorations</p>
         <!-- possibleOptions text-->
         <section class="presetTextAdjust">
           <div class="presetText">
@@ -132,6 +132,22 @@
             <p class="underline">Possible options</p>
             <br />
             <p class="possibleOptText">
+              This can be divided into altar decorations, chairs for newlyweds and other small decorations
+            </p>
+          </div>
+        </section>
+        <section class="presetTextAdjust">
+          <div class="presetText">
+            <p class="underline">Possible options</p>
+            <br />
+            <p class="possibleOptText">This category can include bracelets and headbands</p>
+          </div>
+        </section>
+        <section class="presetTextAdjust">
+          <div class="presetText">
+            <p class="underline">Possible options</p>
+            <br />
+            <p class="possibleOptText">
               As our other decorations, we offer photo wall, polaroid camera, welcome table and seating plan
             </p>
           </div>
@@ -146,6 +162,12 @@
       <!--Wedding hall decorations desktop pictures-->
       <img class="presetPictureDesktop" src="img/weddingvenue1.webp" alt="Bouquet" />
       <img class="presetPictureDesktop" src="img/weddingvenue3.webp" alt="Bouquetes" />
+      <!--Church decorations desktop pictures-->
+      <img class="presetPictureDesktop" src="img/churchdecorations2.webp" alt="Church decorations" />
+      <img class="presetPictureDesktop" src="img/churchdecorations1.webp" alt="Chair decorations" />
+      <!--Bridesmaids decorations desktop pictures-->
+      <img class="presetPictureDesktop" src="img/bridesmatesdecoration2.webp" alt="Bridesmaids decoration" />
+      <img class="presetPictureDesktop" src="img/bridesmatesdecoration1.webp" alt="Bridesmaids decoration" />
       <!--Other decorations desktop pictures-->
       <img class="presetPictureDesktop" src="img/otherdecorations2.webp" alt="Bridesmaids decoration" />
       <img class="presetPictureDesktop" src="img/otherdecorations3.webp" alt="Bridesmaids decoration" />
@@ -233,6 +255,7 @@
           </div>
         </div>
       </div>
+      <h3></h3>
       <section>
         <h4 class="underlineLong">Possible options</h4>
         <p class="possibleOptionsText">You will be able to choose from different bouquet sizes</p>
@@ -244,7 +267,7 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="shownProduct" src="img/buttonholes1.webp" alt="buttonholes" />
+            <img class="shownProduct" src="img/buttonholes1.webp" alt="buttoniere" />
           </div>
           <div class="swiper-slide">
             <img class="shownProduct" src="img/buttonholes2.webp" alt="buttoniere" />
@@ -254,7 +277,7 @@
           </div>
         </div>
       </div>
-
+      <h3></h3>
       <section>
         <h4 class="underlineLong">Possible options</h4>
         <p class="possibleOptionsText">We offer 3 categories. Feathers for groom, for witnesses and wedding guests</p>
@@ -282,7 +305,29 @@
         <p class="possibleOptionsText">This divides into- roof, walls and other requested parts</p>
       </section>
     </section>
-    <!--part4-->
+    <!--part5-->
+    <section class="bouquetePart">
+      <h2 class="underlineLong">Bridesmaids decorations</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/bridesmatesdecoration1.webp" alt="bridesmaids bridesmatesdecoration" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/bridesmatesdecoration2.webp" alt="bridesmaids decoration" />
+          </div>
+          <div class="swiper-slide">
+            <img class="shownProduct" src="img/bridesmatesdecoration3.webp" alt="bridesmaids decoration" />
+          </div>
+        </div>
+      </div>
+      <h3></h3>
+      <section>
+        <h4 class="underlineLong">Possible options</h4>
+        <p class="possibleOptionsText">This category can include bracelets and headbands</p>
+      </section>
+    </section>
+    <!--part6-->
     <section class="bouquetePart">
       <h2 class="underlineLong">Other decorations</h2>
       <div class="swiper mySwiper">
@@ -306,13 +351,16 @@
         </p>
       </section>
     </section>
+
     <!--/* Swiper JS */-->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <section class="sliderButtons">
       <div class="slider-cell slider" id="slid1" onclick="currentPresetSlideMob(1)"></div>
       <div class="slider-cell slider" id="slid2" onclick="currentPresetSlideMob(2)"></div>
       <div class="slider-cell slider" id="slid3" onclick="currentPresetSlideMob(3)"></div>
-      <div class="slider-cell slider" id="slid7" onclick="currentPresetSlideMob(4)"></div>
+      <div class="slider-cell slider" id="slid5" onclick="currentPresetSlideMob(4)"></div>
+      <div class="slider-cell slider" id="slid6" onclick="currentPresetSlideMob(5)"></div>
     </section>
     <section class="navigationButtonsMobile">
       <button class="btn1-light">
@@ -415,16 +463,16 @@
       </div>
 
       <div class="footercontent">
-        <a href="404.html"><p>Terms of use</p></a>
-        <a href="404.html"><p>Cookies</p></a>
-        <a href="404.html"><p>Privacy policy</p></a>
+        <a href="#"><p>Terms of use</p></a>
+        <a href="#"><p>Cookies</p></a>
+        <a href="#"><p>Privacy policy</p></a>
       </div>
     </footer>
 
     <section class="boringInfo">
-      <a href="404.html">Privacy policy</a>
-      <a href="404.html">Terms of use</a>
-      <a href="404.html">Cookie policy</a>
+      <a href="#">Privacy policy</a>
+      <a href="#">Terms of use</a>
+      <a href="#">Cookie policy</a>
     </section>
 
     <script defer src="main.js"></script>
